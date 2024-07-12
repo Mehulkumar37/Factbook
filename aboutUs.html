@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactBook</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="aboutUs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Signika+Negative:wght@300..700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="header-overlay"></div>
+        <div class="header-content">
+
+            <div class="logo">
+                <div class="logo-circle">
+                    <img src="logo.png" alt="Logo">
+                </div>
+            </div>
+
+            <div class="user-options">
+                <a href="#" class="btn" id="loginBtn">Log In</a>
+                <a href="#" class="btn" id="registerBtn">Sign Up</a>
+            </div>
+            
+        </div>
+
+        <p class="quote">"Fact that Educate, Inspire and Amaze"</p>
+        
+    </header>
+
+    <div class="navigation-menu"> 
+        <ul class="menu">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="facts.html"><i class="fas fa-info-circle"></i> Facts</a></li>
+            <li class="active"><a href="aboutUs.html"><i class="fas fa-users"></i> About Us</a></li>
+            <li><a href="contactUs.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="wrapper" id="popupWrapper">
+        <div class="popup-content">
+            <span class="icon-close" id="closePopup">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form id="loginForm" action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Remember me </label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="form-box register">
+                <h2>Sign Up</h2>
+                <form id="registerForm" action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" id="username" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="regEmail" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="regPassword" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox" required>I agree to the terms & conditions </label>
+                    </div>
+                    <button type="submit" class="btn">Sign up</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <section id="vision" class="section">
+        <div class="container">
+            <div class="image-container">
+                <img src="./Image/hp-image/Vision.jpg" alt="vision" class="vision-img">
+            </div>
+            <div class="text-container">
+                <h2>Vision:</h2>
+                <p>At <span>FactBook</span>, we're dedicated to bringing you intriguing facts, fascinating insights, and thought-provoking content from a myriad of topics. Our mission is to be your go-to destination for reliable information, presented in an engaging and accessible manner.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="goals" class="section">
+        <div class="container">
+            <div class="text-container">
+                <h2>Our Goals:</h2>
+                <p>
+                    <ol class="goal-list">
+                        <li><strong>Informative Exploration:</strong> We strive to curate and present facts that inspire curiosity and spark intellectual exploration.</li>
+                        <li><strong>Diverse Perspectives:</strong> Diversity is at the core of our content philosophy. We offer a wide range of topics and viewpoints to cater to varied interests.</li>
+                        <li><strong>Reliability and Accuracy:</strong> We prioritize accuracy and reliability. Our team ensures that every fact presented is thoroughly vetted and sourced from credible sources.</li>
+                        <li><strong>Community Engagement:</strong> We value the input and feedback of our audience. Active participation is encouraged through social media, newsletters, and comments.</li>
+                    </ol>
+                </p>
+            </div>
+            <div class="image-container">
+                <img src="./Image/hp-image/goal.jpg" alt="goals" width="400" height="300">
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="team-section">
+        <div class="team-container">
+            <div class="team-header">
+                <h2>Developer </h2>
+            </div>
+            <div class="team-member">
+                <img src="./Image/hp-image/mehul.jpg" alt="" width="200" height="200">
+                <h3>Gamit Mehulkumar</h3>
+                <p>Head Developer</p>
+                <p>Branch : Information &amp Tech <br> 2nd year, 4th sam <br> Roll No:22118037</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-wrapper">
+                <div class="footer-widget">
+                    <a href="#">
+                        <img src="#" class="logo" alt="logo of Factbook"/>
+                    </a>
+                    <div class="address-contact">
+                        Address:NIT Raipur,<br> Raipur, Chhattisgarh 492010<br>
+                        Phone: 123-456-7890<br>
+                        Email: info@example.com
+                    </div>
+                </div>
+                <div class="footer-widget">
+                    <h6>Menu</h6>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="facts.html">Facts</a></li>
+                        <li><a href="aboutUs.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Help &amp; Support</h6>
+                    <ul class="links">
+                        <li><a href="contactUs.html">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms &amp; Conditionns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Social Media Links</h6>
+                    <ul class="socials">
+                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright-wrapper">
+                <p>Desing and Developed by
+                    <a href="#" terget="blank">FactBook</a>
+                </p>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./login.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactBook</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="facts.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="header-overlay"></div>
+        <div class="header-content">
+
+            <div class="logo">
+                <div class="logo-circle">
+                    <img src="logo.png" alt="Logo">
+                </div>
+            </div>
+
+            <div class="user-options">
+                <a href="#" class="btn" id="loginBtn">Log In</a>
+                <a href="#" class="btn" id="registerBtn">Sign Up</a>
+            </div>
+            
+        </div>
+
+        <p class="quote">"Fact that Educate, Inspire and Amaze"</p>
+        
+    </header>
+
+    <div class="navigation-menu"> 
+        <ul class="menu">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li class="active"><a href="facts.html"><i class="fas fa-info-circle"></i> Facts</a></li>
+            <li><a href="aboutUs.html"><i class="fas fa-users"></i> About Us</a></li>
+            <li><a href="contactUs.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="wrapper" id="popupWrapper">
+        <div class="popup-content">
+            <span class="icon-close" id="closePopup">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form id="loginForm" action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Remember me </label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="form-box register">
+                <h2>Sign Up</h2>
+                <form id="registerForm" action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" id="username" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="regEmail" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="regPassword" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox" required>I agree to the terms & conditions </label>
+                    </div>
+                    <button type="submit" class="btn">Sign up</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!--Facts content -->
+    <article class="fact-card">
+        <div class="fact-content">
+            <p class="heading">Dive into the Depths of Knowledge – Uncover Remarkable Truths!...</p>
+            <img src="./Image/Facts/fact381.jpg" alt="Taj Mahal in Agra, India" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Taj Mahal in Agra, India, is a breathtaking mausoleum built by Emperor Shah Jahan in memory of his wife Mumtaz Mahal.</h1>
+                <p class="fact-text">Constructed from white marble and adorned with intricate carvings and precious stones, it is considered one of the most beautiful buildings in the world.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact382.jpg" alt="The Great Barrier Reef in Australia" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Great Barrier Reef in Australia is the largest coral reef system in the world, stretching over 1,400 miles.</h1>
+                <p class="fact-text">It is home to a vast array of marine life, including colorful corals, fish, sharks, turtles, and dolphins.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact383.jpg" alt="The Kremlin in Moscow, Russia" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Kremlin in Moscow, Russia, is a fortified complex that serves as the official residence of the President of Russia.</h1>
+                <p class="fact-text">It includes several palaces, cathedrals, and government buildings, and is a symbol of Russian power and authority.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact384.png" alt="Bora Bora in French Polynesia" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Bora Bora in French Polynesia is known for its stunning turquoise lagoon and luxury overwater bungalows.</h1>
+                <p class="fact-text">It is a popular honeymoon destination and offers activities such as snorkeling, scuba diving, and romantic sunset cruises.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact385.jpg" alt="The Louvre Museum in Paris, France" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Louvre Museum in Paris, France, is the world's largest art museum and a historic monument.</h1>
+                <p class="fact-text">Home to thousands of works of art, including the Mona Lisa and the Venus de Milo, it attracts millions of visitors each year.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact386.jpg" alt="Mount Everest" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Mount Everest, located in the Himalayas on the border of Nepal and China, is the highest mountain in the world, reaching 29,032 feet above sea level.</h1>
+                <p class="fact-text">It is a challenging and dangerous climb, with extreme weather conditions and high altitude posing significant risks to climbers.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact387.jpg" alt="The Sahara Desert" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Sahara Desert is the largest hot desert in the world, covering an area of over 3.6 million square miles across North Africa.</h1>
+                <p class="fact-text">Despite its harsh conditions, the Sahara is home to a variety of flora and fauna adapted to desert life, including camels, desert foxes, and acacia trees.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact388.jpg" alt="The Statue of Liberty in New York City, USA" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Statue of Liberty in New York City, USA, was a gift from France to commemorate the centennial of American independence.</h1>
+                <p class="fact-text">Designed by French sculptor Frédéric Auguste Bartholdi, it has become a symbol of freedom and democracy and is one of the most recognizable landmarks in the world.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact389.jpeg" alt="Kruger National Park in South Africa" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Kruger National Park in South Africa is one of the largest game reserves in Africa and is known for its diverse wildlife.</h1>
+                <p class="fact-text">Visitors to the park can spot the Big Five (lion, leopard, elephant, buffalo, and rhinoceros) as well as numerous other species on safari tours.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact390.jpeg" alt="The Blue Mosque in Istanbul, Turkey" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Blue Mosque in Istanbul, Turkey, is renowned for its stunning blue tiles adorning its interior walls.</h1>
+                <p class="fact-text">Built in the early 17th century, it is one of the most important landmarks of Istanbul and is still used as a mosque today.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact391.jpg" alt="Victoria Falls on the border of Zambia and Zimbabwe" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Victoria Falls, located on the border of Zambia and Zimbabwe, is one of the largest and most famous waterfalls in the world.</h1>
+                <p class="fact-text">With a width of over 5,600 feet and a height of 354 feet, it is a UNESCO World Heritage Site and a popular tourist destination.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact392.jpg" alt="The Palace of Versailles in France" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Palace of Versailles in France was the principal royal residence of France from 1682 until the French Revolution in 1789.</h1>
+                <p class="fact-text">Known for its opulent architecture, lavish gardens, and Hall of Mirrors, it is a symbol of the absolute monarchy of the Ancien Régime.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact393.jpg" alt="Yellowstone National Park in the United States" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Yellowstone National Park in the United States was the first national park in the world, established in 1872.</h1>
+                <p class="fact-text">It is known for its geothermal features such as geysers, hot springs, and mud pots, as well as its diverse wildlife including bears, wolves, and bison.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact394.jpg" alt="The Panama Canal" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Panama Canal is a 50-mile-long artificial waterway that connects the Atlantic Ocean to the Pacific Ocean.</h1>
+                <p class="fact-text">It plays a crucial role in global trade by allowing ships to bypass the lengthy and treacherous journey around the southern tip of South America.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact395.jpg" alt="The Pyramids of Teotihuacan in Mexico" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Pyramids of Teotihuacan in Mexico are among the largest and most important archaeological sites in Mexico.</h1>
+                <p class="fact-text">Built by the Teotihuacan civilization between the 1st and 7th centuries AD, the site includes the Pyramid of the Sun, the Pyramid of the Moon, and the Temple of the Feathered Serpent.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact396.jpg" alt="Dubrovnik, Croatia" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Dubrovnik, Croatia, is known as the "Pearl of the Adriatic" and is renowned for its well-preserved medieval walls and historic Old Town.</h1>
+                <p class="fact-text">A UNESCO World Heritage Site, Dubrovnik has become a popular tourist destination for its charming streets, baroque buildings, and stunning coastal views.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact397.jpg" alt="Petra, Jordan" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Petra in Jordan is an ancient city famous for its rock-cut architecture and water conduit system.</h1>
+                <p class="fact-text">Carved into the rose-red cliffs by the Nabateans, Petra was an important trading hub and is now a UNESCO World Heritage Site.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact398.jpg" alt="The Great Wall of China" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Great Wall of China is the longest wall in the world, stretching over 13,000 miles across northern China.</h1>
+                <p class="fact-text">Built over centuries to protect against invasions from nomadic tribes, it is one of the most impressive architectural feats in history.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact399.jpg" alt="The Eiffel Tower in Paris, France" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Eiffel Tower in Paris, France, was completed in 1889 as the centerpiece of the 1889 World's Fair.</h1>
+                <p class="fact-text">Originally criticized by some of France's leading artists and intellectuals, it has since become one of the most iconic structures in the world.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact400.jpg" alt="The Colosseum in Rome, Italy" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Colosseum in Rome, Italy, is the largest amphitheater ever built and could hold between 50,000 and 80,000 spectators.</h1>
+                <p class="fact-text">It was used for gladiatorial contests, public spectacles, animal hunts, and executions during the Roman Empire.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact401.jpg" alt="Angkor Wat in Cambodia" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Angkor Wat in Cambodia is the largest religious monument in the world, originally constructed as a Hindu temple for the Khmer Empire.</h1>
+                <p class="fact-text">It was later converted into a Buddhist temple and remains a significant cultural and religious site, attracting visitors from around the globe.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact402.jpg" alt="Niagara Falls, USA/Canada" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Niagara Falls, located on the border of the United States and Canada, consists of three massive waterfalls: the Horseshoe Falls, the American Falls, and the Bridal Veil Falls.</h1>
+                <p class="fact-text">It is one of the most famous natural attractions in North America and is renowned for its beauty and power.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact403.jpg" alt="Mesa Verde National Park, USA" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Mesa Verde National Park in the United States is home to some of the best-preserved Ancestral Puebloan archaeological sites in North America.</h1>
+                <p class="fact-text">The park protects over 5,000 known archaeological sites, including cliff dwellings and pit houses, dating back to the 6th century AD.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact404.jpg" alt="The Acropolis in Athens, Greece" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Acropolis in Athens, Greece, is an ancient citadel located on a rocky outcrop above the city.</h1>
+                <p class="fact-text">It is home to several ancient buildings of great architectural and historic significance, including the Parthenon, the Erechtheion, and the Temple of Athena Nike.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact405.jpeg" alt="The Galápagos Islands, Ecuador" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Galápagos Islands in Ecuador are renowned for their unique biodiversity and played a crucial role in Charles Darwin's theory of evolution.</h1>
+                <p class="fact-text">The islands are home to many species found nowhere else on Earth, including giant tortoises, marine iguanas, and blue-footed boobies.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact406.jpg" alt="The Forbidden City in Beijing, China" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Forbidden City in Beijing, China, served as the imperial palace and political center of Chinese government for nearly 500 years.</h1>
+                <p class="fact-text">With over 980 surviving buildings, it is one of the largest palace complexes in the world and a UNESCO World Heritage Site.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact407.jpg" alt="The Serengeti National Park in Tanzania" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Serengeti National Park in Tanzania is famous for its annual migration of over 1.5 million wildebeest and hundreds of thousands of zebras and gazelles.</h1>
+                <p class="fact-text">It is one of the most iconic wildlife destinations in Africa, offering unparalleled opportunities for safari adventures.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact408.jpg" alt="Chichen Itza in Mexico" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Chichen Itza in Mexico is a UNESCO World Heritage Site and one of the New Seven Wonders of the World.</h1>
+                <p class="fact-text">Built by the Maya civilization, it is famous for its monumental architecture, including the Temple of Kukulcan (El Castillo) and the Great Ballcourt.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact409.jpg" alt="Uluru (Ayers Rock) in Australia" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Uluru, also known as Ayers Rock, is a massive sandstone monolith in the Northern Territory of Australia.</h1>
+                <p class="fact-text">Sacred to the Indigenous Australian people, it is renowned for its striking red coloration and spiritual significance.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact410.jpg" alt="Meteora Monasteries in Greece" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Meteora Monasteries in Greece are a complex of stunning monasteries built atop rock pillars.</h1>
+                <p class="fact-text">Originally inaccessible except by climbing, they were constructed by monks seeking solitude and spiritual isolation.</p>
+            </div>
+        </div>
+    </article>
+    
+    
+    <!--Footer content-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-wrapper">
+                <div class="footer-widget">
+                    <a href="#">
+                        <img src="#" class="logo" alt="logo of Factbook"/>
+                    </a>
+                    <div class="address-contact">
+                        Address:NIT Raipur,<br> Raipur, Chhattisgarh 492010<br>
+                        Phone: 123-456-7890<br>
+                        Email: info@example.com
+                    </div>
+                </div>
+                <div class="footer-widget">
+                    <h6>Menu</h6>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="facts.html">Facts</a></li>
+                        <li><a href="aboutUs.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Help &amp; Support</h6>
+                    <ul class="links">
+                        <li><a href="contactUs.html">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms &amp; Conditionns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Social Media Links</h6>
+                    <ul class="socials">
+                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright-wrapper">
+                <p>Desing and Developed by
+                    <a href="#" terget="blank">FactBook</a>
+                </p>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./login.js"></script>
+
+</body>
+</html>

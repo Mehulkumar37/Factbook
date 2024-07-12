@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactBook</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="facts.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="header-overlay"></div>
+        <div class="header-content">
+
+            <div class="logo">
+                <div class="logo-circle">
+                    <img src="logo.png" alt="Logo">
+                </div>
+            </div>
+
+            <div class="user-options">
+                <a href="#" class="btn" id="loginBtn">Log In</a>
+                <a href="#" class="btn" id="registerBtn">Sign Up</a>
+            </div>
+            
+        </div>
+
+        <p class="quote">"Fact that Educate, Inspire and Amaze"</p>
+        
+    </header>
+
+    <div class="navigation-menu"> 
+        <ul class="menu">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li class="active"><a href="facts.html"><i class="fas fa-info-circle"></i> Facts</a></li>
+            <li><a href="aboutUs.html"><i class="fas fa-users"></i> About Us</a></li>
+            <li><a href="contactUs.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="wrapper" id="popupWrapper">
+        <div class="popup-content">
+            <span class="icon-close" id="closePopup">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form id="loginForm" action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Remember me </label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="form-box register">
+                <h2>Sign Up</h2>
+                <form id="registerForm" action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" id="username" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="regEmail" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="regPassword" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox" required>I agree to the terms & conditions </label>
+                    </div>
+                    <button type="submit" class="btn">Sign up</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!--Facts content -->
+    <article class="fact-card">
+        <div class="fact-content">
+            <p class="heading">Jaw-Dropping Insights You Didn't Know – Enlighten Yourself Now!</p>
+            <img src="./Image/Facts/fact251.jpg" alt="Quokka Smile" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Quokkas are known as the world's happiest animals because of their seemingly smiling faces.</h1>
+                <p class="fact-text">These small marsupials native to Australia have friendly, smiling expressions, leading to their reputation as the happiest creatures on Earth. Quokkas are known for their sociable nature and are often described as the "happiest animal in the world."</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact252.jpg" alt="The Eiffel Tower" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Eiffel Tower can be 15 cm taller during the summer due to thermal expansion.</h1>
+                <p class="fact-text">As the temperature rises, the iron structure of the Eiffel Tower expands, causing it to grow in height by up to 15 centimeters. This phenomenon, known as thermal expansion, is a result of the metal's properties.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact253.jpg" alt="Lunar Timekeeping" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: A day on the Moon is approximately 29.5 Earth days long.</h1>
+                <p class="fact-text">Due to its slow rotation and orbit around the Earth, a day on the Moon lasts about 29.5 Earth days. This means that a lunar day, from one sunrise to the next, is much longer than a day on Earth.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact254.jpg" alt="Watermelon Seed Spitting Contest" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The world record for watermelon seed spitting is over 75 feet!</h1>
+                <p class="fact-text">Watermelon seed spitting is a fun and competitive activity enjoyed by many. The current world record, set in 1995 by Lee Wheelis of Luling, Texas, stands at an impressive 75 feet 2 inches (22.91 meters).</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact255.jpg" alt="Giant Panda's Diet" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Giant pandas spend up to 12 hours a day eating bamboo!</h1>
+                <p class="fact-text">Despite being classified as carnivores, giant pandas primarily eat bamboo, consuming large quantities to meet their nutritional needs. They have specialized adaptations for bamboo consumption, including enlarged wrist bones that act as thumbs for gripping and stripping bamboo.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact256.jpeg" alt="Clouds" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Clouds can weigh millions of pounds!</h1>
+                <p class="fact-text">Although they appear light and fluffy, clouds consist of countless tiny water droplets or ice crystals suspended in the atmosphere. Large clouds, such as cumulonimbus clouds, can contain millions of pounds of water vapor.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact257.jpeg" alt="Whale Songs" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Humpback whales sing complex songs that can last up to 20 minutes and travel for thousands of miles through the ocean.</h1>
+                <p class="fact-text">Humpback whale songs are a form of communication used during mating rituals and other social interactions. These intricate melodies can vary between populations and evolve over time.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact258.jpeg" alt="Space Pen" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: NASA spent millions of dollars developing a pen that could write in space, while the Soviet Union used pencils.</h1>
+                <p class="fact-text">NASA's space pen, developed by Fisher Pen Company, uses pressurized ink cartridges to write in zero gravity, underwater, and in extreme temperatures. In contrast, the Soviet Union opted for simple pencils for their cosmonauts.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact259.jpg" alt="Penguin Swimming" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Penguins can swim at speeds of up to 22 miles per hour!</h1>
+                <p class="fact-text">Despite their clumsy waddle on land, penguins are incredibly agile and fast swimmers underwater. Their streamlined bodies and flipper-like wings propel them through the water with ease.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact260.jpeg" alt="Cats' Purring" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Cats purr at frequencies between 25 and 150 Hertz, which is believed to have therapeutic effects on humans.</h1>
+                <p class="fact-text">The soothing sound of a cat's purr has been shown to lower stress levels, reduce blood pressure, and promote relaxation in humans. Cats often purr when they are content, but they may also purr when they are anxious or in pain.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact261.jpg" alt="Lunar Rainbows" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Lunar rainbows, or "moonbows," occur when moonlight refracts and reflects off water droplets in the air.</h1>
+                <p class="fact-text">Similar to regular rainbows produced by sunlight, moonbows appear as colorful arcs in the night sky when the conditions are right. They are relatively rare and require clear skies, a bright moon, and rain or mist.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact262.jpg" alt="Glowing Fireflies" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Fireflies produce light through a chemical reaction called bioluminescence, which occurs in specialized light-emitting organs in their abdomens.</h1>
+                <p class="fact-text">The flashing patterns of fireflies are used to attract mates and communicate with other individuals of the same species. Each species of firefly has its own unique flash pattern.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact263.jpg" alt="Giraffe Tongue" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: A giraffe's tongue can be up to 20 inches long!</h1>
+                <p class="fact-text">Giraffes use their long, prehensile tongues to grasp leaves and twigs from trees. Their tongues are tough and flexible, allowing them to manipulate food with precision.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact264.jpg" alt="Cows' Compass" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Cows tend to align their bodies with the Earth's magnetic field when grazing or resting.</h1>
+                <p class="fact-text">Researchers have observed that cows often prefer to align their bodies along the north-south axis while grazing or resting. While the reasons for this behavior are not fully understood, it may be related to their ability to detect the Earth's magnetic field.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact265.jpg" alt="Octopus Intelligence" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Octopuses have three hearts and blue blood.</h1>
+                <p class="fact-text">Octopuses are fascinating creatures with unique physiology. They have three hearts: two pump blood to the gills, and the third pumps oxygenated blood to the rest of the body. Additionally, their blood contains a copper-rich protein called hemocyanin, giving it a blue color.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact266.jpg" alt="Jellyfish Immortality" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Turritopsis dohrnii, also known as the "immortal jellyfish," can revert to a younger stage of development and start its life cycle anew.</h1>
+                <p class="fact-text">When faced with environmental stress or aging, the immortal jellyfish can transform its adult cells back into juvenile cells, effectively reversing the aging process. This remarkable ability allows it to potentially live indefinitely.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact267.jpg" alt="Elephant Elephone" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Elephants can communicate over long distances using low-frequency sounds called "infrasound."</h1>
+                <p class="fact-text">Elephants produce infrasound vocalizations that are below the range of human hearing but can travel long distances through the ground and air. These low-frequency calls allow elephants to communicate with each other over vast distances.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact268.jpg" alt="Frogs' Eyes" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Frogs can swallow with their eyes closed by using their eyeballs to push food down their throats.</h1>
+                <p class="fact-text">Frogs lack the muscles in their throats to create the swallowing motion seen in humans and other animals. Instead, they use their powerful eyeballs to retract into their skulls, pushing food down their throats as they swallow.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact269.jpg" alt="Bees' "Dance"" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Honeybees perform a "waggle dance" to communicate the location of food sources.</h1>
+                <p class="fact-text">When a honeybee discovers a rich food source, it returns to the hive and performs a complex dance, known as the waggle dance, to communicate the location and quality of the food to other bees in the colony.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact270.jpg" alt="Glowing Mushrooms" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Some mushrooms glow in the dark!</h1>
+                <p class="fact-text">Bioluminescent fungi, such as the jack-o'-lantern mushroom, produce a greenish glow in the dark. This phenomenon, known as bioluminescence, is caused by the chemical reaction between enzymes and luciferin, a light-emitting compound.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact271.jpg" alt="The Speed of a Sneeze" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: A sneeze can travel at up to 100 miles per hour!</h1>
+                <p class="fact-text">When you sneeze, droplets containing mucus, saliva, and other particles are expelled from your nose and mouth at high speed. This rapid expulsion helps to clear irritants from your airways.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact272.png" alt="Bananas are Berries" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Botanically, bananas are berries!</h1>
+                <p class="fact-text">While bananas are commonly thought of as fruit, they technically qualify as berries according to botanical classification. True berries develop from a single ovary and contain seeds embedded in the flesh.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact273.jpg" alt="Sunflower Heliotropism" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Sunflowers exhibit a behavior called heliotropism, where they track the movement of the sun across the sky.</h1>
+                <p class="fact-text">Sunflowers have the ability to reorient their blooms to face the sun throughout the day, a phenomenon known as heliotropism. This behavior maximizes their exposure to sunlight for photosynthesis.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact274.jpg" alt="The Immortal Hydra" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Hydra, a small freshwater organism, displays remarkable regenerative abilities and is considered biologically immortal.</h1>
+                <p class="fact-text">Hydras can regenerate their entire bodies from small tissue fragments, making them effectively immortal in laboratory conditions. They are a subject of interest in regenerative medicine and aging research.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact275.jpg" alt="Ant Mega-Cities" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Ants build complex underground cities that can contain millions of individuals and span vast areas.</h1>
+                <p class="fact-text">Ant colonies consist of intricate networks of tunnels and chambers constructed by worker ants. These colonies can exhibit sophisticated organization and division of labor, with different groups of ants fulfilling specific roles within the colony.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact276.jpg" alt="Dolphin Names" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Dolphins have individual names or "signature whistles" that they use to identify themselves to others.</h1>
+                <p class="fact-text">Each dolphin develops its own unique signature whistle early in life, which serves as a vocal identity. Other dolphins can recognize and respond to these signature whistles, allowing for individual recognition and social bonding within dolphin communities.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact277.jpg" alt="Owl's Silent Flight" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Owls have specialized feathers that enable them to fly silently, allowing them to hunt without being heard.</h1>
+                <p class="fact-text">The unique structure of owl feathers disrupts airflow and reduces turbulence, minimizing noise during flight. This silent flight adaptation enhances their hunting abilities, as they can approach prey stealthily.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact278.jpg" alt="Pigeon Navigation" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Pigeons can navigate using Earth's magnetic field, the sun, and visual landmarks.</h1>
+                <p class="fact-text">Pigeons have impressive navigational abilities, allowing them to find their way home over long distances. They use a combination of magnetic cues, the position of the sun, and familiar landmarks to orient themselves during flight.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact279.jpg" alt="Butterfly Migration" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Monarch butterflies undertake a remarkable migration journey of up to 3,000 miles each year.</h1>
+                <p class="fact-text">Monarch butterflies migrate annually from North America to central Mexico, covering thousands of miles to reach their overwintering sites. This incredible journey spans multiple generations of butterflies and is one of the longest insect migrations on Earth.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact280.jpg" alt="Sea Otter Tool Use" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Sea otters use rocks as tools to crack open shellfish.</h1>
+                <p class="fact-text">Sea otters are one of the few non-human animals known to use tools. They collect rocks from the ocean floor and use them to break open shellfish, such as clams and mussels, by pounding them against a hard surface.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact281.jpg" alt="Mantis Shrimp's Eyesight" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Mantis shrimp have one of the most complex visual systems in the animal kingdom, with up to 16 types of photoreceptors.</h1>
+                <p class="fact-text">Mantis shrimp possess extraordinary eyesight, capable of detecting polarized light, ultraviolet light, and a wide range of colors. Their complex visual system allows them to perceive the world in ways that humans cannot imagine.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact282.jpg" alt="Giant Squid" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Giant squid have the largest eyes of any animal, measuring up to 10 inches in diameter.</h1>
+                <p class="fact-text">The colossal eyes of giant squid are adapted for deep-sea environments, where light is scarce. Their large size allows them to capture as much available light as possible, aiding in the detection of prey and predators in the darkness of the ocean depths.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact283.jpg" alt="Elephant Ears" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Elephants use their large ears to regulate their body temperature and communicate over long distances.</h1>
+                <p class="fact-text">Elephants have a network of blood vessels in their ears that help dissipate heat and cool their bodies in hot climates. Additionally, they use infrasound vocalizations to communicate with other elephants over long distances, relying on their sensitive ears to detect these low-frequency calls.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact284.jpg" alt="Polar Bear's Black Skin" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Despite their white fur, polar bears have black skin to absorb and retain heat from the sun.</h1>
+                <p class="fact-text">Polar bear fur appears white because it reflects light, helping them blend in with their snowy surroundings. However, their skin underneath is black, providing effective insulation and absorbing solar radiation to keep them warm in the Arctic climate.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact285.jpg" alt="Sloth's Slow Metabolism" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Sloths have extremely slow metabolisms and can take up to a month to digest a single meal.</h1>
+                <p class="fact-text">Sloths are known for their leisurely pace of life, spending most of their time hanging upside down in trees. Their slow metabolism helps them conserve energy, and their diet of leaves is low in nutrients, requiring a long digestion process.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact286.jpg" alt="Puffin Beaks" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Puffins' colorful beaks are specially adapted for catching and holding fish.</h1>
+                <p class="fact-text">The distinctive beaks of puffins play a crucial role in their survival as seabirds. Lined with ridges and grooves, these beaks are designed to grip slippery fish and hold multiple fish at once, making them efficient hunters in the ocean.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact287.jpg" alt="The Blobfish" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The blobfish, often called the "world's ugliest fish," looks very different in its natural habitat deep underwater.</h1>
+                <p class="fact-text">Blobfish inhabit deep ocean waters, where they experience high pressure and low temperatures. Their gelatinous bodies have a density slightly lower than water, allowing them to float effortlessly above the seabed while conserving energy.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact288.jpg" alt="Fennec Fox's Ears" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Fennec foxes have large ears that help dissipate heat and detect prey underground.</h1>
+                <p class="fact-text">Fennec foxes are adapted to desert environments, where temperatures can soar during the day and plummet at night. Their large ears contain a network of blood vessels that release heat, helping them stay cool in hot climates.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact289.jpg" alt="Singing Sands" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Some beaches are known as "singing sands" because the sand produces musical sounds when walked on or disturbed.</h1>
+                <p class="fact-text">The phenomenon of singing sands occurs when certain types of sand grains rub against each other, creating a squeaking or humming noise. This unique auditory experience can be found in various locations around the world, including beaches in California, Japan, and Scotland.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact290.jpg" alt="The Red-Eyed Tree Frog" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The red-eyed tree frog has bright red eyes and vibrant green skin, making it one of the most iconic frog species.</h1>
+                <p class="fact-text">Native to tropical rainforests in Central and South America, the red-eyed tree frog is known for its striking appearance and nocturnal habits. Its red eyes are thought to startle predators, while its green coloration provides camouflage among the leaves.</p>
+            </div>
+        </div>
+    </article>
+    
+    <!--Footer content-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-wrapper">
+                <div class="footer-widget">
+                    <a href="#">
+                        <img src="#" class="logo" alt="logo of Factbook"/>
+                    </a>
+                    <div class="address-contact">
+                        Address:NIT Raipur,<br> Raipur, Chhattisgarh 492010<br>
+                        Phone: 123-456-7890<br>
+                        Email: info@example.com
+                    </div>
+                </div>
+                <div class="footer-widget">
+                    <h6>Menu</h6>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="facts.html">Facts</a></li>
+                        <li><a href="aboutUs.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Help &amp; Support</h6>
+                    <ul class="links">
+                        <li><a href="contactUs.html">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms &amp; Conditionns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Social Media Links</h6>
+                    <ul class="socials">
+                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright-wrapper">
+                <p>Desing and Developed by
+                    <a href="#" terget="blank">FactBook</a>
+                </p>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./login.js"></script>
+
+</body>
+</html>

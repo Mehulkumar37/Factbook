@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactBook</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="facts.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="header-overlay"></div>
+        <div class="header-content">
+
+            <div class="logo">
+                <div class="logo-circle">
+                    <img src="logo.png" alt="Logo">
+                </div>
+            </div>
+
+            <div class="user-options">
+                <a href="#" class="btn" id="loginBtn">Log In</a>
+                <a href="#" class="btn" id="registerBtn">Sign Up</a>
+            </div>
+            
+        </div>
+
+        <p class="quote">"Fact that Educate, Inspire and Amaze"</p>
+        
+    </header>
+
+    <div class="navigation-menu"> 
+        <ul class="menu">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li class="active"><a href="facts.html"><i class="fas fa-info-circle"></i> Facts</a></li>
+            <li><a href="aboutUs.html"><i class="fas fa-users"></i> About Us</a></li>
+            <li><a href="contactUs.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="wrapper" id="popupWrapper">
+        <div class="popup-content">
+            <span class="icon-close" id="closePopup">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form id="loginForm" action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Remember me </label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="form-box register">
+                <h2>Sign Up</h2>
+                <form id="registerForm" action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" id="username" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="regEmail" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="regPassword" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox" required>I agree to the terms & conditions </label>
+                    </div>
+                    <button type="submit" class="btn">Sign up</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!--Facts content -->
+    <article class="fact-card">
+        <div class="fact-content">
+            <p class="heading">Mind-Blowing Fun Facts You Never Knew – Expand Your Knowledge Today!</p>
+            <img src="./Image/Facts/fact151.jpg" alt="Maya Civilization" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Maya civilization developed a complex writing system</h1>
+                <p class="fact-text">The Maya civilization, flourishing in Mesoamerica from approximately 2000 BCE to the 16th century CE, developed one of the most sophisticated writing systems in the pre-Columbian Americas. Using hieroglyphs, they recorded historical events, religious rituals, and astronomical observations on various media, including stone monuments and codices.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact152.jpg" alt="Byzantine Iconoclasm" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Byzantine Empire experienced periods of iconoclasm</h1>
+                <p class="fact-text">Iconoclasm, the destruction of religious images or icons, was a contentious issue in the Byzantine Empire during the 8th and 9th centuries. Emperors and religious authorities debated the use of religious icons, leading to periods of iconoclasm followed by periods of icon veneration, shaping the Byzantine Church and society.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact153.jpg" alt="Sistine Chapel Ceiling" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Michelangelo painted the ceiling of the Sistine Chapel</h1>
+                <p class="fact-text">Italian Renaissance artist Michelangelo Buonarroti painted the ceiling of the Sistine Chapel in Vatican City between 1508 and 1512. This masterpiece includes iconic frescoes such as the Creation of Adam and the Last Judgment, showcasing Michelangelo's unparalleled skill as a painter and his deep understanding of human anatomy and emotion.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact154.jpeg" alt="Shakespearean Plays" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: William Shakespeare wrote 37 plays</h1>
+                <p class="fact-text">English playwright William Shakespeare, often regarded as the greatest writer in the English language, wrote a total of 37 plays during his career. These include tragedies like Hamlet and Macbeth, comedies like A Midsummer Night's Dream and Twelfth Night, and histories like Henry V and Richard III, among others.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact155.jpeg" alt="Battle of Waterloo" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Battle of Waterloo ended Napoleon's rule as Emperor of the French</h1>
+                <p class="fact-text">The Battle of Waterloo, fought on June 18, 1815, in present-day Belgium, marked the final defeat of Napoleon Bonaparte's French Empire. A coalition of European powers led by the Duke of Wellington and the Prussian army defeated Napoleon's forces, leading to his abdication and exile to the island of Saint Helena.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact156.jpeg" alt="Code of Hammurabi" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Code of Hammurabi is one of the earliest known written legal codes</h1>
+                <p class="fact-text">The Code of Hammurabi, created by the Babylonian king Hammurabi around 1754 BCE, is one of the earliest known written legal codes in human history. Inscribed on a stele, it consists of 282 laws covering various aspects of Babylonian society, including criminal justice, civil law, and economic regulations.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact157.jpeg" alt="Rosetta Stone Decipherment" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Rosetta Stone was deciphered by Jean-François Champollion</h1>
+                <p class="fact-text">French scholar Jean-François Champollion deciphered the hieroglyphic script on the Rosetta Stone in 1822, unlocking the secrets of ancient Egyptian writing. By comparing the Greek text on the stone with the hieroglyphic and demotic inscriptions, Champollion successfully translated the ancient Egyptian language.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact158.jpeg" alt="Age of Exploration" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Age of Exploration expanded European knowledge of the world</h1>
+                <p class="fact-text">The Age of Exploration, spanning the 15th to the 17th centuries, was a period of intensive European exploration and discovery of new lands and sea routes. Explorers like Christopher Columbus, Vasco da Gama, and Ferdinand Magellan expanded European knowledge of geography, trade, and cultural exchange.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact159.jpeg" alt="Magna Carta" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Magna Carta established the principle of the rule of law</h1>
+                <p class="fact-text">Signed in 1215 by King John of England, the Magna Carta was a landmark document that limited the power of the monarchy and established the principle of the rule of law. It guaranteed certain legal rights and protections to nobles and freemen, laying the foundation for constitutional government and individual liberties.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact160.jpeg" alt="Indus Valley Script" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The script of the Indus Valley Civilization remains undeciphered</h1>
+                <p class="fact-text">Despite extensive research, the script used by the Indus Valley Civilization, also known as the Harappan Civilization, remains undeciphered. The lack of bilingual inscriptions and the complexity of the script present challenges to scholars attempting to unlock the language and writing system of this ancient civilization.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact161.jpg" alt="Invention of Paper" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Paper was invented in ancient China</h1>
+                <p class="fact-text">Paper, one of the most important inventions in human history, was invented in ancient China during the Han Dynasty (202 BCE - 220 CE). Traditionally made from plant fibers such as bamboo or mulberry, paper revolutionized communication, education, and the spread of knowledge worldwide.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact162.jpeg" alt="Marco Polo's Travels" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Marco Polo traveled to China during the Yuan Dynasty</h1>
+                <p class="fact-text">Italian explorer Marco Polo embarked on a journey to China in the late 13th century, during the Yuan Dynasty. His travels, documented in the book "The Travels of Marco Polo," introduced Europeans to the wonders of the East and played a significant role in fostering trade and cultural exchange between Europe and Asia.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact163.jpeg" alt="Declaration of Independence" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Declaration of Independence was signed on July 4, 1776</h1>
+                <p class="fact-text">The United States Declaration of Independence, drafted primarily by Thomas Jefferson, was adopted by the Continental Congress on July 4, 1776. This historic document declared the 13 American colonies independent from British rule, paving the way for the establishment of the United States of America.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact164.jpg" alt="The Renaissance" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Renaissance began in Italy in the 14th century</h1>
+                <p class="fact-text">The Renaissance, a period of cultural and intellectual rebirth in Europe, began in Italy in the 14th century and spread throughout the continent in the following centuries. Characterized by a revival of interest in art, literature, science, and humanism, the Renaissance laid the groundwork for the modern world.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact165.jpeg" alt="The Industrial Revolution" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Industrial Revolution transformed society in the 18th and 19th centuries</h1>
+                <p class="fact-text">The Industrial Revolution, beginning in Britain in the late 18th century, marked a profound shift from agrarian and handicraft-based economies to industrialized and urbanized societies. Technological advancements in manufacturing, transportation, and communication revolutionized production and reshaped social and economic structures.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact166.jpeg" alt="The Treaty of Versailles" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Treaty of Versailles ended World War I</h1>
+                <p class="fact-text">The Treaty of Versailles, signed on June 28, 1919, officially ended World War I and imposed harsh terms on Germany. Among its provisions were territorial losses, demilitarization, and reparations payments, contributing to economic hardship and political instability in Germany and laying the groundwork for World War II.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact167.jpg" alt="The Great Depression" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Great Depression was a severe worldwide economic downturn</h1>
+                <p class="fact-text">The Great Depression, lasting from 1929 to the late 1930s, was the most severe economic downturn in modern history. Triggered by the stock market crash of 1929 and exacerbated by factors such as bank failures and trade disruptions, it led to widespread unemployment, poverty, and social unrest around the world.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact168.jpg" alt="The Space Race" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Space Race was a competition between the United States and the Soviet Union</h1>
+                <p class="fact-text">The Space Race, occurring during the Cold War between the United States and the Soviet Union, was a competition to achieve significant milestones in space exploration and technology. Key achievements included the launch of the first artificial satellite, Sputnik 1, and the first human spaceflight by Yuri Gagarin.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact169.jpg" alt="The Berlin Wall" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Berlin Wall divided East and West Berlin during the Cold War</h1>
+                <p class="fact-text">Constructed by the German Democratic Republic (East Germany) in 1961, the Berlin Wall separated East Berlin from West Berlin and became a symbol of the ideological divide between communism and democracy during the Cold War. Its fall in 1989 marked the reunification of Germany and the end of the Cold War era.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact170.jpg" alt="The Renaissance in Florence" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Florence was the epicenter of the Renaissance in Italy</h1>
+                <p class="fact-text">Florence, a city in Tuscany, Italy, was the epicenter of the Renaissance during the 14th to 17th centuries. It was home to influential artists, thinkers, and patrons such as Leonardo da Vinci, Michelangelo, and the Medici family, who supported and nurtured the cultural and intellectual flourishing of the period.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact171.jpg" alt="The Cold War" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Cold War was a period of geopolitical tension between the United States and the Soviet Union</h1>
+                <p class="fact-text">The Cold War, lasting from the late 1940s to the early 1990s, was a state of political and military tension between the Western Bloc led by the United States and the Eastern Bloc led by the Soviet Union. Although direct military conflict was avoided, proxy wars, espionage, and nuclear brinkmanship characterized this period of global rivalry.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact172.jpeg" alt="The Renaissance Man" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Leonardo da Vinci epitomized the Renaissance ideal of the "Renaissance Man"</h1>
+                <p class="fact-text">Leonardo da Vinci, renowned as a painter, sculptor, architect, inventor, mathematician, engineer, and anatomist, epitomized the Renaissance ideal of the "Renaissance Man" or "Universal Genius." His diverse talents and insatiable curiosity exemplify the interdisciplinary nature of Renaissance learning and innovation.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact173.jpeg" alt="The Trail of Tears" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Trail of Tears forcibly displaced Native American tribes</h1>
+                <p class="fact-text">The Trail of Tears refers to the forced relocation of Native American tribes, including the Cherokee, Choctaw, Chickasaw, Creek, and Seminole, from their ancestral homelands in the southeastern United States to Indian Territory (present-day Oklahoma) in the 1830s. This tragic event resulted in the deaths of thousands due to exposure, disease, and hardship.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact174.jpeg" alt="The Treaty of Versailles" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Treaty of Versailles ended World War I</h1>
+                <p class="fact-text">The Treaty of Versailles, signed on June 28, 1919, officially ended World War I and imposed harsh terms on Germany. Among its provisions were territorial losses, demilitarization, and reparations payments, contributing to economic hardship and political instability in Germany and laying the groundwork for World War II.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact175.jpeg" alt="The Great Depression" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Great Depression was a severe worldwide economic downturn</h1>
+                <p class="fact-text">The Great Depression, lasting from 1929 to the late 1930s, was the most severe economic downturn in modern history. Triggered by the stock market crash of 1929 and exacerbated by factors such as bank failures and trade disruptions, it led to widespread unemployment, poverty, and social unrest around the world.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact176.jpg" alt="The Space Race" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Space Race was a competition between the United States and the Soviet Union</h1>
+                <p class="fact-text">The Space Race, occurring during the Cold War between the United States and the Soviet Union, was a competition to achieve significant milestones in space exploration and technology. Key achievements included the launch of the first artificial satellite, Sputnik 1, and the first human spaceflight by Yuri Gagarin.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact177.jpg" alt="The Berlin Wall" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Berlin Wall divided East and West Berlin during the Cold War</h1>
+                <p class="fact-text">Constructed by the German Democratic Republic (East Germany) in 1961, the Berlin Wall separated East Berlin from West Berlin and became a symbol of the ideological divide between communism and democracy during the Cold War. Its fall in 1989 marked the reunification of Germany and the end of the Cold War era.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact178.jpg" alt="The Renaissance in Florence" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Florence was the epicenter of the Renaissance in Italy</h1>
+                <p class="fact-text">Florence, a city in Tuscany, Italy, was the epicenter of the Renaissance during the 14th to 17th centuries. It was home to influential artists, thinkers, and patrons such as Leonardo da Vinci, Michelangelo, and the Medici family, who supported and nurtured the cultural and intellectual flourishing of the period.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact179.jpeg" alt="The Cold War" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Cold War was a period of geopolitical tension between the United States and the Soviet Union</h1>
+                <p class="fact-text">The Cold War, lasting from the late 1940s to the early 1990s, was a state of political and military tension between the Western Bloc led by the United States and the Eastern Bloc led by the Soviet Union. Although direct military conflict was avoided, proxy wars, espionage, and nuclear brinkmanship characterized this period of global rivalry.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact180.jpeg" alt="The Renaissance Man" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Leonardo da Vinci epitomized the Renaissance ideal of the "Renaissance Man"</h1>
+                <p class="fact-text">Leonardo da Vinci, renowned as a painter, sculptor, architect, inventor, mathematician, engineer, and anatomist, epitomized the Renaissance ideal of the "Renaissance Man" or "Universal Genius." His diverse talents and insatiable curiosity exemplify the interdisciplinary nature of Renaissance learning and innovation.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact181.jpeg" alt="The Trail of Tears" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Trail of Tears forcibly displaced Native American tribes</h1>
+                <p class="fact-text">The Trail of Tears refers to the forced relocation of Native American tribes, including the Cherokee, Choctaw, Chickasaw, Creek, and Seminole, from their ancestral homelands in the southeastern United States to Indian Territory (present-day Oklahoma) in the 1830s. This tragic event resulted in the deaths of thousands due to exposure, disease, and hardship.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact182.jpeg" alt="The Treaty of Versailles" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Treaty of Versailles ended World War I</h1>
+                <p class="fact-text">The Treaty of Versailles, signed on June 28, 1919, officially ended World War I and imposed harsh terms on Germany. Among its provisions were territorial losses, demilitarization, and reparations payments, contributing to economic hardship and political instability in Germany and laying the groundwork for World War II.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact183.jpg" alt="The Great Depression" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Great Depression was a severe worldwide economic downturn</h1>
+                <p class="fact-text">The Great Depression, lasting from 1929 to the late 1930s, was the most severe economic downturn in modern history. Triggered by the stock market crash of 1929 and exacerbated by factors such as bank failures and trade disruptions, it led to widespread unemployment, poverty, and social unrest around the world.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact184.jpg" alt="The Space Race" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Space Race was a competition between the United States and the Soviet Union</h1>
+                <p class="fact-text">The Space Race, occurring during the Cold War between the United States and the Soviet Union, was a competition to achieve significant milestones in space exploration and technology. Key achievements included the launch of the first artificial satellite, Sputnik 1, and the first human spaceflight by Yuri Gagarin.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact185.jpg" alt="The Berlin Wall" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Berlin Wall divided East and West Berlin during the Cold War</h1>
+                <p class="fact-text">Constructed by the German Democratic Republic (East Germany) in 1961, the Berlin Wall separated East Berlin from West Berlin and became a symbol of the ideological divide between communism and democracy during the Cold War. Its fall in 1989 marked the reunification of Germany and the end of the Cold War era.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact186.jpg" alt="The Renaissance in Florence" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Florence was the epicenter of the Renaissance in Italy</h1>
+                <p class="fact-text">Florence, a city in Tuscany, Italy, was the epicenter of the Renaissance during the 14th to 17th centuries. It was home to influential artists, thinkers, and patrons such as Leonardo da Vinci, Michelangelo, and the Medici family, who supported and nurtured the cultural and intellectual flourishing of the period.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact187.jpg" alt="The Cold War" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Cold War was a period of geopolitical tension between the United States and the Soviet Union</h1>
+                <p class="fact-text">The Cold War, lasting from the late 1940s to the early 1990s, was a state of political and military tension between the Western Bloc led by the United States and the Eastern Bloc led by the Soviet Union. Although direct military conflict was avoided, proxy wars, espionage, and nuclear brinkmanship characterized this period of global rivalry.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact188.jpeg" alt="The Renaissance Man" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Leonardo da Vinci epitomized the Renaissance ideal of the "Renaissance Man"</h1>
+                <p class="fact-text">Leonardo da Vinci, renowned as a painter, sculptor, architect, inventor, mathematician, engineer, and anatomist, epitomized the Renaissance ideal of the "Renaissance Man" or "Universal Genius." His diverse talents and insatiable curiosity exemplify the interdisciplinary nature of Renaissance learning and innovation.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact189.jpeg" alt="The Trail of Tears" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Trail of Tears forcibly displaced Native American tribes</h1>
+                <p class="fact-text">The Trail of Tears refers to the forced relocation of Native American tribes, including the Cherokee, Choctaw, Chickasaw, Creek, and Seminole, from their ancestral homelands in the southeastern United States to Indian Territory.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact190.jpg" alt="Sphinx of Giza" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Sphinx of Giza has the body of a lion and the head of a human</h1>
+                <p class="fact-text">Located near the Great Pyramids of Giza in Egypt, the Sphinx is a colossal statue with the body of a lion and the head of a human, often believed to represent the pharaoh Khafre. Carved from a single piece of limestone, it is one of the largest and most recognizable monuments of ancient Egypt.</p>
+            </div>
+        </div>
+    </article>
+    
+    <!--Footer content-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-wrapper">
+                <div class="footer-widget">
+                    <a href="#">
+                        <img src="#" class="logo" alt="logo of Factbook"/>
+                    </a>
+                    <div class="address-contact">
+                        Address:NIT Raipur,<br> Raipur, Chhattisgarh 492010<br>
+                        Phone: 123-456-7890<br>
+                        Email: info@example.com
+                    </div>
+                </div>
+                <div class="footer-widget">
+                    <h6>Menu</h6>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="facts.html">Facts</a></li>
+                        <li><a href="aboutUs.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Help &amp; Support</h6>
+                    <ul class="links">
+                        <li><a href="contactUs.html">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms &amp; Conditionns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Social Media Links</h6>
+                    <ul class="socials">
+                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright-wrapper">
+                <p>Desing and Developed by
+                    <a href="#" terget="blank">FactBook</a>
+                </p>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./login.js"></script>
+
+</body>
+</html>

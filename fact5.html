@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactBook</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="facts.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="header-overlay"></div>
+        <div class="header-content">
+
+            <div class="logo">
+                <div class="logo-circle">
+                    <img src="logo.png" alt="Logo">
+                </div>
+            </div>
+
+            <div class="user-options">
+                <a href="#" class="btn" id="loginBtn">Log In</a>
+                <a href="#" class="btn" id="registerBtn">Sign Up</a>
+            </div>
+            
+        </div>
+
+        <p class="quote">"Fact that Educate, Inspire and Amaze"</p>
+        
+    </header>
+
+    <div class="navigation-menu"> 
+        <ul class="menu">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li class="active"><a href="facts.html"><i class="fas fa-info-circle"></i> Facts</a></li>
+            <li><a href="aboutUs.html"><i class="fas fa-users"></i> About Us</a></li>
+            <li><a href="contactUs.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="wrapper" id="popupWrapper">
+        <div class="popup-content">
+            <span class="icon-close" id="closePopup">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form id="loginForm" action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Remember me </label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="form-box register">
+                <h2>Sign Up</h2>
+                <form id="registerForm" action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" id="username" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="regEmail" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="regPassword" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox" required>I agree to the terms & conditions </label>
+                    </div>
+                    <button type="submit" class="btn">Sign up</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!--Facts content -->
+    <article class="fact-card">
+        <div class="fact-content">
+            <p class="heading">The Wow Factor: Mind-Blowing Facts to Expand Your Knowledge...</p>
+            <img src="./Image/Facts/fact112.jpg" alt="Angkor Wat" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Angkor Wat is the largest religious monument in the world</h1>
+                <p class="fact-text">Located in Cambodia, Angkor Wat is a UNESCO World Heritage site and the largest religious monument in the world. Built in the early 12th century by the Khmer Empire, it was originally dedicated to the Hindu god Vishnu but later transformed into a Buddhist temple complex.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact122.jpeg" alt="Leonardo da Vinci" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Leonardo da Vinci was a polymath</h1>
+                <p class="fact-text">Italian Renaissance polymath Leonardo da Vinci was not only a painter but also excelled in various fields including anatomy, engineering, mathematics, and astronomy. His diverse interests and talents made him one of the most influential figures of the Renaissance period.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact132.jpeg" alt="Inca Empire" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Inca Empire was the largest empire in pre-Columbian America</h1>
+                <p class="fact-text">At its height, the Inca Empire, centered in present-day Peru, was the largest empire in pre-Columbian America, extending over a vast territory along the Andes Mountains. Known for their advanced engineering, including the construction of Machu Picchu, the Incas ruled a diverse and culturally rich civilization.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact124.jpg" alt="Vesuvius Eruption" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The eruption of Mount Vesuvius buried the city of Pompeii</h1>
+                <p class="fact-text">In 79 CE, the eruption of Mount Vesuvius, near the city of Pompeii in Italy, buried the thriving Roman city under a thick layer of volcanic ash and pumice. This catastrophic event preserved Pompeii's buildings, artifacts, and even human remains, providing valuable insights into daily life in ancient Rome.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact125.jpeg" alt="Byzantine Empire" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Byzantine Empire was the continuation of the Eastern Roman Empire</h1>
+                <p class="fact-text">Following the division of the Roman Empire in 395 CE, the Eastern Roman Empire, with its capital in Constantinople (modern-day Istanbul), continued to thrive as the Byzantine Empire. Lasting for over a thousand years, the Byzantine Empire made significant contributions to art, culture, and law.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact126.jpeg" alt="Genghis Khan" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Genghis Khan founded the Mongol Empire</h1>
+                <p class="fact-text">Genghis Khan, born Temüjin, rose from humble beginnings to become the founder and first Great Khan of the Mongol Empire. Through military conquests and strategic alliances, he unified the Mongol tribes and established one of the largest contiguous empires in history, stretching from Asia to Europe.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact127.jpg" alt="Easter Island" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Easter Island is home to nearly 1,000 Moai statues</h1>
+                <p class="fact-text">Easter Island, also known as Rapa Nui, is famous for its colossal stone statues called Moai. Carved by the Rapa Nui people between the 13th and 16th centuries, these statues are believed to represent ancestors or important chiefs and are scattered across the island's landscape.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact128.jpeg" alt="Napoleon Bonaparte" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Napoleon Bonaparte was crowned Emperor of the French</h1>
+                <p class="fact-text">Napoleon Bonaparte, a military general and statesman, rose to prominence during the French Revolution and later declared himself Emperor of the French in 1804. His conquests and reforms reshaped Europe and had a lasting impact on the continent's political landscape.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact129.jpg" alt="Machu Picchu" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Machu Picchu was built by the Inca civilization</h1>
+                <p class="fact-text">Perched high in the Andes Mountains of Peru, Machu Picchu is a stunning archaeological site built by the Inca civilization in the 15th century. This "Lost City of the Incas" was likely a royal estate or religious retreat and is renowned for its breathtaking mountain scenery and intricate stone architecture.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact130.jpeg" alt="Christopher Columbus" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Christopher Columbus reached the Americas in 1492</h1>
+                <p class="fact-text">Italian explorer Christopher Columbus, sailing under the flag of Spain, reached the Americas on October 12, 1492, when he made landfall in the Bahamas. His voyages initiated the European exploration and colonization of the Americas, leading to profound historical and cultural changes.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact131.jpeg" alt="Black Death" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Black Death ravaged Europe in the 14th century</h1>
+                <p class="fact-text">The Black Death, a devastating pandemic caused by the bacterium Yersinia pestis, swept through Europe in the mid-14th century, killing an estimated 25-30% of the continent's population. This catastrophic event had profound social, economic, and religious repercussions, reshaping medieval society.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact132.jpeg" alt="Roman Roads" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Romans built an extensive network of roads across their empire</h1>
+                <p class="fact-text">The Roman Empire constructed thousands of miles of roads, connecting distant provinces and facilitating the movement of troops, goods, and information. These well-engineered roads, known as "viae," were essential for the empire's administration, trade, and military operations.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact133.jpeg" alt="Joan of Arc" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Joan of Arc led the French army to victory at the Siege of Orléans</h1>
+                <p class="fact-text">During the Hundred Years' War, French heroine Joan of Arc, inspired by divine visions, played a crucial role in lifting the Siege of Orléans in 1429. Her leadership and bravery boosted French morale and contributed to the eventual French victory over the English.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact134.jpg" alt="Terracotta Army" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Terracotta Army was buried to protect China's first emperor in the afterlife</h1>
+                <p class="fact-text">Commissioned by China's first emperor, Qin Shi Huang, the Terracotta Army near Xi'an consists of thousands of life-sized clay soldiers, horses, and chariots buried with the emperor to accompany him in the afterlife. This remarkable archaeological find provides insights into ancient Chinese funerary practices and military organization.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact135.jpg" alt="Hagia Sophia" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Hagia Sophia was converted into a mosque by the Ottomans</h1>
+                <p class="fact-text">Originally built as a Christian cathedral in the 6th century CE, the Hagia Sophia in Istanbul, Turkey, was converted into a mosque following the Ottoman conquest in 1453. Its architectural significance and religious symbolism have made it one of the most iconic landmarks in the world.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact136.jpg" alt="Pyramids of Giza" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Pyramids of Giza are the oldest of the Seven Wonders of the Ancient World</h1>
+                <p class="fact-text">Built over 4,500 years ago, the Pyramids of Giza in Egypt are the oldest and only surviving monuments of the original Seven Wonders of the Ancient World. These monumental tombs, constructed for pharaohs Khufu, Khafre, and Menkaure, continue to awe and inspire visitors from around the world.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact137.jpeg" alt="Viking Age" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Viking Age spanned from the late 8th to the early 11th century</h1>
+                <p class="fact-text">The Viking Age was a period of Scandinavian expansion, exploration, and raids across Europe, spanning from the late 8th to the early 11th century. Viking seafarers, traders, and warriors left a lasting impact on European history and culture.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact138.jpeg" alt="Rosetta Stone" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Rosetta Stone was key to deciphering ancient Egyptian hieroglyphs</h1>
+                <p class="fact-text">Discovered in 1799 in Egypt, the Rosetta Stone is a granodiorite slab inscribed with a decree issued by King Ptolemy V in 196 BCE. Its inscription in three scripts—hieroglyphic, demotic, and Greek—played a crucial role in deciphering ancient Egyptian hieroglyphs, unlocking the secrets of this ancient civilization's language and culture.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact139.jpeg" alt="Ancient Olympic Games" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The ancient Olympic Games were held in Olympia, Greece</h1>
+                <p class="fact-text">The ancient Olympic Games, held in Olympia, Greece, from 776 BCE to 393 CE, were a major religious and athletic festival in ancient Greece. Dedicated to the god Zeus, the games featured various sports competitions and attracted athletes and spectators from across the Greek world.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact140.jpeg" alt="Terracotta Army Discovery" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Terracotta Army was discovered by farmers in 1974</h1>
+                <p class="fact-text">In 1974, farmers digging a well near Xi'an, China, stumbled upon one of the most significant archaeological discoveries of the 20th century: the Terracotta Army. This vast collection of life-sized clay soldiers, horses, and chariots buried with China's first emperor Qin Shi Huang has since become a UNESCO World Heritage site.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact141.jpeg" alt="Indus Valley Civilization" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Indus Valley Civilization was one of the world's earliest urban societies</h1>
+                <p class="fact-text">The Indus Valley Civilization, flourishing in present-day Pakistan and northwest India from around 3300 BCE to 1300 BCE, was one of the world's earliest urban societies. Known for its advanced urban planning, sophisticated drainage systems, and distinctive pottery, it left behind a rich archaeological legacy.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact142.jpg" alt="The Great Wall of China" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Great Wall of China stretches over 13,000 miles</h1>
+                <p class="fact-text">Constructed over centuries by various Chinese dynasties, the Great Wall of China is a monumental fortification stretching over 13,000 miles across northern China. Originally built to protect against invasions from nomadic tribes, it is one of the most impressive architectural feats in history.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact143.jpeg" alt="Punic Wars" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Punic Wars were fought between Rome and Carthage</h1>
+                <p class="fact-text">The Punic Wars, a series of three conflicts fought between the Roman Republic and the Carthaginian Empire from 264 BCE to 146 BCE, were among the largest and most significant wars of antiquity. These wars ultimately resulted in the destruction of Carthage and the expansion of Roman power in the Mediterranean region.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact144.jpeg" alt="Byzantine Mosaics" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Byzantine mosaics adorned churches and palaces</h1>
+                <p class="fact-text">Byzantine art, particularly mosaic art, flourished in the Eastern Roman Empire and adorned churches, palaces, and public buildings. These intricate mosaics, often depicting religious scenes and figures, are renowned for their vibrant colors, intricate patterns, and spiritual symbolism.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact145.jpeg" alt="Queen Elizabeth I" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Queen Elizabeth I ruled England during the Elizabethan Era</h1>
+                <p class="fact-text">Queen Elizabeth I, daughter of Henry VIII and Anne Boleyn, ruled England from 1558 until her death in 1603. Her reign, known as the Elizabethan Era, was marked by a flourishing of English literature, exploration, and the defeat of the Spanish Armada.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact146.jpeg" alt="Gutenberg Printing Press" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Johannes Gutenberg invented the printing press</h1>
+                <p class="fact-text">German inventor Johannes Gutenberg is credited with inventing the movable-type printing press around 1440. His innovative printing technology revolutionized the production of books and facilitated the spread of knowledge and ideas during the Renaissance and beyond.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact147.jpeg" alt="Aztec Empire" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Aztec Empire was centered in the city of Tenochtitlan</h1>
+                <p class="fact-text">The Aztec Empire, also known as the Mexica Empire, was a Mesoamerican civilization that thrived in central Mexico from the 14th to the 16th century. Its capital city, Tenochtitlan, was built on an island in Lake Texcoco and was one of the largest and most populous cities in the world at the time.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact148.jpeg" alt="Leonardo da Vinci's Vitruvian Man" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Leonardo da Vinci's Vitruvian Man illustrates ideal human proportions</h1>
+                <p class="fact-text">Leonardo da Vinci's Vitruvian Man, drawn around 1490, is a famous illustration of ideal human proportions based on the writings of the ancient Roman architect Vitruvius. This iconic image reflects da Vinci's fascination with anatomy, geometry, and the relationship between man and the universe.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact149.jpeg" alt="The Enlightenment" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Enlightenment was an intellectual movement in 18th-century Europe</h1>
+                <p class="fact-text">The Enlightenment, also known as the Age of Reason, was an intellectual and cultural movement that swept through Europe in the 18th century. Characterized by a focus on reason, science, and individual rights, it laid the groundwork for many of the democratic principles and scientific advancements of the modern era.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact150.jpeg" alt="Fall of Constantinople" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Fall of Constantinople marked the end of the Byzantine Empire</h1>
+                <p class="fact-text">In 1453, the Byzantine Empire came to an end with the capture of its capital, Constantinople, by the Ottoman Empire. This event, known as the Fall of Constantinople, had far-reaching consequences for the history of Europe and the Mediterranean region, leading to the rise of the Ottoman Empire and the end of the Middle Ages.</p>
+            </div>
+        </div>
+    </article>
+    
+    <!--Footer content-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-wrapper">
+                <div class="footer-widget">
+                    <a href="#">
+                        <img src="#" class="logo" alt="logo of Factbook"/>
+                    </a>
+                    <div class="address-contact">
+                        Address:NIT Raipur,<br> Raipur, Chhattisgarh 492010<br>
+                        Phone: 123-456-7890<br>
+                        Email: info@example.com
+                    </div>
+                </div>
+                <div class="footer-widget">
+                    <h6>Menu</h6>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="facts.html">Facts</a></li>
+                        <li><a href="aboutUs.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Help &amp; Support</h6>
+                    <ul class="links">
+                        <li><a href="contactUs.html">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms &amp; Conditionns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Social Media Links</h6>
+                    <ul class="socials">
+                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright-wrapper">
+                <p>Desing and Developed by
+                    <a href="#" terget="blank">FactBook</a>
+                </p>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./login.js"></script>
+
+</body>
+</html>

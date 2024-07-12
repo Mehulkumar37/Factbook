@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactBook</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="facts.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="header-overlay"></div>
+        <div class="header-content">
+
+            <div class="logo">
+                <div class="logo-circle">
+                    <img src="logo.png" alt="Logo">
+                </div>
+            </div>
+
+            <div class="user-options">
+                <a href="#" class="btn" id="loginBtn">Log In</a>
+                <a href="#" class="btn" id="registerBtn">Sign Up</a>
+            </div>
+            
+        </div>
+
+        <p class="quote">"Fact that Educate, Inspire and Amaze"</p>
+        
+    </header>
+
+    <div class="navigation-menu"> 
+        <ul class="menu">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li class="active"><a href="facts.html"><i class="fas fa-info-circle"></i> Facts</a></li>
+            <li><a href="aboutUs.html"><i class="fas fa-users"></i> About Us</a></li>
+            <li><a href="contactUs.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="wrapper" id="popupWrapper">
+        <div class="popup-content">
+            <span class="icon-close" id="closePopup">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form id="loginForm" action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Remember me </label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="form-box register">
+                <h2>Sign Up</h2>
+                <form id="registerForm" action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" id="username" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="regEmail" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="regPassword" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox" required>I agree to the terms & conditions </label>
+                    </div>
+                    <button type="submit" class="btn">Sign up</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!--Facts content -->
+    <article class="fact-card">
+        <div class="fact-content">
+            <p class="heading">Explore the Unknown with Incredible Fun Facts – Ignite Your Interest!</p>
+            <img src="./Image/Facts/fact291.jpg" alt="The Great Wall of China" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Great Wall of China is over 13,000 miles long and took over 2,000 years to build.</h1>
+                <p class="fact-text">Stretching across northern China, the Great Wall is one of the most impressive architectural feats in history. It was built to protect China from invasions and has become a symbol of the country's rich cultural heritage.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact292.jpg" alt="Mount Everest" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Mount Everest, the world's tallest mountain, is located on the border of Nepal and China.</h1>
+                <p class="fact-text">Standing at 29,032 feet (8,848 meters) above sea level, Mount Everest is a popular destination for climbers and adventurers from around the globe. Its summit is the highest point on Earth.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact293.jpg" alt="The Colosseum" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Colosseum in Rome, Italy, is the largest amphitheater ever built and could hold up to 80,000 spectators.</h1>
+                <p class="fact-text">Constructed over 2,000 years ago, the Colosseum was used for gladiatorial contests, animal hunts, and other public spectacles. It is one of Rome's most iconic landmarks and a UNESCO World Heritage Site.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact294.jpg" alt="Cherry Blossoms in Japan" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Japan celebrates the arrival of spring with hanami, the tradition of viewing cherry blossoms in bloom.</h1>
+                <p class="fact-text">Cherry blossoms, known as sakura in Japanese, symbolize the fleeting beauty of life. During hanami season, people gather in parks and gardens to enjoy picnics under the blooming trees.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact295.jpg" alt="Eiffel Tower in France" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Eiffel Tower in Paris, France, was originally intended to be a temporary installation for the 1889 World's Fair.</h1>
+                <p class="fact-text">Designed by Gustave Eiffel, the iconic tower was initially criticized by some as an eyesore. However, it has since become one of the most recognizable landmarks in the world and a symbol of France.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact296.jpg" alt="Rio Carnival in Brazil" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Rio Carnival in Brazil is the largest carnival celebration in the world, attracting millions of visitors each year.</h1>
+                <p class="fact-text">The carnival features vibrant parades, elaborate costumes, samba music, and street parties that last for days. It is a cultural extravaganza that showcases Brazil's rich heritage and diversity.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact297.jpg" alt="Sydney Opera House" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Sydney Opera House in Australia is one of the most distinctive and recognizable buildings in the world.</h1>
+                <p class="fact-text">Designed by Danish architect Jørn Utzon, the iconic structure features a series of sail-like shells that form its roof. It is a UNESCO World Heritage Site and a symbol of Australia's cultural identity.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact298.jpg" alt="Petra in Jordan" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Petra, an ancient city carved into rose-red cliffs in Jordan, is one of the New Seven Wonders of the World.</h1>
+                <p class="fact-text">Founded over 2,000 years ago, Petra was the capital of the Nabatean Kingdom and a major trading hub. Its impressive architecture and rock-cut monuments attract visitors from around the globe.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact299.jpg" alt="The Pyramids of Giza" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Pyramids of Giza in Egypt are the only surviving wonder of the ancient world.</h1>
+                <p class="fact-text">Built over 4,500 years ago, the Great Pyramid of Giza is the largest and most famous of the three pyramids. It was constructed as a tomb for the Pharaoh Khufu and is a testament to the ingenuity of ancient Egyptian civilization.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact300.jpg" alt="Angkor Wat in Cambodia" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Angkor Wat in Cambodia is the largest religious monument in the world.</h1>
+                <p class="fact-text">Built in the 12th century, Angkor Wat was originally constructed as a Hindu temple dedicated to the god Vishnu. It later transformed into a Buddhist temple and is now a symbol of Cambodia's cultural and religious heritage.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact301.jpg" alt="Neuschwanstein Castle in Germany" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Neuschwanstein Castle in Germany served as the inspiration for the Sleeping Beauty Castle in Disneyland.</h1>
+                <p class="fact-text">Perched on a rugged hill in Bavaria, Neuschwanstein Castle is a fairy-tale fortress with towers, turrets, and stunning views of the surrounding landscape. It is one of the most photographed castles in the world.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact302.jpg" alt="Machu Picchu in Peru" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Machu Picchu in Peru is a UNESCO World Heritage Site and one of the New Seven Wonders of the World.</h1>
+                <p class="fact-text">Built by the Inca Empire in the 15th century, Machu Picchu is a breathtaking citadel nestled in the Andes Mountains. It is renowned for its sophisticated stone architecture and panoramic views of the surrounding valleys.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact303.png" alt="Sagrada Família in Spain" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Sagrada Família in Barcelona, Spain, is a UNESCO World Heritage Site and one of the most famous examples of Art Nouveau architecture.</h1>
+                <p class="fact-text">Designed by renowned architect Antoni Gaudí, the basilica is known for its intricate facades, towering spires, and colorful stained glass windows. Construction began in 1882 and is expected to be completed by 2026.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact304.jpg" alt="Kilimanjaro in Tanzania" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Mount Kilimanjaro in Tanzania is the highest peak in Africa and the tallest freestanding mountain in the world.</h1>
+                <p class="fact-text">Rising 19,341 feet (5,895 meters) above sea level, Kilimanjaro is a popular destination for trekkers and climbers seeking to conquer its summit. Its snow-capped peak is visible from miles away.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact305.jpg" alt="The Alhambra in Spain" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Alhambra in Granada, Spain, is a stunning palace and fortress complex that showcases the finest examples of Moorish architecture.</h1>
+                <p class="fact-text">Constructed during the Nasrid dynasty in the 14th century, the Alhambra features intricate tilework, ornate stucco carvings, and lush gardens. It is a masterpiece of Islamic art and a symbol of Spain's multicultural history.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact306.jpg" alt="The Taj Mahal in India" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Taj Mahal in Agra, India, is a UNESCO World Heritage Site and one of the most beautiful buildings in the world.</h1>
+                <p class="fact-text">Commissioned by Emperor Shah Jahan in the 17th century as a mausoleum for his beloved wife Mumtaz Mahal, the Taj Mahal is renowned for its white marble dome, intricate carvings, and perfectly symmetrical design.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact307.jpg" alt="Venice Canals in Italy" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The city of Venice in Italy is built on a network of 118 small islands separated by canals and linked by bridges.</h1>
+                <p class="fact-text">Venice is famous for its picturesque waterways, historic architecture, and romantic gondola rides. The Grand Canal, lined with colorful buildings and palaces, serves as the main thoroughfare through the city.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact308.jpg" alt="Uluru in Australia" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Uluru, also known as Ayers Rock, is a massive sandstone monolith in the heart of Australia's Red Centre.</h1>
+                <p class="fact-text">Sacred to the Indigenous Anangu people, Uluru is a UNESCO World Heritage Site and one of Australia's most iconic natural landmarks. It is particularly stunning at sunrise and sunset, when its colors change dramatically.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact309.jpg" alt="The Acropolis in Greece" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Acropolis of Athens, Greece, is a UNESCO World Heritage Site and home to some of the most famous ancient ruins in the world.</h1>
+                <p class="fact-text">Perched atop a rocky outcrop overlooking the city, the Acropolis includes iconic structures such as the Parthenon, Erechtheion, and Temple of Athena Nike. It is a symbol of ancient Greek civilization and the birthplace of democracy.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact310.jpg" alt="The Kremlin in Russia" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Kremlin in Moscow, Russia, is a historic fortified complex that serves as the official residence of the President of Russia.</h1>
+                <p class="fact-text">Dating back to the 15th century, the Kremlin is home to palaces, cathedrals, and government buildings. Its iconic red walls and towers are emblematic of Russian power and authority.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact311.jpg" alt="The Forbidden City in China" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Forbidden City in Beijing, China, was the imperial palace of the Ming and Qing dynasties for over 500 years.</h1>
+                <p class="fact-text">Covering 180 acres, the Forbidden City is the world's largest palace complex and contains over 1,000 buildings. It is a masterpiece of Chinese architecture and a symbol of imperial power and prestige.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact312.jpg" alt="Stonehenge in England" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Stonehenge in Wiltshire, England, is a prehistoric monument consisting of massive stone circles arranged in a mysterious pattern.</h1>
+                <p class="fact-text">Built over 4,500 years ago, Stonehenge is one of the most famous landmarks in the world. Its purpose and significance remain the subject of debate among archaeologists and historians.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact313.jpg" alt="The Louvre Museum in France" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Louvre Museum in Paris, France, is the largest art museum in the world and home to thousands of works of art, including the Mona Lisa.</h1>
+                <p class="fact-text">Originally a royal palace, the Louvre now houses an extensive collection of paintings, sculptures, and artifacts spanning thousands of years of history and culture. It attracts millions of visitors each year.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact314.jpg" alt="Mesa Verde in the United States" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Mesa Verde National Park in Colorado, USA, preserves over 5,000 archaeological sites, including ancient cliff dwellings built by the Ancestral Puebloans.</h1>
+                <p class="fact-text">Mesa Verde is a UNESCO World Heritage Site and provides a fascinating glimpse into the lives of indigenous peoples who inhabited the region over 1,000 years ago. The cliff dwellings are remarkably well-preserved.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact315.jpg" alt="The Blue Mosque in Turkey" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Blue Mosque in Istanbul, Turkey, is famous for its stunning blue tiles and six towering minarets.</h1>
+                <p class="fact-text">Built in the 17th century, the Blue Mosque is one of the most important landmarks in Istanbul and a symbol of Ottoman architecture. Its interior is adorned with intricate calligraphy and geometric patterns.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact316.jpg" alt="The Terracotta Army in China" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Terracotta Army in Xi'an, China, is a vast collection of life-sized clay soldiers and horses buried with the first Emperor of China, Qin Shi Huang.</h1>
+                <p class="fact-text">Discovered in 1974 by local farmers, the Terracotta Army is a UNESCO World Heritage Site and one of the most significant archaeological finds of the 20th century. It is believed to represent the emperor's army in the afterlife.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact317.jpg" alt="The Moai Statues on Easter Island" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Easter Island, located in the southeastern Pacific Ocean, is famous for its massive stone statues called Moai.</h1>
+                <p class="fact-text">Carved by the indigenous Rapa Nui people between the 13th and 16th centuries, the Moai statues are a UNESCO World Heritage Site and a symbol of the island's mysterious past. Some statues weigh up to 80 tons.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact318.jpeg" alt="The Pyramids of Teotihuacan in Mexico" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Pyramids of Teotihuacan in Mexico are ancient Mesoamerican structures built by the Teotihuacan civilization around 100 BCE.</h1>
+                <p class="fact-text">The Pyramid of the Sun and the Pyramid of the Moon are the most prominent structures in the archaeological complex. Teotihuacan was one of the largest cities in the pre-Columbian Americas and a center of culture and trade.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact319.jpg" alt="The Christ the Redeemer Statue in Brazil" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Christ the Redeemer statue in Rio de Janeiro, Brazil, is one of the New Seven Wonders of the World.</h1>
+                <p class="fact-text">Perched atop Corcovado Mountain, the iconic statue stands 98 feet (30 meters) tall with arms outstretched in a gesture of welcome. It is a symbol of Christianity and a beloved landmark in Brazil.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact320.jpg" alt="The Petra Treasury in Jordan" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Treasury in Petra, Jordan, is an ancient rock-cut temple carved into the rose-red cliffs of the city.</h1>
+                <p class="fact-text">Also known as Al-Khazneh, the Treasury is one of Petra's most famous and elaborate structures. It is believed to have served as a tomb or ceremonial building for the Nabateans.</p>
+            </div>
+        </div>
+    </article>
+    
+    <!--Footer content-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-wrapper">
+                <div class="footer-widget">
+                    <a href="#">
+                        <img src="#" class="logo" alt="logo of Factbook"/>
+                    </a>
+                    <div class="address-contact">
+                        Address:NIT Raipur,<br> Raipur, Chhattisgarh 492010<br>
+                        Phone: 123-456-7890<br>
+                        Email: info@example.com
+                    </div>
+                </div>
+                <div class="footer-widget">
+                    <h6>Menu</h6>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="facts.html">Facts</a></li>
+                        <li><a href="aboutUs.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Help &amp; Support</h6>
+                    <ul class="links">
+                        <li><a href="contactUs.html">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms &amp; Conditionns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Social Media Links</h6>
+                    <ul class="socials">
+                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright-wrapper">
+                <p>Desing and Developed by
+                    <a href="#" terget="blank">FactBook</a>
+                </p>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./login.js"></script>
+
+</body>
+</html>

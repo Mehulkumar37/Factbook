@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactBook</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="facts.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="header-overlay"></div>
+        <div class="header-content">
+
+            <div class="logo">
+                <div class="logo-circle">
+                    <img src="logo.png" alt="Logo">
+                </div>
+            </div>
+
+            <div class="user-options">
+                <a href="#" class="btn" id="loginBtn">Log In</a>
+                <a href="#" class="btn" id="registerBtn">Sign Up</a>
+            </div>
+            
+        </div>
+
+        <p class="quote">"Fact that Educate, Inspire and Amaze"</p>
+        
+    </header>
+
+    <div class="navigation-menu"> 
+        <ul class="menu">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li class="active"><a href="facts.html"><i class="fas fa-info-circle"></i> Facts</a></li>
+            <li><a href="aboutUs.html"><i class="fas fa-users"></i> About Us</a></li>
+            <li><a href="contactUs.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="wrapper" id="popupWrapper">
+        <div class="popup-content">
+            <span class="icon-close" id="closePopup">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form id="loginForm" action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Remember me </label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="form-box register">
+                <h2>Sign Up</h2>
+                <form id="registerForm" action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" id="username" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="regEmail" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="regPassword" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox" required>I agree to the terms & conditions </label>
+                    </div>
+                    <button type="submit" class="btn">Sign up</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!--Facts content -->
+    <article class="fact-card">
+        <div class="fact-content">
+            <p class="heading">Fascinating Insights into the World...</p>
+            <img src="./Image/Facts/fact91.jpg" alt="Great Wall of China" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Great Wall of China is over 13,000 miles long</h1>
+                <p class="fact-text">Built over centuries and spanning multiple dynasties, the Great Wall of China is one of the most impressive architectural feats in history. Stretching over 13,000 miles, it was constructed to protect China from invasions and reflects the strategic and engineering prowess of ancient civilizations.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact92.jpg" alt="Cleopatra VII" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Cleopatra VII spoke at least seven languages fluently</h1>
+                <p class="fact-text">Known for her intelligence and charm, Cleopatra VII, the last active ruler of the Ptolemaic Kingdom of Egypt, was a highly educated woman. Fluent in Egyptian, Greek, Latin, Arabic, Hebrew, Persian, and Syrian, her linguistic abilities helped her maintain diplomatic relations with various cultures and rulers.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact93.jpg" alt="Seven Hills of Rome" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The ancient city of Rome was built on seven hills</h1>
+                <p class="fact-text">Legend has it that Rome, the capital of the ancient Roman Empire, was founded on seven hills: Aventine, Caelian, Capitoline, Esquiline, Palatine, Quirinal, and Viminal. These hills not only provided natural defensive positions but also influenced the city's layout and development.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact94.jpg" alt="Library of Alexandria" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Library of Alexandria was one of the largest and most significant libraries of the ancient world</h1>
+                <p class="fact-text">Established in the 3rd century BCE, the Library of Alexandria in Egypt housed a vast collection of scrolls and texts from various civilizations, making it a center of learning and scholarship in the ancient world. It is believed to have been destroyed by fire, resulting in the loss of countless works of literature, science, and philosophy.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact95.jpeg" alt="Aztec Cocoa Beans" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Aztecs used cocoa beans as currency</h1>
+                <p class="fact-text">Long before the introduction of coins or paper money, the Aztecs of Mesoamerica used cocoa beans as a form of currency. Cocoa beans, which were also valued for their use in making chocolate, played a central role in Aztec economy and trade.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact96.jpg" alt="Taj Mahal" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Taj Mahal was built by Emperor Shah Jahan in memory of his wife</h1>
+                <p class="fact-text">Regarded as one of the most beautiful buildings in the world, the Taj Mahal in Agra, India, was commissioned by Mughal Emperor Shah Jahan in memory of his beloved wife, Mumtaz Mahal, who died during childbirth. Constructed from white marble and adorned with intricate carvings and inlays, it is a symbol of enduring love and architectural mastery.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact97.jpg" alt="Socrates" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Greek philosopher Socrates never wrote anything down</h1>
+                <p class="fact-text">Despite his profound influence on Western philosophy, Socrates left no written records of his own teachings. Instead, his philosophical ideas and methods were conveyed through the writings of his students, most notably Plato, who documented Socrates' dialogues and philosophical inquiries.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact98.jpeg" alt="Mausoleum at Halicarnassus" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Mausoleum at Halicarnassus was one of the Seven Wonders of the Ancient World</h1>
+                <p class="fact-text">Constructed in the 4th century BCE in Halicarnassus, a city in present-day Turkey, the Mausoleum at Halicarnassus was a monumental tomb built for Mausolus, a satrap in the Persian Empire, and his wife Artemisia II. Renowned for its grandeur and architectural beauty, it was considered one of the Seven Wonders of the Ancient World.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact99.jpg" alt="Silk Road" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Silk Road facilitated trade between East and West</h1>
+                <p class="fact-text">Stretching thousands of miles across Asia, the Silk Road was a network of trade routes connecting China with the Mediterranean world. Named for the lucrative silk trade that flourished along its routes, the Silk Road facilitated the exchange of goods, ideas, and cultures between East and West, contributing to the development of civilizations along its path.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact100.jpg" alt="Parthenon" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Parthenon in Athens was dedicated to the goddess Athena</h1>
+                <p class="fact-text">Constructed in the 5th century BCE on the Acropolis of Athens, the Parthenon was a temple dedicated to the goddess Athena, the patron deity of the city. Adorned with intricate sculptures and architectural features, it served as a symbol of Athenian power and cultural achievement during the golden age of ancient Greece.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact101.jpg" alt="Inca Quipu" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Inca Empire had no writing system</h1>
+                <p class="fact-text">Despite their remarkable achievements in engineering, architecture, and governance, the Inca civilization of South America did not develop a written language. Instead, they relied on a system of knotted cords known as quipu to record information, such as census data, accounting records, and historical events.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact102.jpg" alt="Eiffel Tower" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Eiffel Tower was originally intended to be a temporary installation</h1>
+                <p class="fact-text">Designed by engineer Gustave Eiffel, the Eiffel Tower was constructed as the centerpiece of the 1889 Exposition Universelle (World's Fair) in Paris, France. Originally intended to stand for only 20 years, it was saved from demolition and has since become an iconic symbol of Paris and a beloved landmark around the world.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact103.jpeg" alt="Rosetta Stone" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Rosetta Stone helped decipher ancient Egyptian hieroglyphs</h1>
+                <p class="fact-text">Discovered in 1799 in Egypt by French soldiers, the Rosetta Stone is a granite slab inscribed with a decree issued by King Ptolemy V in 196 BCE. Its inscription is in three scripts: hieroglyphic, demotic, and Greek, which allowed scholars to decipher ancient Egyptian hieroglyphs, unlocking the secrets of this ancient civilization's language and culture.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact104.jpg" alt="Samurai" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Samurai adhered to a code of honor known as Bushido</h1>
+                <p class="fact-text">Originating in feudal Japan, Bushido was a code of conduct followed by the Samurai, the warrior class of Japanese society. Emphasizing loyalty, courage, and self-discipline, Bushido governed the behavior of Samurai in both warfare and daily life, shaping their identity and values.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact105.jpg" alt="Moai Statues" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Moai statues of Easter Island were carved by the Rapa Nui people</h1>
+                <p class="fact-text">Located in the southeastern Pacific Ocean, Easter Island is famous for its massive stone statues known as Moai. Carved by the indigenous Rapa Nui people between the 13th and 16th centuries, these statues represent ancestors and chiefs and are a testament to the ingenuity and craftsmanship of the island's inhabitants.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact106.jpg" alt="Colosseum" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Colosseum in Rome could hold up to 80,000 spectators</h1>
+                <p class="fact-text">Built in the 1st century CE, the Colosseum, also known as the Flavian Amphitheater, was a massive arena used for public spectacles, including gladiatorial contests, animal hunts, and mock naval battles. With seating capacity for tens of thousands of spectators, it was a symbol of Roman power and entertainment.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact107.jpeg" alt="Maya Calendar" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Maya civilization developed a complex calendar system</h1>
+                <p class="fact-text">The ancient Maya civilization of Mesoamerica developed a sophisticated calendar system that combined a solar calendar, based on the movement of the sun, with a ritual calendar, used for religious ceremonies and events. This calendar system played a central role in Maya society, influencing agriculture, governance, and religious practices.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact108.jpg" alt="Mona Lisa" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Mona Lisa has no eyebrows</h1>
+                <p class="fact-text">One of the most famous paintings in the world, Leonardo da Vinci's Mona Lisa, housed in the Louvre Museum in Paris, has intrigued viewers for centuries. One peculiar feature of the painting is that the subject, Lisa Gherardini, has no visible eyebrows—a stylistic choice that adds to the enigmatic nature of the artwork.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact109.jpeg" alt="Hanging Gardens of Babylon" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Hanging Gardens of Babylon were one of the Seven Wonders of the Ancient World</h1>
+                <p class="fact-text">According to ancient texts, the Hanging Gardens of Babylon were a marvel of engineering and horticulture, constructed in the ancient city of Babylon (present-day Iraq) by King Nebuchadnezzar II for his wife, Amytis. Though their existence is debated, they are often cited as one of the Seven Wonders of the Ancient World.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact110.jpg" alt="Michelangelo's David" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Michelangelo's David is a masterpiece of Renaissance sculpture</h1>
+                <p class="fact-text">Sculpted by the Italian artist Michelangelo between 1501 and 1504, David is a marble statue depicting the biblical hero David. Standing over 17 feet tall, it is renowned for its anatomical accuracy, dynamic pose, and expression of strength and determination, exemplifying the ideals of the Renaissance era.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact111.jpg" alt="Sphinx of Giza" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Sphinx of Giza has the body of a lion and the head of a human</h1>
+                <p class="fact-text">Located near the Great Pyramids of Giza in Egypt, the Sphinx is a colossal statue with the body of a lion and the head of a human, often believed to represent the pharaoh Khafre. Carved from a single piece of limestone, it is one of the largest and most recognizable monuments of ancient Egypt.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact112.jpg" alt="Viking Ship" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Vikings were skilled navigators and seafarers</h1>
+                <p class="fact-text">From the 8th to the 11th centuries, the Vikings, Scandinavian warriors and traders, explored and raided vast regions of Europe, Asia, and North America. Renowned for their shipbuilding skills and navigational prowess, they established trade routes, founded settlements, and left a lasting impact on the cultures they encountered.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact113.jpg" alt="Pyramids of Teotihuacan" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Pyramids of Teotihuacan in Mexico were built by the Teotihuacan civilization</h1>
+                <p class="fact-text">Teotihuacan, located near present-day Mexico City, was one of the largest and most influential cities in ancient Mesoamerica. Constructed between the 1st and 7th centuries CE, its monumental pyramids, including the Pyramid of the Sun and the Pyramid of the Moon, are among the most impressive architectural achievements of pre-Columbian civilizations.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact114.jpg" alt="Renaissance Art" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Renaissance was a period of cultural rebirth in Europe</h1>
+                <p class="fact-text">The Renaissance, which began in Italy in the 14th century and spread throughout Europe, was a time of renewed interest in art, literature, science, and humanism. Characterized by a revival of classical learning and the development of new artistic techniques, the Renaissance marked a transition from the medieval to the modern world.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact115.jpg" alt="Terracotta Army" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Terracotta Army was buried with China's first emperor to protect him in the afterlife</h1>
+                <p class="fact-text">Discovered in 1974 near Xi'an, China, the Terracotta Army is a collection of thousands of life-sized clay soldiers, horses, and chariots buried with Qin Shi Huang, the first emperor of China, to accompany him in the afterlife. This remarkable archaeological find provides insights into ancient Chinese burial practices and military technology.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact116.jpg" alt="Hagia Sophia" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Hagia Sophia in Istanbul has served as a church, mosque, and museum</h1>
+                <p class="fact-text">Originally built as a Christian cathedral in the 6th century CE, the Hagia Sophia in Istanbul, Turkey, later served as a mosque following the Ottoman conquest in the 15th century. In 1935, it was converted into a museum, reflecting its significance as a symbol of both Byzantine and Islamic heritage.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact117.jpg" alt="Gutenberg Bible" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Gutenberg Bible was the first major book printed using movable type in Europe</h1>
+                <p class="fact-text">Produced by Johannes Gutenberg in the 15th century, the Gutenberg Bible is considered one of the most important books in the history of printing. Using movable type and the newly developed printing press, Gutenberg revolutionized the production of books, paving the way for the dissemination of knowledge and the spread of literacy.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact118.jpg" alt="Acropolis of Athens" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Acropolis of Athens is home to several ancient temples and monuments</h1>
+                <p class="fact-text">Perched atop a rocky outcrop overlooking the city of Athens, the Acropolis is a UNESCO World Heritage site housing several ancient temples and monuments, including the Parthenon, the Erechtheion, and the Temple of Athena Nike. These architectural masterpieces are enduring symbols of ancient Greek civilization and cultural achievement.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact119.jpg" alt="Mona Lisa Theft" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Mona Lisa was stolen from the Louvre Museum in 1911</h1>
+                <p class="fact-text">One of the most famous art heists in history occurred in 1911 when the Mona Lisa, painted by Leonardo da Vinci, was stolen from the Louvre Museum in Paris. The painting was recovered two years later, and the incident only added to the mystique surrounding this iconic work of art.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact120.jpg" alt="Roman Aqueducts" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Roman aqueducts supplied water to cities across the empire</h1>
+                <p class="fact-text">The Romans were renowned for their engineering prowess, and one of their most impressive achievements was the construction of aqueducts to supply fresh water to cities, towns, and settlements across the vast Roman Empire. These stone structures, which utilized gravity to transport water over long distances, were essential for urban development and public health.</p>
+            </div>
+        </div>
+    </article>
+    
+    
+    <!--Footer content-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-wrapper">
+                <div class="footer-widget">
+                    <a href="#">
+                        <img src="#" class="logo" alt="logo of Factbook"/>
+                    </a>
+                    <div class="address-contact">
+                        Address:NIT Raipur,<br> Raipur, Chhattisgarh 492010<br>
+                        Phone: 123-456-7890<br>
+                        Email: info@example.com
+                    </div>
+                </div>
+                <div class="footer-widget">
+                    <h6>Menu</h6>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="facts.html">Facts</a></li>
+                        <li><a href="aboutUs.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Help &amp; Support</h6>
+                    <ul class="links">
+                        <li><a href="contactUs.html">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms &amp; Conditionns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Social Media Links</h6>
+                    <ul class="socials">
+                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright-wrapper">
+                <p>Desing and Developed by
+                    <a href="#" terget="blank">FactBook</a>
+                </p>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./login.js"></script>
+
+</body>
+</html>

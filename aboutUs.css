@@ -1,0 +1,128 @@
+/* Vision and Goals Sections */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 25px auto;
+    padding:10px;
+}
+
+.image-container {
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.text-container {
+    width: 50%;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.text-container h2 {
+    font-family: "Signika Negative", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.text-container p {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.goal-list{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+/* Team Section */
+.team-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-header {
+    width: 100%;
+    margin-bottom: 30px;
+    font-family: "Signika Negative", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 36px;
+}
+
+.team-member {
+    width: 300px;
+    margin: 0 20px 30px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    text-align: center;
+}
+
+.team-member img {
+    max-width: 100%;
+    height:220px;
+    margin-bottom: 15px;
+    border-radius:10px;
+}
+
+.team-member h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.team-member p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column; /* Change to column layout */
+        align-items: center; /* Center-align items */
+        padding: 20px;; /* Remove padding */
+    }
+
+    .image-container,
+    .text-container {
+        width: 100%; /* Make image and text containers occupy full width */
+        margin: 20px; /* Add space between containers */
+    }
+
+}

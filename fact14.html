@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactBook</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="facts.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="header-overlay"></div>
+        <div class="header-content">
+
+            <div class="logo">
+                <div class="logo-circle">
+                    <img src="logo.png" alt="Logo">
+                </div>
+            </div>
+
+            <div class="user-options">
+                <a href="#" class="btn" id="loginBtn">Log In</a>
+                <a href="#" class="btn" id="registerBtn">Sign Up</a>
+            </div>
+            
+        </div>
+
+        <p class="quote">"Fact that Educate, Inspire and Amaze"</p>
+        
+    </header>
+
+    <div class="navigation-menu"> 
+        <ul class="menu">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li class="active"><a href="facts.html"><i class="fas fa-info-circle"></i> Facts</a></li>
+            <li><a href="aboutUs.html"><i class="fas fa-users"></i> About Us</a></li>
+            <li><a href="contactUs.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="wrapper" id="popupWrapper">
+        <div class="popup-content">
+            <span class="icon-close" id="closePopup">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form id="loginForm" action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Remember me </label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="form-box register">
+                <h2>Sign Up</h2>
+                <form id="registerForm" action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" id="username" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="regEmail" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="regPassword" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox" required>I agree to the terms & conditions </label>
+                    </div>
+                    <button type="submit" class="btn">Sign up</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!--Facts content -->
+    <article class="fact-card">
+        <div class="fact-content">
+            <p class="heading">Fact Attack: Prepare to Be Stunned by These Truths</p>
+            <img src="./Image/Facts/fact411.jpg" alt="Meteora Monasteries in Greece" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Sahara Desert is the largest hot desert in the world, covering an area of over 9.2 million square kilometers (3.6 million square miles) across North Africa.</h1>
+                <p class="fact-text">Despite its harsh and arid conditions, the Sahara is home to a variety of plants and animals specially adapted to desert life, including camels, desert foxes, and acacia trees. The Sahara experiences extreme temperature variations, with scorching hot days and freezing cold nights. It is also known for its vast sand dunes, some of which can reach heights of over 180 meters (590 feet). Despite its inhospitable environment, the Sahara has a rich history and has been inhabited by humans for thousands of years.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact412.jpg" alt="Blue Whale" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Blue Whale is the largest animal on Earth, reaching lengths of up to 30 meters (98 feet) and weights of over 200 tons.</h1>
+                <p class="fact-text">Despite its massive size, this magnificent creature feeds primarily on small shrimp-like animals called krill. Its heart alone can weigh as much as a car, and its tongue can weigh as much as an elephant. Blue Whales produce the loudest sound of any animal and can communicate with each other over hundreds of miles using low-frequency sounds. Sadly, they are classified as endangered due to decades of hunting and are now protected by international law.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact413.jpg" alt="Great Pyramid of Giza" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Great Pyramid of Giza, also known as the Pyramid of Khufu or the Pyramid of Cheops, is the oldest and largest of the three pyramids in the Giza pyramid complex.</h1>
+                <p class="fact-text">It was built over a 20-year period during the Fourth Dynasty of the Old Kingdom of Egypt, around 2560 BC, as a tomb for the Pharaoh Khufu. The Great Pyramid was originally covered in smooth white limestone casing stones that reflected the sun's rays, giving it a brilliant appearance. Standing at a height of 146.6 meters (481 feet), it held the title of the tallest man-made structure in the world for over 3,800 years. Today, the Great Pyramid of Giza remains one of the most enduring symbols of ancient Egyptian civilization and is a UNESCO World Heritage Site.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact414.jpg" alt="Baobab Tree" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Baobab tree, also known as the "Tree of Life," is a symbol of Africa and is renowned for its distinctive appearance and longevity.</h1>
+                <p class="fact-text">These iconic trees can live for thousands of years and have adapted to survive in harsh and arid environments. Baobabs can store thousands of liters of water in their trunks, allowing them to endure long periods of drought. Their large, swollen trunks and branches resemble roots sticking up into the air, giving them a surreal and otherworldly appearance. Baobab trees play a crucial role in the ecosystems of the African savannah, providing food, shelter, and water for a variety of animals.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact415.jpg" alt="Taj Mahal" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Taj Mahal is one of the most iconic landmarks in India and a masterpiece of Mughal architecture, renowned for its exquisite beauty and symmetry.</h1>
+                <p class="fact-text">It was commissioned in 1632 by the Mughal emperor Shah Jahan to house the tomb of his favorite wife, Mumtaz Mahal, who died during childbirth. Constructed over 20 years by a team of architects, artisans, and craftsmen, the Taj Mahal is made entirely of white marble adorned with intricate carvings and inlaid with semi-precious stones. It is often considered a symbol of love and is recognized as a UNESCO World Heritage Site. Millions of visitors from around the world flock to the Taj Mahal each year to marvel at its breathtaking beauty and architectural grandeur.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact416.jpg" alt="Great Wall of China" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Great Wall of China is one of the most impressive architectural feats in history, stretching over 21,196 kilometers (13,170 miles) across northern China.</h1>
+                <p class="fact-text">It was originally built over 2,000 years ago during the Qin Dynasty to protect China from invasions by nomadic tribes from the north. The wall consists of various sections built during different dynasties, using a combination of materials such as brick, stone, and rammed earth. Contrary to popular belief, the Great Wall of China is not visible from space without aid and has never been proven by astronauts. However, it remains a symbol of Chinese civilization and a UNESCO World Heritage Site, attracting millions of visitors each year.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact417.jpg" alt="Northern Lights" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Northern Lights, also known as the Aurora Borealis, are a natural light display that occurs in the polar regions of the Earth.</h1>
+                <p class="fact-text">They are caused by the interaction between charged particles from the Sun and the Earth's magnetic field, resulting in colorful curtains of light dancing across the night sky. The Northern Lights are most commonly observed in high-latitude regions such as Scandinavia, Canada, and Alaska, although they can occasionally be seen at lower latitudes during periods of heightened solar activity. The auroras come in a variety of colors, including green, pink, purple, and blue, creating a mesmerizing spectacle that has captivated people for centuries.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact418.jpg" alt="Mount Everest" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Mount Everest is the highest mountain on Earth, with its peak reaching an elevation of 8,848.86 meters (29,031.7 feet) above sea level.</h1>
+                <p class="fact-text">Located in the Himalayas on the border between Nepal and China, Everest is part of the Seven Summits, a challenge to climb the highest peak on each of the seven continents. Despite its extreme altitude and harsh conditions, Mount Everest attracts thousands of climbers and adventurers from around the world each year, seeking to conquer its summit. The first successful ascent of Everest was achieved by Sir Edmund Hillary of New Zealand and Tenzing Norgay, a Sherpa of Nepal, on May 29, 1953. Since then, many climbers have attempted the ascent, with varying degrees of success and peril.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact419.jpg" alt="Venice Canals" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The city of Venice, Italy, is renowned for its intricate network of canals, historic architecture, and artistic heritage.</h1>
+                <p class="fact-text">Built on a series of islands in the Venetian Lagoon, Venice is a UNESCO World Heritage Site and one of the most popular tourist destinations in the world. The city is famous for its romantic gondola rides along the winding canals, its magnificent Renaissance and Gothic palaces, and its vibrant cultural scene. Venice has inspired countless artists, writers, and filmmakers with its timeless beauty and unique charm. However, the city faces numerous challenges, including rising sea levels, overcrowding, and environmental degradation, which threaten its long-term sustainability.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact420.jpg" alt="Petra, Jordan" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Petra is an ancient city located in southern Jordan, famous for its rock-cut architecture and archaeological significance.</h1>
+                <p class="fact-text">Founded as the capital of the Nabatean Kingdom around the 4th century BC, Petra flourished as a major trading hub and caravan city, controlling vital trade routes between Arabia, Egypt, and Syria. Its most famous structure is the Treasury, carved into the rose-red cliffs of the surrounding mountains. Petra's unique blend of Hellenistic, Roman, and Arabian architectural styles, combined with its stunning natural setting, makes it one of the most awe-inspiring archaeological sites in the world. In 1985, Petra was designated a UNESCO World Heritage Site, ensuring its preservation for future generations to appreciate and explore.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact421.jpg" alt="Niagara Falls" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Niagara Falls is a breathtaking natural wonder located on the border between the United States and Canada, consisting of three majestic waterfalls: the Horseshoe Falls, the American Falls, and the Bridal Veil Falls.</h1>
+                <p class="fact-text">Formed during the last Ice Age, Niagara Falls is renowned for its immense beauty and powerful cascades, attracting millions of visitors each year from around the globe. The Horseshoe Falls, named for its distinctive shape, is the largest of the three falls and straddles the border between Canada and the United States. Visitors to Niagara Falls can experience the awe-inspiring sight of millions of gallons of water plunging over the cliffs each minute, creating a thunderous roar and mist that can be seen for miles.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact422.jpg" alt="Easter Island Statues" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Easter Island, also known as Rapa Nui, is a remote island located in the southeastern Pacific Ocean, famous for its enigmatic giant stone statues called Moai.</h1>
+                <p class="fact-text">The Moai were carved by the early Rapa Nui people between the 13th and 16th centuries and are believed to represent ancestors or powerful tribal chiefs. Standing as tall as 10 meters (33 feet) and weighing up to 80 tons, the Moai are a testament to the ingenuity and craftsmanship of the ancient Polynesian civilization. The precise methods used to transport and erect these massive statues remain a subject of debate among archaeologists and historians. Today, Easter Island is a UNESCO World Heritage Site and a place of intrigue and fascination for travelers and researchers alike.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact423.jpg" alt="Machu Picchu" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Machu Picchu is an ancient Incan citadel located high in the Andes Mountains of Peru, often referred to as the "Lost City of the Incas."</h1>
+                <p class="fact-text">Built in the 15th century and later abandoned, Machu Picchu remained hidden from the outside world until its rediscovery by American explorer Hiram Bingham in 1911. This remarkable archaeological site is renowned for its sophisticated dry-stone construction, stunning panoramic views, and mysterious aura. Machu Picchu is believed to have served as a royal estate or sacred religious site for the Inca civilization, although its exact purpose remains a topic of debate among scholars. Today, Machu Picchu is one of the most visited tourist attractions in South America and a UNESCO World Heritage Site, attracting thousands of travelers each year who come to marvel at its beauty and immerse themselves in its rich history.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact424.jpg" alt="Mount Kilimanjaro" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Mount Kilimanjaro is the highest mountain in Africa, towering over the surrounding plains of Tanzania and Kenya with its snow-capped peak.</h1>
+                <p class="fact-text">Rising to an elevation of 5,895 meters (19,341 feet) above sea level, Kilimanjaro is a dormant volcano and one of the most iconic natural landmarks on the African continent. Despite its formidable height, Kilimanjaro is a popular destination for trekkers and climbers of all skill levels, thanks to its accessible routes and stunning scenery. The mountain supports a diverse array of ecosystems, from lush rainforests teeming with wildlife to alpine deserts and glaciers near the summit. Climbing Kilimanjaro offers adventurers the chance to experience dramatic changes in climate and landscape as they ascend to the "Roof of Africa."</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact425.jpg" alt="Angkor Wat" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Angkor Wat is a sprawling temple complex located in Cambodia, considered the largest religious monument in the world and a masterpiece of Khmer architecture.</h1>
+                <p class="fact-text">Built in the early 12th century by the Khmer king Suryavarman II, Angkor Wat was originally dedicated to the Hindu god Vishnu and later transformed into a Buddhist temple. Its name translates to "City of Temples" or "Temple City" in Khmer, reflecting its immense scale and significance. Angkor Wat is renowned for its intricate bas-reliefs, towering spires, and vast moat, which symbolizes the cosmic ocean in Hindu mythology. Despite centuries of neglect and natural decay, Angkor Wat remains a symbol of Cambodia's cultural heritage and a source of pride for the Khmer people. It is a UNESCO World Heritage Site and one of the most visited tourist attractions in Southeast Asia.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact426.jpg" alt="Galápagos Islands" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Galápagos Islands are an archipelago of volcanic islands located in the Pacific Ocean, known for their unique biodiversity and role in Charles Darwin's theory of evolution.</h1>
+                <p class="fact-text">These remote islands are home to an incredible array of wildlife, including giant tortoises, marine iguanas, blue-footed boobies, and Galápagos penguins. The Galápagos served as a living laboratory for Darwin during his famous voyage on the HMS Beagle in the 1830s, providing crucial insights into the process of natural selection and adaptation. Today, the Galápagos Islands are a UNESCO World Heritage Site and a protected national park, attracting ecotourists and researchers from around the world who come to study its unique ecosystems and endemic species.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact427.jpg" alt="Antarctica" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Antarctica is the southernmost continent on Earth and the coldest, driest, and windiest place on the planet.</h1>
+                <p class="fact-text">Covered by ice sheets that are several kilometers thick, Antarctica is home to some of the most extreme environments and unique wildlife on Earth, including penguins, seals, and albatrosses. Despite its harsh conditions, Antarctica has captured the imagination of explorers, scientists, and adventurers for centuries. The first confirmed sighting of Antarctica is attributed to the Russian expedition led by Fabian Gottlieb von Bellingshausen and Mikhail Lazarev in 1820. Since then, Antarctica has been the focus of numerous scientific research expeditions aimed at studying its climate, geology, and ecosystems. While the continent has no permanent human inhabitants, it is governed by an international treaty system that promotes scientific research and environmental conservation.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact428.jpeg" alt="Great Barrier Reef" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Great Barrier Reef is the world's largest coral reef system, stretching over 2,300 kilometers (1,400 miles) along the northeast coast of Australia.</h1>
+                <p class="fact-text">Comprising thousands of individual reefs and islands, the Great Barrier Reef is a UNESCO World Heritage Site and one of the most biodiverse ecosystems on the planet. It is home to a staggering variety of marine life, including colorful coral reefs, tropical fish, sea turtles, sharks, and rays. The reef supports a thriving tourism industry, offering visitors the opportunity to snorkel, dive, and explore its vibrant underwater world. However, the Great Barrier Reef faces numerous threats, including climate change, coral bleaching, pollution, and overfishing, which jeopardize its long-term health and sustainability.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact429.jpg" alt="Amazon Rainforest" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Amazon Rainforest is the largest tropical rainforest in the world, covering an area of approximately 5.5 million square kilometers (2.1 million square miles) across nine countries in South America.</h1>
+                <p class="fact-text">Home to an estimated 10% of the world's known biodiversity, the Amazon Rainforest is a critical ecosystem that plays a vital role in regulating the Earth's climate and water cycle. It is also home to numerous indigenous communities that have lived in harmony with the forest for thousands of years. Despite its ecological significance, the Amazon Rainforest faces threats from deforestation, agricultural expansion, mining, and climate change, putting its biodiversity and the well-being of indigenous peoples at risk. Efforts to conserve and protect the Amazon are ongoing, but urgent action is needed to safeguard this irreplaceable natural treasure for future generations.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact430.jpg" alt="Grand Canyon" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Grand Canyon is a vast and awe-inspiring gorge carved by the Colorado River in the state of Arizona, United States.</h1>
+                <p class="fact-text">Measuring approximately 446 kilometers (277 miles) in length, up to 29 kilometers (18 miles) in width, and over 1,800 meters (6,000 feet) in depth, the Grand Canyon is one of the most iconic natural landmarks in the world. Its sheer size, intricate rock formations, and stunning vistas draw millions of visitors each year, making it one of the most popular tourist destinations in the United States. The Grand Canyon is also a UNESCO World Heritage Site and a testament to the power of geological forces over millions of years. Visitors to the canyon can enjoy a variety of outdoor activities, including hiking, rafting, and scenic drives along the rim.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact431.jpg" alt="Victoria Falls" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Victoria Falls is a spectacular waterfall located on the Zambezi River, straddling the border between Zambia and Zimbabwe in southern Africa.</h1>
+                <p class="fact-text">With a width of over 1,700 meters (5,600 feet) and a height of more than 100 meters (330 feet), Victoria Falls is one of the largest and most famous waterfalls in the world. Known locally as "Mosi-oa-Tunya," or "The Smoke That Thunders," Victoria Falls is renowned for the deafening roar of its cascading waters and the towering column of mist that can be seen from miles away. The falls are surrounded by lush rainforest and are part of a UNESCO World Heritage Site that includes the Victoria Falls National Park. Visitors to Victoria Falls can enjoy a range of activities, including guided tours, scenic flights, and adrenaline-pumping adventures such as bungee jumping and white-water rafting.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact432.jpg" alt="Taj Mahal" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Taj Mahal is an iconic white marble mausoleum located in Agra, India, built by the Mughal emperor Shah Jahan in memory of his beloved wife, Mumtaz Mahal.</h1>
+                <p class="fact-text">Completed in 1653, the Taj Mahal is considered one of the most beautiful buildings in the world and a masterpiece of Mughal architecture. Its symmetrical design, intricate marble inlay work, and ornate domes and minarets make it a symbol of enduring love and a UNESCO World Heritage Site. The Taj Mahal attracts millions of visitors each year who come to admire its timeless beauty and learn about its rich history. In addition to its architectural significance, the Taj Mahal is also a symbol of India's cultural heritage and a source of national pride.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact433.jpg" alt="Pyramids of Giza" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Pyramids of Giza are ancient Egyptian monuments located on the outskirts of Cairo, Egypt, consisting of three main pyramids, as well as several smaller pyramids, temples, and tombs.</h1>
+                <p class="fact-text">Built over 4,500 years ago during the Fourth Dynasty of the Old Kingdom, the Great Pyramid of Giza is the largest and most famous of the three pyramids, originally standing at a height of 146.6 meters (481 feet). The other two pyramids, known as the Pyramid of Khafre and the Pyramid of Menkaure, are slightly smaller but equally impressive. The Pyramids of Giza are believed to have served as royal tombs for the pharaohs Khufu, Khafre, and Menkaure, although much about their construction and purpose remains shrouded in mystery. Despite millennia of erosion and human activity, the pyramids continue to inspire awe and wonder, attracting visitors from around the world who come to marvel at their monumental scale and historical significance.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact434.jpg" alt="Mount Everest" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Mount Everest is the highest mountain in the world, with its peak reaching an elevation of 8,848.86 meters (29,031.7 feet) above sea level.</h1>
+                <p class="fact-text">Located in the Himalayas on the border between Nepal and the Tibet Autonomous Region of China, Mount Everest has long captivated the imagination of adventurers and mountaineers seeking to conquer its summit. The first successful ascent of Everest was achieved by Sir Edmund Hillary of New Zealand and Tenzing Norgay, a Sherpa of Nepal, on May 29, 1953. Since then, thousands of climbers have attempted to reach the summit, with varying degrees of success and risk. Despite its extreme altitude and treacherous conditions, Mount Everest continues to be a symbol of human perseverance and the ultimate challenge for those who dare to climb it.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact435.jpg" alt="Antarctica" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Covered by ice sheets that are several kilometers thick, Antarctica is home to some of the most extreme environments and unique wildlife on Earth, including penguins, seals, and albatrosses.</h1>
+                <p class="fact-text">Despite its harsh conditions, Antarctica has captured the imagination of explorers, scientists, and adventurers for centuries. The first confirmed sighting of Antarctica is attributed to the Russian expedition led by Fabian Gottlieb von Bellingshausen and Mikhail Lazarev in 1820. Since then, Antarctica has been the focus of numerous scientific research expeditions aimed at studying its climate, geology, and ecosystems. While the continent has no permanent human inhabitants, it is governed by an international treaty system that promotes scientific research and environmental conservation.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact436.jpg" alt="Niagara Falls" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Niagara Falls is a group of three waterfalls located on the border between the United States and Canada, comprising the American Falls, the Horseshoe Falls, and the Bridal Veil Falls.</h1>
+                <p class="fact-text">With a combined average flow rate of over 85,000 cubic feet per second, Niagara Falls is one of the most powerful waterfall systems in the world. The Horseshoe Falls, which straddle the border between Canada and the United States, are the most voluminous and visually striking of the three falls, with water plunging over a height of more than 50 meters (167 feet). Niagara Falls has long been a popular tourist destination, attracting millions of visitors each year who come to witness its natural beauty and experience the thrill of boat tours, observation decks, and other attractions.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact437.jpg" alt="Mount Kilimanjaro" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Mount Kilimanjaro is the highest mountain in Africa, rising to an elevation of 5,895 meters (19,341 feet) above sea level.</h1>
+                <p class="fact-text">Located in Tanzania, Mount Kilimanjaro is a dormant volcano and one of the world's most iconic natural landmarks. Its snow-capped peak dominates the surrounding landscape and attracts thousands of climbers and trekkers each year. Despite its impressive height, Mount Kilimanjaro is accessible to hikers of varying skill levels, with several different routes leading to the summit. The most popular route, the Marangu Route, is often referred to as the "Coca-Cola Route" due to its relative comfort and amenities. Climbing Mount Kilimanjaro offers adventurers the opportunity to experience diverse ecosystems, from lush rainforests to alpine deserts, and to witness breathtaking panoramic views from the roof of Africa.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact438.jpg" alt="Machu Picchu" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Machu Picchu is an ancient Inca citadel located in the Andes Mountains of Peru, situated at an altitude of approximately 2,430 meters (7,970 feet) above sea level.</h1>
+                <p class="fact-text">Built in the 15th century during the reign of the Inca emperor Pachacuti, Machu Picchu is renowned for its sophisticated dry-stone construction and stunning mountain setting. The site was abandoned following the Spanish conquest of the Inca Empire in the 16th century and remained hidden from the outside world until its rediscovery by American historian Hiram Bingham in 1911. Today, Machu Picchu is one of the most famous archaeological sites in the world and a UNESCO World Heritage Site. It attracts millions of visitors each year who come to marvel at its well-preserved ruins, intricate terraces, and panoramic views of the surrounding mountains.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact439.jpg" alt="Petra" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Petra is an ancient city carved into the sandstone cliffs of southern Jordan, known for its stunning rock-cut architecture and archaeological significance.</h1>
+                <p class="fact-text">Founded as the capital of the Nabataean Kingdom around the 6th century BCE, Petra flourished as a major trade hub and caravan city along ancient trade routes linking Arabia, Egypt, and the Mediterranean. The city's most famous monument is Al-Khazneh, or the Treasury, a magnificent temple facade carved into the cliff face. Other notable attractions include the Monastery, the Royal Tombs, and the Siq, a narrow canyon that serves as the main entrance to the city. Petra was rediscovered by the Western world in the early 19th century and has since become one of Jordan's most visited tourist destinations and a UNESCO World Heritage Site.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact440.jpg" alt="Angkor Wat" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Angkor Wat is a vast temple complex located in Cambodia, built by the Khmer Empire in the early 12th century as a Hindu temple dedicated to the god Vishnu, and later transformed into a Buddhist temple.</h1>
+                <p class="fact-text">Covering an area of over 162 hectares (400 acres), Angkor Wat is one of the largest religious monuments in the world and a masterpiece of Khmer architecture. Its intricate carvings, towering spires, and expansive moat make it a symbol of Cambodia's cultural heritage and a UNESCO World Heritage Site. Angkor Wat is the centerpiece of the larger Angkor Archaeological Park, which contains dozens of other temples, shrines, and ancient structures dating from the 9th to the 15th centuries. Despite centuries of neglect and the ravages of time, Angkor Wat continues to inspire awe and wonder in visitors from around the world, attracting millions of tourists each year.</p>
+            </div>
+        </div>
+    </article>
+    
+    <!--Footer content-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-wrapper">
+                <div class="footer-widget">
+                    <a href="#">
+                        <img src="#" class="logo" alt="logo of Factbook"/>
+                    </a>
+                    <div class="address-contact">
+                        Address:NIT Raipur,<br> Raipur, Chhattisgarh 492010<br>
+                        Phone: 123-456-7890<br>
+                        Email: info@example.com
+                    </div>
+                </div>
+                <div class="footer-widget">
+                    <h6>Menu</h6>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="facts.html">Facts</a></li>
+                        <li><a href="aboutUs.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Help &amp; Support</h6>
+                    <ul class="links">
+                        <li><a href="contactUs.html">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms &amp; Conditionns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Social Media Links</h6>
+                    <ul class="socials">
+                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright-wrapper">
+                <p>Desing and Developed by
+                    <a href="#" terget="blank">FactBook</a>
+                </p>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./login.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactBook</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="facts.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="header-overlay"></div>
+        <div class="header-content">
+
+            <div class="logo">
+                <div class="logo-circle">
+                    <img src="logo.png" alt="Logo">
+                </div>
+            </div>
+
+            <div class="user-options">
+                <a href="#" class="btn" id="loginBtn">Log In</a>
+                <a href="#" class="btn" id="registerBtn">Sign Up</a>
+            </div>
+            
+        </div>
+
+        <p class="quote">"Fact that Educate, Inspire and Amaze"</p>
+        
+    </header>
+
+    <div class="navigation-menu"> 
+        <ul class="menu">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li class="active"><a href="facts.html"><i class="fas fa-info-circle"></i> Facts</a></li>
+            <li><a href="aboutUs.html"><i class="fas fa-users"></i> About Us</a></li>
+            <li><a href="contactUs.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="wrapper" id="popupWrapper">
+        <div class="popup-content">
+            <span class="icon-close" id="closePopup">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form id="loginForm" action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Remember me </label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="form-box register">
+                <h2>Sign Up</h2>
+                <form id="registerForm" action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" id="username" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="regEmail" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="regPassword" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox" required>I agree to the terms & conditions </label>
+                    </div>
+                    <button type="submit" class="btn">Sign up</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!--Facts content -->
+    <article class="fact-card">
+        <div class="fact-content">
+            <p class="heading">Fascinating Revelations to Amaze You – Embark on a Journey of Discovery!</p>
+            <img src="./Image/Facts/fact321.jpg" alt="The Great Wall of China" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Pacific Ring of Fire is a horseshoe-shaped area around the edges of the Pacific Ocean where a large number of earthquakes and volcanic eruptions occur.</h1>
+                <p class="fact-text">It is home to approximately 75% of the world's active and dormant volcanoes and experiences about 90% of the world's earthquakes. The Ring of Fire is the result of tectonic plate movements, where the Pacific Plate collides with and is subducted beneath other plates, leading to seismic activity and volcanic eruptions. This region is highly significant for its geological activity, shaping landscapes and impacting human settlements along its perimeter. The Ring of Fire is closely monitored by scientists for its potential to generate tsunamis, earthquakes, and volcanic eruptions that can have devastating consequences for nearby communities and ecosystems.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact322.jpg" alt="The Dead Sea" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Dead Sea, bordered by Jordan to the east and Israel and Palestine to the west, is one of the saltiest bodies of water in the world.</h1>
+                <p class="fact-text">It has a salinity level of around 34%, which is about 10 times saltier than the ocean. Due to its high salinity, the Dead Sea is unable to support marine life, but its mineral-rich waters and mud are believed to have therapeutic properties and attract visitors from around the world for health and wellness purposes. The unique properties of the Dead Sea have made it a natural wonder and a site of interest for both scientific research and tourism. Its shores are lined with resorts and spas that offer treatments utilizing its mineral-rich waters and mud, drawing visitors seeking relief from various skin conditions and ailments.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact323.jpg" alt="The Grand Canyon" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Grand Canyon, located in Arizona, USA, is a steep-sided canyon carved by the Colorado River over millions of years.</h1>
+                <p class="fact-text">It is one of the most spectacular natural landmarks in the world, with rock formations and layers that reveal the Earth's geological history. The Grand Canyon is over 446 kilometers (277 miles) long, up to 29 kilometers (18 miles) wide, and reaches depths of over 1,800 meters (6,000 feet). Its formation is a testament to the power of erosion, with the Colorado River slowly carving through layers of rock to create this breathtaking landscape. The Grand Canyon attracts millions of visitors each year who come to hike its trails, admire its panoramic views, and learn about its geology and Native American history through guided tours and interpretive exhibits.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact324.jpg" alt="The Sahara Desert" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Sahara Desert was not always a desert; it experienced periods of lush vegetation and even hosted ancient civilizations.</h1>
+                <p class="fact-text">Geological evidence suggests that the Sahara was once a fertile region with rivers, lakes, and grasslands, but changes in the Earth's orbit and axial tilt led to climate shifts, causing the area to become increasingly arid over time. Archaeological sites such as the Egyptian pyramids and rock art in the Sahara testify to its rich human history. The transformation of the Sahara highlights the dynamic nature of Earth's climate and the impact of environmental changes on ecosystems and civilizations. Today, the Sahara is undergoing further changes due to factors such as desertification, climate change, and human activities, posing challenges for the people and wildlife that call this vast desert home.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact325.jpg" alt="Lake Baikal" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Lake Baikal in Siberia, Russia, is the world's deepest and oldest freshwater lake, reaching depths of over 1,600 meters (5,300 feet) and estimated to be around 25 million years old.</h1>
+                <p class="fact-text">It contains approximately 20% of the world's unfrozen freshwater, making it one of the largest reservoirs of freshwater on the planet. Lake Baikal is also home to a unique ecosystem, with thousands of plant and animal species, two-thirds of which are found nowhere else in the world. Its ancient origins and pristine waters make it a hotspot for scientific research and ecotourism, attracting visitors eager to explore its natural beauty and biodiversity. Lake Baikal is considered one of the clearest and purest bodies of water in the world, with visibility reaching up to 40 meters (130 feet) in some areas, making it ideal for diving, snorkeling, and observing its diverse aquatic life.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact326.jpeg" alt="The Great Wall of China" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Great Wall of China is the longest wall in the world, stretching over 21,000 kilometers (13,000 miles) across northern China.</h1>
+                <p class="fact-text">It was built over several centuries to protect China from invasions and raids by nomadic groups from the north. Contrary to popular belief, the Great Wall is not a single continuous structure but a series of walls, fortifications, and natural barriers built and rebuilt by various Chinese dynasties. The Great Wall symbolizes China's rich history and engineering prowess, attracting millions of visitors each year to marvel at its ancient architecture and strategic significance. In addition to its defensive function, the Great Wall has also served as a cultural and economic corridor, facilitating trade, communication, and the exchange of ideas between China and its neighboring regions.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact327.jpg" alt="The Galápagos Islands" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Galápagos Islands, located in the Pacific Ocean off the coast of Ecuador, played a crucial role in Charles Darwin's theory of evolution by natural selection.</h1>
+                <p class="fact-text">The unique and diverse species found on the islands, including giant tortoises, marine iguanas, and finches, inspired Darwin's observations and insights into how species adapt to their environments over time. Today, the Galápagos Islands are a UNESCO World Heritage Site and a living laboratory for scientific research and conservation. They serve as a reminder of the interconnectedness of life on Earth and the importance of preserving biodiversity for future generations. The Galápagos Islands are protected by the Ecuadorian government, with strict regulations in place to minimize human impact and preserve the islands' fragile ecosystems. Visitors to the Galápagos must adhere to guidelines designed to minimize their ecological footprint and ensure the long-term sustainability of this unique archipelago.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact328.jpg" alt="The Gobi Desert" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Gobi Desert, spanning northern China and southern Mongolia, is one of the world's largest and driest deserts.</h1>
+                <p class="fact-text">Despite its arid conditions, the Gobi Desert supports a variety of plant and animal species adapted to its harsh environment, including the Bactrian camel and the elusive snow leopard. The Gobi is also rich in dinosaur fossils and has yielded significant discoveries that contribute to our understanding of prehistoric life. In addition to its scientific value, the Gobi Desert is of cultural significance to the people of Mongolia and China, who have lived in and traversed its vast expanse for centuries. The Gobi's unique landscapes and ecosystems attract adventurers, researchers, and tourists seeking to explore its remote wilderness and learn about its natural and cultural heritage.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact329.jpg" alt="The Himalayas" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Himalayas, located in Asia, are the highest and youngest mountain range in the world, formed by the collision of the Indian and Eurasian tectonic plates.</h1>
+                <p class="fact-text">The Himalayas are home to the world's highest peaks, including Mount Everest and K2, as well as diverse ecosystems ranging from subtropical forests to alpine meadows. They also have cultural significance as sacred sites in Hinduism, Buddhism, and other religions, attracting pilgrims and adventurers from around the world. The Himalayas are of vital importance to the region's water resources, serving as the source of major rivers such as the Ganges, Indus, and Brahmaputra, which sustain millions of people in South Asia. However, the Himalayas are increasingly vulnerable to climate change, with rising temperatures leading to glacial retreat, changes in precipitation patterns, and increased risks of natural disasters such as floods and landslides.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact330.jpg" alt="The Atacama Desert" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Atacama Desert in Chile is one of the driest places on Earth, with some areas receiving less than 1 millimeter of rainfall per year.</h1>
+                <p class="fact-text">Despite its extreme aridity, the Atacama Desert is home to unique flora and fauna adapted to its harsh conditions, including cacti, lizards, and flamingos. The desert's high altitude and clear skies also make it an ideal location for astronomical observatories, with scientists studying the universe from its remote and pristine environment. The Atacama Desert is a popular destination for adventure tourism, attracting visitors eager to explore its otherworldly landscapes, salt flats, and geothermal features.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact331.jpg" alt="The Appalachian Mountains" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Appalachian Mountains stretch over 2,400 kilometers (1,500 miles) along the eastern United States, from Alabama in the south to Newfoundland and Labrador in Canada.</h1>
+                <p class="fact-text">They are one of the oldest mountain ranges in the world, formed over 480 million years ago during the assembly of the supercontinent Pangaea. The Appalachian Mountains are known for their rich biodiversity, with diverse ecosystems ranging from hardwood forests to alpine meadows. The region is also culturally significant, with a rich history of Native American settlements, European colonization, and the development of industries such as coal mining and logging.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact332.jpg" alt="The Danube River" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Danube River is the second-longest river in Europe, flowing over 2,850 kilometers (1,770 miles) through ten countries, including Germany, Austria, Hungary, and Romania.</h1>
+                <p class="fact-text">It is one of the continent's major waterways, serving as a vital transportation route, source of freshwater, and habitat for diverse aquatic species. The Danube River has played a significant role in the history, culture, and economy of the region, with cities such as Vienna, Budapest, and Belgrade located along its banks. The river basin is also home to numerous UNESCO World Heritage Sites, including historic towns, castles, and natural reserves.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact333.jpg" alt="The Great Victoria Desert" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Great Victoria Desert is the largest desert in Australia, covering an area of approximately 348,750 square kilometers (134,650 square miles) in Western Australia and South Australia.</h1>
+                <p class="fact-text">It is characterized by its sandy plains, dunes, and salt lakes, with sparse vegetation adapted to its arid conditions. The Great Victoria Desert is home to unique wildlife, including marsupials such as the red kangaroo and the bilby, as well as reptiles, birds, and insects. Despite its harsh environment, Aboriginal groups have inhabited the desert for thousands of years, relying on traditional knowledge and sustainable practices to survive in this challenging landscape.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact334.jpg" alt="The Andaman and Nicobar Islands" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Andaman and Nicobar Islands are a group of islands in the Indian Ocean, located between the Bay of Bengal and the Andaman Sea.</h1>
+                <p class="fact-text">They are known for their stunning beaches, coral reefs, and lush rainforests, making them a popular destination for ecotourism and adventure activities such as scuba diving and snorkeling. The Andaman and Nicobar Islands are also home to indigenous tribes, including the Sentinelese and the Jarawa, who have lived in relative isolation for thousands of years. These tribes are protected by laws that restrict access to their territories in order to preserve their cultures and prevent outside influences.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact335.jpg" alt="The Alps" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Alps are the highest and most extensive mountain range system in Europe, stretching approximately 1,200 kilometers (750 miles) across eight countries, including France, Switzerland, Italy, and Austria.</h1>
+                <p class="fact-text">They are a popular destination for outdoor recreation, offering activities such as skiing, hiking, and mountaineering. The Alps are also home to diverse ecosystems, with alpine meadows, forests, and glaciers supporting a variety of plant and animal species. The region is culturally rich, with distinct languages, cuisines, and traditions found in each Alpine country. The Alps are a symbol of natural beauty and wilderness, attracting millions of visitors each year to explore their majestic peaks and picturesque landscapes.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact336.jpg" alt="The Okavango Delta" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Okavango Delta in Botswana is the largest inland delta in the world, covering an area of over 15,000 square kilometers (5,800 square miles).</h1>
+                <p class="fact-text">It is formed by seasonal flooding from the Okavango River, which fans out into a network of channels, lagoons, and islands, creating a unique and biodiverse ecosystem. The Okavango Delta is home to a wealth of wildlife, including elephants, hippos, crocodiles, and a variety of bird species. It is a UNESCO World Heritage Site and a popular safari destination, offering visitors the opportunity to explore its pristine wilderness and observe its rich wildlife up close.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact337.jpg" alt="The Taiga" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Taiga, also known as the boreal forest, is the world's largest biome, covering vast areas of Canada, Russia, and Scandinavia.</h1>
+                <p class="fact-text">It is characterized by its cold climate, coniferous trees, and acidic soils, adapted to long winters and short summers. The Taiga is home to diverse wildlife, including moose, wolves, bears, and migratory birds. It also plays a crucial role in the global carbon cycle, storing vast amounts of carbon in its vegetation and soils. The Taiga is facing threats from deforestation, industrial development, and climate change, which can disrupt its delicate balance and impact both local communities and the global environment.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact338.jpg" alt="The Amazon Rainforest" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Amazon Rainforest, also known as the Amazon Jungle, is the largest tropical rainforest in the world, spanning nine countries in South America.</h1>
+                <p class="fact-text">It covers an area of over 6.7 million square kilometers (2.7 million square miles) and is home to the greatest biodiversity on Earth, with millions of species of plants, animals, and microorganisms. The Amazon plays a vital role in regulating the planet's climate, producing oxygen, and storing carbon dioxide, helping to mitigate climate change on a global scale. However, the Amazon Rainforest is facing threats from deforestation, agriculture, mining, and climate change, endangering its rich ecosystems and indigenous communities who depend on its resources for their livelihoods.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact339.jpg" alt="The Nile River" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Nile River is the longest river in the world, stretching over 6,650 kilometers (4,130 miles) through eleven countries in northeastern Africa.</h1>
+                <p class="fact-text">It has played a crucial role in the development of ancient civilizations, including the Egyptian civilization, providing water for agriculture, transportation, and trade. The Nile River is the lifeblood of Egypt, supporting the country's population and economy through its fertile floodplains and delta. Today, the Nile remains a vital resource for millions of people in the region, but it is facing challenges such as pollution, overuse of water resources, and the impacts of climate change, threatening its sustainability and the livelihoods of those who depend on it.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact340.jpg" alt="The Great Barrier Reef" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Great Barrier Reef, located off the coast of Queensland, Australia, is the world's largest coral reef system, stretching over 2,300 kilometers (1,400 miles).</h1>
+                <p class="fact-text">It is composed of thousands of individual reefs and islands, home to a diverse array of marine life, including corals, fish, sharks, turtles, and dolphins. The Great Barrier Reef is a UNESCO World Heritage Site and a global biodiversity hotspot, supporting ecosystems that are essential for the health of the oceans and the planet. However, the reef is under threat from climate change, pollution, overfishing, and coastal development, leading to coral bleaching, habitat loss, and declines in marine biodiversity. Efforts are underway to protect and restore the Great Barrier Reef, but urgent action is needed to ensure its long-term survival.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact341.jpeg" alt="The Sahara Desert" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Sahara Desert is the largest hot desert in the world, covering most of North Africa and spanning over 9.2 million square kilometers (3.6 million square miles).</h1>
+                <p class="fact-text">It is characterized by its vast sand dunes, rocky plateaus, and occasional oasis, with extreme temperatures and arid conditions. Despite its harsh environment, the Sahara is home to a variety of desert-adapted plants and animals, including camels, fennec foxes, and acacia trees. The Sahara has a rich cultural history, with ancient civilizations such as the Egyptians and Berbers leaving behind archaeological sites and cultural landmarks. Today, the Sahara faces challenges such as desertification, climate change, and conflicts over water resources, impacting both the environment and the people who live in this inhospitable landscape.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact342.jpg" alt="The Yangtze River" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Yangtze River, also known as the Chang Jiang, is the longest river in Asia and the third-longest river in the world, stretching over 6,300 kilometers (3,900 miles) through China.</h1>
+                <p class="fact-text">It plays a crucial role in China's history, culture, and economy, serving as a transportation route, source of water for irrigation, and habitat for diverse aquatic species. The Yangtze River is home to the critically endangered Yangtze River dolphin, also known as the baiji, as well as other species such as the Chinese alligator and the Yangtze sturgeon. However, the river faces threats from pollution, overfishing, habitat destruction, and the impacts of dams and infrastructure development, endangering its ecosystems and the communities that rely on it for their livelihoods.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact343.jpg" alt="The Serengeti" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Serengeti is a vast ecosystem in East Africa, spanning northern Tanzania and southwestern Kenya, famous for its annual migration of wildebeest, zebras, and other grazing animals.</h1>
+                <p class="fact-text">The Serengeti is home to some of the largest mammal populations in the world, including the "Big Five" (lion, elephant, buffalo, leopard, and rhinoceros), as well as cheetahs, giraffes, and hyenas. It is a UNESCO World Heritage Site and a popular destination for safari tourism, offering visitors the opportunity to witness one of the most spectacular wildlife events on the planet. The Serengeti faces threats from habitat loss, poaching, climate change, and human-wildlife conflicts, highlighting the need for conservation efforts to protect this iconic landscape and its diverse wildlife.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact344.jpg" alt="The Sahara Desert" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Sahara Desert was not always a desert; it experienced periods of lush vegetation and even hosted ancient civilizations.</h1>
+                <p class="fact-text">Geological evidence suggests that the Sahara was once a fertile region with rivers, lakes, and grasslands, but changes in the Earth's orbit and axial tilt led to climate shifts, causing the area to become increasingly aridover time. Archaeological sites such as the Egyptian pyramids and rock art in the Sahara testify to its rich human history. The transformation of the Sahara highlights the dynamic nature of Earth's climate and the impact of environmental changes on ecosystems and civilizations. Today, the Sahara is undergoing further changes due to factors such as desertification, climate change, and human activities, posing challenges for the people and wildlife that call this vast desert home.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact345.jpg" alt="Lake Baikal" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Lake Baikal in Siberia, Russia, is the world's deepest and oldest freshwater lake, reaching depths of over 1,600 meters (5,300 feet) and estimated to be around 25 million years old.</h1>
+                <p class="fact-text">It contains approximately 20% of the world's unfrozen freshwater, making it one of the largest reservoirs of freshwater on the planet. Lake Baikal is also home to a unique ecosystem, with thousands of plant and animal species, two-thirds of which are found nowhere else in the world. Its ancient origins and pristine waters make it a hotspot for scientific research and ecotourism, attracting visitors eager to explore its natural beauty and biodiversity. Lake Baikal is considered one of the clearest and purest bodies of water in the world, with visibility reaching up to 40 meters (130 feet) in some areas, making it ideal for diving, snorkeling, and observing its diverse aquatic life.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact346.jpg" alt="The Great Wall of China" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Great Wall of China is the longest wall in the world, stretching over 21,000 kilometers (13,000 miles) across northern China.</h1>
+                <p class="fact-text">It was built over several centuries to protect China from invasions and raids by nomadic groups from the north. Contrary to popular belief, the Great Wall is not a single continuous structure but a series of walls, fortifications, and natural barriers built and rebuilt by various Chinese dynasties. The Great Wall symbolizes China's rich history and engineering prowess, attracting millions of visitors each year to marvel at its ancient architecture and strategic significance. In addition to its defensive function, the Great Wall has also served as a cultural and economic corridor, facilitating trade, communication, and the exchange of ideas between China and its neighboring regions.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact347.jpg" alt="The Galápagos Islands" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Galápagos Islands, located in the Pacific Ocean off the coast of Ecuador, played a crucial role in Charles Darwin's theory of evolution by natural selection.</h1>
+                <p class="fact-text">The unique and diverse species found on the islands, including giant tortoises, marine iguanas, and finches, inspired Darwin's observations and insights into how species adapt to their environments over time. Today, the Galápagos Islands are a UNESCO World Heritage Site and a living laboratory for scientific research and conservation. They serve as a reminder of the interconnectedness of life on Earth and the importance of preserving biodiversity for future generations. The Galápagos Islands are protected by the Ecuadorian government, with strict regulations in place to minimize human impact and preserve the islands' fragile ecosystems. Visitors to the Galápagos must adhere to guidelines designed to minimize their ecological footprint and ensure the long-term sustainability of this unique archipelago.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact348.jpg" alt="The Gobi Desert" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Gobi Desert, spanning northern China and southern Mongolia, is one of the world's largest and driest deserts.</h1>
+                <p class="fact-text">Despite its arid conditions, the Gobi Desert supports a variety of plant and animal species adapted to its harsh environment, including the Bactrian camel and the elusive snow leopard. The Gobi is also rich in dinosaur fossils and has yielded significant discoveries that contribute to our understanding of prehistoric life. In addition to its scientific value, the Gobi Desert is of cultural significance to the people of Mongolia and China, who have lived in and traversed its vast expanse for centuries. The Gobi's unique landscapes and ecosystems attract adventurers, researchers, and tourists seeking to explore its remote wilderness and learn about its natural and cultural heritage.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact349.jpeg" alt="The Himalayas" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Himalayas, located in Asia, are the highest and youngest mountain range in the world, formed by the collision of the Indian and Eurasian tectonic plates.</h1>
+                <p class="fact-text">The Himalayas are home to the world's highest peaks, including Mount Everest and K2, as well as diverse ecosystems ranging from subtropical forests to alpine meadows. They also have cultural significance as sacred sites in Hinduism, Buddhism, and other religions, attracting pilgrims and adventurers from around the world. The Himalayas are of vital importance to the region's water resources, serving as the source of major rivers such as the Ganges, Indus, and Brahmaputra, which sustain millions of people in South Asia. However, the Himalayas are increasingly vulnerable to climate change, with rising temperatures leading to glacial retreat, changes in precipitation patterns, and increased risks of natural disasters such as floods and landslides.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact350.jpg" alt="The Atacama Desert" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Atacama Desert in Chile is one of the driest places on Earth, with some areas receiving less than 1 millimeter of rainfall per year.</h1>
+                <p class="fact-text">Despite its extreme aridity, the Atacama Desert is home to unique flora and fauna adapted to its harsh conditions, including cacti, lizards, and flamingos. The desert's high altitude and clear skies also make it an ideal location for astronomical observatories, with scientists studying the universe from its remote and pristine environment. The Atacama Desert is a popular destination for adventure tourism, attracting visitors eager to explore its otherworldly landscapes, salt flats, and geothermal features.</p>
+            </div>
+        </div>
+    </article>
+    
+    <!--Footer content-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-wrapper">
+                <div class="footer-widget">
+                    <a href="#">
+                        <img src="#" class="logo" alt="logo of Factbook"/>
+                    </a>
+                    <div class="address-contact">
+                        Address:NIT Raipur,<br> Raipur, Chhattisgarh 492010<br>
+                        Phone: 123-456-7890<br>
+                        Email: info@example.com
+                    </div>
+                </div>
+                <div class="footer-widget">
+                    <h6>Menu</h6>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="facts.html">Facts</a></li>
+                        <li><a href="aboutUs.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Help &amp; Support</h6>
+                    <ul class="links">
+                        <li><a href="contactUs.html">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms &amp; Conditionns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Social Media Links</h6>
+                    <ul class="socials">
+                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright-wrapper">
+                <p>Desing and Developed by
+                    <a href="#" terget="blank">FactBook</a>
+                </p>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./login.js"></script>
+
+</body>
+</html>

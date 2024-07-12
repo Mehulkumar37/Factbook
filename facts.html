@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactBook</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="facts.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="header-overlay"></div>
+        <div class="header-content">
+
+            <div class="logo">
+                <div class="logo-circle">
+                    <img src="logo.png" alt="Logo">
+                </div>
+            </div>
+
+            <div class="user-options">
+                <a href="#" class="btn" id="loginBtn">Log In</a>
+                <a href="#" class="btn" id="registerBtn">Sign Up</a>
+            </div>
+            
+        </div>
+
+        <p class="quote">"Fact that Educate, Inspire and Amaze"</p>
+        
+    </header>
+
+    <div class="navigation-menu"> 
+        <ul class="menu">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li class="active"><a href="facts.html"><i class="fas fa-info-circle"></i> Facts</a></li>
+            <li><a href="aboutUs.html"><i class="fas fa-users"></i> About Us</a></li>
+            <li><a href="contactUs.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="wrapper" id="popupWrapper">
+        <div class="popup-content">
+            <span class="icon-close" id="closePopup">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form id="loginForm" action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Remember me </label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="form-box register">
+                <h2>Sign Up</h2>
+                <form id="registerForm" action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" id="username" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="regEmail" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="regPassword" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox" required>I agree to the terms & conditions </label>
+                    </div>
+                    <button type="submit" class="btn">Sign up</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!--Facts content -->
+    
+    <article class="fact-card">
+        <p class="heading">  Random fun facts that will blow your mind</p>
+        <div class="fact-content">
+            <img src="./Image/Facts/fact1.jpg" alt="Space" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The universe is expanding constantly</h1>
+                <p class="fact-text">Scientists have observed that galaxies are moving away from each other in all directions, indicating that the universe is expanding. This discovery, made in the 20th century, led to the formulation of the Big Bang theory, which suggests that the universe began from a hot, dense state approximately 13.8 billion years ago.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact2.jpg" alt="Wooden Wheel" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The world’s oldest wooden wheel has been around for more than 5,000 years</h1>
+                <p class="fact-text">It was found in 2002, approximately 12 miles south of Ljubljana, the capital of Slovenia, and is now housed in the city’s museum. Radiocarbon dating was used to determine the wheel’s age, which is somewhere between 5,100 and 5,350 years old. Closer to home, these are the oldest tourist attractions in every state.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact3.jpg" alt="Giraffe" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Giraffes have the same number of neck vertebrae as humans</h1>
+                <p class="fact-text">Despite their long necks, giraffes actually have the same number of neck vertebrae as humans, which is seven. However, each vertebra is much larger, measuring up to 10 inches long.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact4.jpg" alt="Solar System" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The solar system is about 4.6 billion years old</h1>
+                <p class="fact-text">The solar system, which includes the sun, planets, moons, asteroids, comets, and other celestial objects, formed approximately 4.6 billion years ago from the gravitational collapse of a giant molecular cloud. Our understanding of the solar system's age comes from various scientific methods, including radiometric dating of meteorites and analysis of the ages of the oldest rocks on Earth and the moon.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact5.jpg" alt="Honey Bee" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Honey bees can recognize human faces</h1>
+                <p class="fact-text">Honey bees have a remarkable ability to recognize and remember human faces. They can distinguish between different faces and remember them for several days. This skill helps them identify and return to familiar food sources, such as flowers in a garden.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact6.jpg" alt="Rainbow" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Rainbows are full circles, but we usually see only half</h1>
+                <p class="fact-text">When we see a rainbow, we are actually only seeing half of the circle. The other half is below the horizon. To see a full-circle rainbow, you would need to be viewing it from above, such as from an airplane or a tall building.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact7.jpg" alt="Library" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Library of Congress is the largest library in the world</h1>
+                <p class="fact-text">The Library of Congress, located in Washington, D.C., is the largest library in the world in terms of shelf space and number of volumes. It holds more than 170 million items, including books, manuscripts, maps, photographs, recordings, and sheet music.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact8.jpg" alt="Coffee" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Coffee is one of the most popular beverages in the world</h1>
+                <p class="fact-text">Coffee is consumed by millions of people around the world every day. It is one of the most traded commodities in the world, second only to oil. Coffee is grown in more than 70 countries, with Brazil being the largest producer.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact9.jpg" alt="Octopus" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Octopuses have three hearts</h1>
+                <p class="fact-text">Octopuses have three hearts: two branchial hearts that pump blood to the gills and one systemic heart that pumps oxygenated blood to the rest of the body. This unique circulatory system helps them efficiently move blood and oxygen throughout their bodies.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact10.jpg" alt="Taj Mahal" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Taj Mahal changes color depending on the time of day</h1>
+                <p class="fact-text">The Taj Mahal, a stunning marble mausoleum in Agra, India, appears to change color throughout the day. It appears pinkish in the morning, white during the day, and golden in the moonlight. This color-changing phenomenon is due to the reflection of sunlight and the translucent qualities of the marble.</p>
+            </div>
+        </div>
+    </article>
+
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact11.jpg" alt="Pyramids" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Great Pyramid of Giza was originally covered in smooth, white limestone casing stones</h1>
+                <p class="fact-text">These casing stones reflected the sun's light, making the pyramid shine brightly. Over the centuries, these stones were removed, leaving the rough surface we see today.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact12.jpg" alt="DNA" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Every cell in the human body contains DNA</h1>
+                <p class="fact-text">DNA, or deoxyribonucleic acid, contains the genetic instructions for the development, functioning, growth, and reproduction of all known organisms. It is composed of two strands that coil around each other to form the famous double helix structure.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact13.jpg" alt="Lightning" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Lightning can strike the same place twice</h1>
+                <p class="fact-text">Contrary to popular belief, lightning can indeed strike the same place more than once. Tall structures such as skyscrapers and mountains are often struck repeatedly during a thunderstorm due to their height and prominence.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact14.jpg" alt="Redwoods" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The tallest trees in the world are redwoods</h1>
+                <p class="fact-text">Coastal redwoods, native to California and Oregon, are the tallest trees in the world, with some reaching heights of over 350 feet (107 meters). These magnificent trees can live for thousands of years and are among the oldest living organisms on Earth.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact15.jpg" alt="Volcano" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Hawaii is home to the world’s most active volcano</h1>
+                <p class="fact-text">Kilauea, located on the Big Island of Hawaii, has been erupting continuously since 1983. It is one of the most studied volcanoes in the world and has shaped the landscape of Hawaii over millions of years.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact16.jpg" alt="Cheetah" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Cheetahs can accelerate from 0 to 60 mph (97 km/h) in just a few seconds</h1>
+                <p class="fact-text">Cheetahs are the fastest land animals, capable of reaching speeds of up to 70 mph (113 km/h) in short bursts covering distances of up to 500 meters. Their incredible speed helps them catch their prey, primarily small to medium-sized ungulates.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact17.jpg" alt="Moon" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Moon is gradually moving away from Earth</h1>
+                <p class="fact-text">Due to tidal forces between the Earth and the Moon, the Moon is slowly drifting away from our planet at a rate of about 1.5 inches (3.78 cm) per year. This phenomenon is causing Earth's rotation to slow down slightly over time.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact18.jpg" alt="Turtles" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Some species of turtles can live for over 100 years</h1>
+                <p class="fact-text">Turtles are known for their longevity, with some species capable of living for well over a century. The oldest known turtle was a Seychelles giant tortoise named Jonathan, who lived to be 187 years old before passing away in 2021.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact19.jpg" alt="Antarctica" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Antarctica is the coldest, windiest, and driest continent on Earth</h1>
+                <p class="fact-text">Antarctica holds several records for extreme weather conditions. The lowest temperature ever recorded on Earth, -128.6°F (-89.2°C), was recorded at the Soviet Union's Vostok Station on July 21, 1983. Additionally, the continent experiences strong katabatic winds, with gusts reaching hurricane-force speeds.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact20.jpg" alt="Mount Everest" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Mount Everest is the tallest mountain in the world</h1>
+                <p class="fact-text">Mount Everest, located in the Himalayas on the border between Nepal and China, stands at 29,032 feet (8,849 meters) above sea level, making it the highest point on Earth. Despite its extreme altitude, it continues to attract climbers from around the world, with thousands attempting to reach its summit each year.</p>
+            </div>
+        </div>
+    </article>
+
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact21.jpg" alt="Oceans" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The oceans contain 99% of the Earth's living space</h1>
+                <p class="fact-text">Despite covering only about 71% of the Earth's surface, the oceans provide habitat for the vast majority of life on our planet. From the deepest trenches to the sunlit surface waters, marine ecosystems support an incredible diversity of organisms, from microscopic plankton to massive whales.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact22.jpg" alt="Elephants" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Elephants can communicate over long distances using infrasound</h1>
+                <p class="fact-text">Elephants produce low-frequency sounds, known as infrasound, that can travel over long distances through the ground and air. These infrasonic calls can be used to communicate with other elephants, locate distant herd members, and detect potential threats or resources.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact23.jpeg" alt="Eiffel Tower" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Eiffel Tower was originally intended to be a temporary structure</h1>
+                <p class="fact-text">Constructed for the 1889 Exposition Universelle (World's Fair) in Paris, the Eiffel Tower was initially criticized by some as an eyesore. However, it quickly became a beloved symbol of France and an iconic landmark in the city of Paris. Gustave Eiffel's design was intended to stand for only 20 years, but it remains standing to this day.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact24.jpg" alt="Platypus" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The platypus is one of the few venomous mammals</h1>
+                <p class="fact-text">Male platypuses have venomous spurs on their hind legs that they use to defend themselves during mating season. The venom is not usually lethal to humans but can cause severe pain and swelling. Female platypuses do not have venomous spurs.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact25.jpg" alt="Chameleons" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Chameleons change color to regulate their body temperature and communicate with other chameleons</h1>
+                <p class="fact-text">Contrary to popular belief, chameleons do not change color to match their surroundings for camouflage. Instead, they change color in response to temperature, light, and mood. They can also change color to communicate with other chameleons, establish territory, or attract a mate.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact26.jpg" alt="Machu Picchu" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Machu Picchu was built without the use of wheels or iron tools</h1>
+                <p class="fact-text">The Inca civilization constructed Machu Picchu, a magnificent ancient city located in the Andes Mountains of Peru, without the use of wheels or iron tools. The massive stone blocks used in its construction were transported and shaped using basic tools made of stone, wood, and bronze.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact27.jpg" alt="Jellyfish" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Jellyfish have been around for millions of years and have no brain, heart, or bones</h1>
+                <p class="fact-text">Despite their simple body structure, jellyfish are incredibly ancient creatures that have been swimming in Earth's oceans for at least 500 million years. They belong to a group of animals known as cnidarians, which also includes corals and sea anemones.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact28.jpg" alt="Monarch Butterfly" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Monarch butterflies migrate thousands of miles every year</h1>
+                <p class="fact-text">Monarch butterflies undertake one of the longest insect migrations in the world, traveling thousands of miles from Canada and the United States to central Mexico each year. This remarkable journey spans multiple generations, with each generation continuing the migration begun by its predecessors.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact29.jpg" alt="Leonardo da Vinci" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Leonardo da Vinci was ambidextrous and could write with both hands simultaneously</h1>
+                <p class="fact-text">Leonardo da Vinci, the Renaissance polymath known for his art, science, and inventions, possessed a rare ability to write with both hands at the same time, with one hand writing in mirror script. This ambidextrous skill allowed him to record his thoughts and observations more quickly and efficiently.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact30.jpg" alt="Ants" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Ants can carry objects many times their own body weight</h1>
+                <p class="fact-text">Despite their small size, ants are incredibly strong for their size. Some species of ants can carry objects that are up to 50 times their own body weight. This feat is made possible by their muscular bodies and specialized anatomy.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact31.jpg" alt="Coral Reefs" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Coral reefs are among the most diverse ecosystems on Earth</h1>
+                <p class="fact-text">Coral reefs, often referred to as the "rainforests of the sea," are home to a stunning array of marine life, including thousands of species of fish, invertebrates, and plants. Despite covering less than 1% of the ocean floor, coral reefs support approximately 25% of all marine species.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact32.jpg" alt="Mona Lisa" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Mona Lisa has no eyebrows</h1>
+                <p class="fact-text">One of the most famous paintings in the world, Leonardo da Vinci's Mona Lisa, does not have any visible eyebrows. It is believed that either the eyebrows were originally painted by da Vinci but have since faded or that they were never included in the painting.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact33.jpg" alt="Hummingbirds" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Hummingbirds are the only birds that can fly backwards</h1>
+                <p class="fact-text">Hummingbirds are known for their incredible agility in flight, which allows them to hover in mid-air and fly in any direction, including backwards. This unique ability is made possible by their rapid wing beats, which can exceed 80 times per second.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact34.jpg" alt="Amazon Rainforest" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Amazon Rainforest produces 20% of the world's oxygen</h1>
+                <p class="fact-text">The Amazon Rainforest, often referred to as the "lungs of the Earth," plays a crucial role in regulating the planet's climate and atmospheric composition. It absorbs large amounts of carbon dioxide and releases oxygen through the process of photosynthesis, helping to maintain the balance of gases in the atmosphere.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact35.jpg" alt="Penguins" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Penguins can leap out of the water at speeds of up to 6.5 feet (2 meters) per second</h1>
+                <p class="fact-text">Penguins are excellent swimmers and use powerful thrusts of their flippers to propel themselves through the water. When hunting for fish, they can launch themselves out of the water onto ice floes or rocky shores with remarkable speed and agility.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact36.jpg" alt="Sphinx" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Great Sphinx of Giza is one of the largest and oldest statues in the world</h1>
+                <p class="fact-text">The Great Sphinx, a massive limestone statue with the body of a lion and the head of a human, is believed to have been built during the reign of the ancient Egyptian pharaoh Khafre in the 26th century BCE. It stands 66 feet (20 meters) tall and 240 feet (73 meters) long.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact37.jpg" alt="Venice" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The city of Venice is built on more than 100 small islands</h1>
+                <p class="fact-text">Venice, located in northeastern Italy, is renowned for its network of canals, historic architecture, and artistic heritage. The city is built on a series of marshy islands in the Venetian Lagoon, connected by a network of canals and bridges.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact38.jpg" alt="Eyes" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Human eyes are capable of distinguishing between approximately 10 million different colors</h1>
+                <p class="fact-text">The human eye contains millions of specialized cells called cones, which are responsible for color vision. These cones can detect wavelengths of light ranging from approximately 400 to 700 nanometers, allowing us to perceive a wide spectrum of colors.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact39.jpg" alt="Piano" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The piano has 88 keys</h1>
+                <p class="fact-text">The modern piano has 88 keys, consisting of 52 white keys and 36 black keys. These keys represent a range of seven octaves plus a minor third, from the lowest A0 to the highest C8. Each key corresponds to a specific pitch, allowing for a wide range of musical expression.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact40.jpg" alt="Soccer" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Soccer is the most popular sport in the world</h1>
+                <p class="fact-text">Soccer, also known as football in most countries, is played and watched by billions of people around the world. It is the most widely played sport, with an estimated 4 billion fans globally. The FIFA World Cup, held every four years, is the most watched sporting event in the world.</p>
+            </div>
+        </div>
+    </article>
+
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact41.jpg" alt="Tornado" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Tornadoes can occur on every continent except Antarctica</h1>
+                <p class="fact-text">Tornadoes are violently rotating columns of air that extend from thunderstorms to the ground. While they are most commonly associated with the central United States, tornadoes can occur in many parts of the world, including Europe, Asia, Africa, and Australia.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact42.jpg" alt="Fossils" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The study of fossils is called paleontology</h1>
+                <p class="fact-text">Paleontology is the scientific study of fossils, including their identification, classification, and interpretation. Fossils provide valuable evidence of past life forms and help scientists reconstruct the history of life on Earth, including the evolution of species and ecosystems.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact43.jpg" alt="Einstein" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Albert Einstein's brain was smaller than average</h1>
+                <p class="fact-text">Despite his immense intellectual capabilities, Albert Einstein's brain was not significantly larger than that of an average adult male. However, certain regions of his brain, particularly the parietal lobe, showed unusual structural features that may have contributed to his remarkable mathematical and spatial reasoning abilities.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact44.jpg" alt="Giant Panda" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Giant pandas spend most of their lives eating bamboo</h1>
+                <p class="fact-text">Giant pandas are herbivores with a diet consisting almost exclusively of bamboo. They spend up to 12 hours a day eating large quantities of bamboo to meet their energy needs. Despite their carnivorous digestive system, they have evolved to efficiently digest bamboo through a specialized diet and digestive system.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact45.jpg" alt="Space" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: There are more stars in the universe than grains of sand on Earth</h1>
+                <p class="fact-text">The universe is estimated to contain billions of galaxies, each containing billions to trillions of stars. With such vast numbers, the total number of stars in the observable universe far exceeds the estimated 7.5 x 10^18 grains of sand on Earth's beaches.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact46.jpg" alt="Bees" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Bees communicate through intricate dance movements</h1>
+                <p class="fact-text">Honey bees perform a unique form of communication known as the waggle dance to inform other members of the hive about the location of food sources. By dancing in specific patterns and orientations relative to the sun, bees convey information about the direction and distance of the food source.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact47.jpg" alt="Mount Kilimanjaro" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Mount Kilimanjaro is the tallest mountain in Africa</h1>
+                <p class="fact-text">Mount Kilimanjaro, located in Tanzania, is the highest peak in Africa, rising to an elevation of 19,341 feet (5,895 meters) above sea level. Despite its proximity to the equator, the summit of Kilimanjaro is permanently snow-capped due to its high elevation.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact48.jpg" alt="Rome" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Rome was founded in 753 BCE</h1>
+                <p class="fact-text">According to legend, Rome was founded on April 21, 753 BCE, by the twin brothers Romulus and Remus. Over the centuries, Rome grew from a small settlement on the banks of the Tiber River into one of the largest and most influential cities in the ancient world, serving as the capital of the Roman Empire.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact49.jpeg" alt="Gorillas" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Gorillas share approximately 98% of their DNA with humans</h1>
+                <p class="fact-text">Gorillas are our closest living relatives among non-human primates, sharing a common ancestor with humans approximately 10 million years ago. Despite their physical differences, gorillas exhibit complex social behaviors and emotions that are strikingly similar to those of humans.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact50.png" alt="Neptune" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Neptune has the strongest winds in the solar system</h1>
+                <p class="fact-text">Neptune, the eighth and farthest known planet from the sun, experiences incredibly strong winds in its atmosphere, with speeds reaching up to 1,300 miles per hour (2,100 kilometers per hour). These high-speed winds are driven by the planet's rapid rotation and its distance from the sun, which generates powerful atmospheric dynamics.</p>
+            </div>
+        </div>
+    </article>
+    
+    <!--Footer content-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-wrapper">
+                <div class="footer-widget">
+                    <a href="#">
+                        <img src="#" class="logo" alt="logo of Factbook"/>
+                    </a>
+                    <div class="address-contact">
+                        Address:NIT Raipur,<br> Raipur, Chhattisgarh 492010<br>
+                        Phone: 123-456-7890<br>
+                        Email: info@example.com
+                    </div>
+                </div>
+                <div class="footer-widget">
+                    <h6>Menu</h6>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="facts.html">Facts</a></li>
+                        <li><a href="aboutUs.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Help &amp; Support</h6>
+                    <ul class="links">
+                        <li><a href="contactUs.html">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms &amp; Conditionns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Social Media Links</h6>
+                    <ul class="socials">
+                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright-wrapper">
+                <p>Desing and Developed by
+                    <a href="#" terget="blank">FactBook</a>
+                </p>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./login.js"></script>
+
+</body>
+</html>

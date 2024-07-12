@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactBook</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="facts.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="header-overlay"></div>
+        <div class="header-content">
+
+            <div class="logo">
+                <div class="logo-circle">
+                    <img src="logo.png" alt="Logo">
+                </div>
+            </div>
+
+            <div class="user-options">
+                <a href="#" class="btn" id="loginBtn">Log In</a>
+                <a href="#" class="btn" id="registerBtn">Sign Up</a>
+            </div>
+            
+        </div>
+
+        <p class="quote">"Fact that Educate, Inspire and Amaze"</p>
+        
+    </header>
+
+    <div class="navigation-menu"> 
+        <ul class="menu">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li class="active"><a href="facts.html"><i class="fas fa-info-circle"></i> Facts</a></li>
+            <li><a href="aboutUs.html"><i class="fas fa-users"></i> About Us</a></li>
+            <li><a href="contactUs.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="wrapper" id="popupWrapper">
+        <div class="popup-content">
+            <span class="icon-close" id="closePopup">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form id="loginForm" action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Remember me </label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="form-box register">
+                <h2>Sign Up</h2>
+                <form id="registerForm" action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" id="username" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="regEmail" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="regPassword" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox" required>I agree to the terms & conditions </label>
+                    </div>
+                    <button type="submit" class="btn">Sign up</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!--Facts content -->
+    <article class="fact-card">
+        <div class="fact-content">
+            <p class="heading">Discover Fascinating Fun Facts – Broaden Your Perspective!</p>
+            <img src="./Image/Facts/fact221.jpg" alt="Fingerprint" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Every person's fingerprint is unique, even identical twins!</h1>
+                <p class="fact-text">The ridges and patterns on your fingertips form a unique pattern that no one else in the world has. This distinctiveness makes fingerprints a valuable tool in forensic science and identification.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact222.jpg" alt="Brain Power" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Your brain generates about 12-25 watts of electricity.</h1>
+                <p class="fact-text">Although it's not enough to power a light bulb, your brain is still an electrical powerhouse. Neurons firing in your brain create tiny electrical impulses that can be measured with specialized equipment.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact223.jpg" alt="Laughing" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Laughing reduces stress and boosts your immune system.</h1>
+                <p class="fact-text">When you laugh, your body releases endorphins, which are natural feel-good chemicals. Laughing also increases blood flow and improves the function of blood vessels, helping to reduce stress and boost your immune system.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact224.jpeg" alt="Blue Whale Tongue" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The tongue of a blue whale can weigh as much as an elephant!</h1>
+                <p class="fact-text">Blue whales, the largest animals on Earth, have tongues that can weigh up to 2.7 metric tons (6,000 pounds). Despite their massive size, these tongues are relatively small compared to the rest of their bodies.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact225.jpg" alt="Penguin Proposals" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Male penguins propose to their mates with pebbles.</h1>
+                <p class="fact-text">During mating season, male penguins search for the smoothest, most perfect pebble to present to their chosen mate. If she accepts the pebble, they become a bonded pair and start their nesting process.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact226.jpg" alt="Honey Never Spoils" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Honey never spoils!</h1>
+                <p class="fact-text">Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still perfectly edible. Honey's low moisture content and acidic pH create an inhospitable environment for bacteria and microorganisms.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact227.jpg" alt="Bananas are Berries" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Botanically, bananas are berries!</h1>
+                <p class="fact-text">In botanical terms, a berry is a fruit produced from the ovary of a single flower with seeds embedded in the flesh. By this definition, bananas qualify as berries, while strawberries, which are commonly called berries, do not.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact228.jpg" alt="Space Smell" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Space smells like seared steak or hot metal.</h1>
+                <p class="fact-text">Astronauts have described the smell of space during a spacewalk as similar to seared steak, hot metal, or welding fumes. This distinct odor is likely due to the ionization of space dust and other particles.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact229.jpg" alt="The Moon's Gravity" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Moon's gravity affects the Earth's tides.</h1>
+                <p class="fact-text">The gravitational pull of the Moon causes the Earth's oceans to bulge outward, creating high tides. As the Earth rotates, different parts of the planet experience high and low tides as the Moon's gravitational force changes.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact230.jpg" alt="The Speed of a Sneeze" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: A sneeze can travel at up to 100 miles per hour!</h1>
+                <p class="fact-text">When you sneeze, droplets containing mucus, saliva, and other particles are expelled from your nose and mouth at high speed. This rapid expulsion helps to clear irritants from your airways.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact231.jpg" alt="Caffeine in Coffee" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Coffee beans are not naturally caffeinated.</h1>
+                <p class="fact-text">Coffee beans contain no caffeine until they undergo a roasting process. During roasting, caffeine is formed as a byproduct of chemical reactions, contributing to the stimulating effects of coffee.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact232.jpg" alt="Cat Whiskers" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Cats have whiskers on the backs of their front legs.</h1>
+                <p class="fact-text">Known as carpal whiskers or wrist whiskers, these specialized hairs help cats navigate and judge distances, particularly when hunting or exploring in low-light conditions.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact233.jpg" alt="Incredible Shrinking Brain" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Your brain can shrink in size while you sleep.</h1>
+                <p class="fact-text">During sleep, your brain's cells shrink by up to 60%, allowing cerebrospinal fluid to flush out toxins and waste products more efficiently. This process helps to maintain brain health and function.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact234.jpg" alt="Octopus Intelligence" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Octopuses have three hearts and blue blood.</h1>
+                <p class="fact-text">Octopuses are fascinating creatures with unique physiology. They have three hearts: two pump blood to the gills, and the third pumps oxygenated blood to the rest of the body. Additionally, their blood contains a copper-rich protein called hemocyanin, giving it a blue color.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact235.jpg" alt="Baby Elephants" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Baby elephants suck their trunks for comfort, similar to how human babies suck their thumbs.</h1>
+                <p class="fact-text">Sucking their trunks provides comfort and security for baby elephants, especially during stressful or uncertain situations. As they grow older, they gradually lose this behavior.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact236.jpg" alt="Giraffe Tongue" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: A giraffe's tongue can be up to 20 inches long!</h1>
+                <p class="fact-text">Giraffes use their long, prehensile tongues to grasp leaves and twigs from trees. Their tongues are tough and flexible, allowing them to manipulate food with precision.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact237.jpg" alt="Chameleon Eyes" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Chameleons can move their eyes independently, allowing them to look in two different directions simultaneously.</h1>
+                <p class="fact-text">Chameleons have remarkable vision thanks to their independently mobile eyes. Each eye can rotate and focus independently, giving them a 360-degree field of vision and allowing them to spot prey and predators with ease.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact238.jpg" alt="Penguin Swimming" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Penguins can swim at speeds of up to 22 miles per hour!</h1>
+                <p class="fact-text">Despite their clumsy waddle on land, penguins are incredibly agile and fast swimmers underwater. Their streamlined bodies and flipper-like wings propel them through the water with ease.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact239.jpg" alt="Sea Otter Tool Use" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Sea otters use rocks as tools to crack open shellfish.</h1>
+                <p class="fact-text">Sea otters are one of the few non-human animals known to use tools. They collect rocks from the ocean floor and use them to break open shellfish, such as clams and mussels, by pounding them against a hard surface.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact240.jpg" alt="Bees" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Honeybees perform a "waggle dance" to communicate the location of food sources.</h1>
+                <p class="fact-text">When a honeybee discovers a rich food source, it returns to the hive and performs a complex dance, known as the waggle dance, to communicate the location and quality of the food to other bees in the colony.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact241.jpg" alt="Glowing Mushrooms" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Some mushrooms glow in the dark!</h1>
+                <p class="fact-text">Bioluminescent fungi, such as the jack-o'-lantern mushroom, produce a greenish glow in the dark. This phenomenon, known as bioluminescence, is caused by the chemical reaction between enzymes and luciferin, a light-emitting compound.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact242.jpg" alt="Lunar Rainbows" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Lunar rainbows, or "moonbows," occur when moonlight refracts and reflects off water droplets in the air.</h1>
+                <p class="fact-text">Similar to regular rainbows produced by sunlight, moonbows appear as colorful arcs in the night sky when the conditions are right. They are relatively rare and require clear skies, a bright moon, and rain or mist.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact243.jpg" alt="Elephant Elephone" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Elephants can communicate over long distances using low-frequency sounds called "infrasound."</h1>
+                <p class="fact-text">Elephants produce infrasound vocalizations that are below the range of human hearing but can travel long distances through the ground and air. These low-frequency calls allow elephants to communicate with each other over vast distances.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact244.jpg" alt="Frogs' Eyes" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Frogs can swallow with their eyes closed by using their eyeballs to push food down their throats.</h1>
+                <p class="fact-text">Frogs lack the muscles in their throats to create the swallowing motion seen in humans and other animals. Instead, they use their powerful eyeballs to retract into their skulls, pushing food down their throats as they swallow.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact245.jpg" alt="Jellyfish Immortality" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Turritopsis dohrnii, also known as the "immortal jellyfish," can revert to a younger stage of development and start its life cycle anew.</h1>
+                <p class="fact-text">When faced with environmental stress or aging, the immortal jellyfish can transform its adult cells back into juvenile cells, effectively reversing the aging process. This remarkable ability allows it to potentially live indefinitely.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact246.jpg" alt="Ant Mega-Cities" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Ants build complex underground cities that can contain millions of individuals and span vast areas.</h1>
+                <p class="fact-text">Ant colonies consist of intricate networks of tunnels and chambers constructed by worker ants. These colonies can exhibit sophisticated organization and division of labor, with different groups of ants fulfilling specific roles within the colony.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact247.jpg" alt="Whale Songs" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Humpback whales sing complex songs that can last up to 20 minutes and travel for thousands of miles through the ocean.</h1>
+                <p class="fact-text">Humpback whale songs are a form of communication used during mating rituals and other social interactions. These intricate melodies can vary between populations and evolve over time.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact248.jpg" alt="Glowing Fireflies" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Fireflies produce light through a chemical reaction called bioluminescence, which occurs in specialized light-emitting organs in their abdomens.</h1>
+                <p class="fact-text">The flashing patterns of fireflies are used to attract mates and communicate with other individuals of the same species. Each species of firefly has its own unique flash pattern.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact249.jpg" alt="Cows' Compass" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Cows tend to align their bodies with the Earth's magnetic field when grazing or resting.</h1>
+                <p class="fact-text">Researchers have observed that cows often prefer to align their bodies along the north-south axis while grazing or resting. While the reasons for this behavior are not fully understood, it may be related to their ability to detect the Earth's magnetic field.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact250.jpg" alt="Dolphin Names" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Dolphins have individual names or "signature whistles" that they use to identify themselves to others.</h1>
+                <p class="fact-text">Each dolphin develops its own unique signature whistle early in life, which serves as a vocal identity. Other dolphins can recognize and respond to these signature whistles, allowing for individual recognition and social bonding within dolphin communities.</p>
+            </div>
+        </div>
+    </article>    
+    
+    <!--Footer content-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-wrapper">
+                <div class="footer-widget">
+                    <a href="#">
+                        <img src="#" class="logo" alt="logo of Factbook"/>
+                    </a>
+                    <div class="address-contact">
+                        Address:NIT Raipur,<br> Raipur, Chhattisgarh 492010<br>
+                        Phone: 123-456-7890<br>
+                        Email: info@example.com
+                    </div>
+                </div>
+                <div class="footer-widget">
+                    <h6>Menu</h6>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="facts.html">Facts</a></li>
+                        <li><a href="aboutUs.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Help &amp; Support</h6>
+                    <ul class="links">
+                        <li><a href="contactUs.html">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms &amp; Conditionns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Social Media Links</h6>
+                    <ul class="socials">
+                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright-wrapper">
+                <p>Desing and Developed by
+                    <a href="#" terget="blank">FactBook</a>
+                </p>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./login.js"></script>
+
+</body>
+</html>

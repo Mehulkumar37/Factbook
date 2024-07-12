@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactBook</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="facts.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="header-overlay"></div>
+        <div class="header-content">
+
+            <div class="logo">
+                <div class="logo-circle">
+                    <img src="logo.png" alt="Logo">
+                </div>
+            </div>
+
+            <div class="user-options">
+                <a href="#" class="btn" id="loginBtn">Log In</a>
+                <a href="#" class="btn" id="registerBtn">Sign Up</a>
+            </div>
+            
+        </div>
+
+        <p class="quote">"Fact that Educate, Inspire and Amaze"</p>
+        
+    </header>
+
+    <div class="navigation-menu"> 
+        <ul class="menu">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li class="active"><a href="facts.html"><i class="fas fa-info-circle"></i> Facts</a></li>
+            <li><a href="aboutUs.html"><i class="fas fa-users"></i> About Us</a></li>
+            <li><a href="contactUs.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="wrapper" id="popupWrapper">
+        <div class="popup-content">
+            <span class="icon-close" id="closePopup">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form id="loginForm" action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Remember me </label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="form-box register">
+                <h2>Sign Up</h2>
+                <form id="registerForm" action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" id="username" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="regEmail" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="regPassword" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox" required>I agree to the terms & conditions </label>
+                    </div>
+                    <button type="submit" class="btn">Sign up</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!--Facts content -->
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <p class="heading">Extraordinary Facts from Around the Globe...</p>
+            <img src="./Image/Facts/fact61.jpeg" alt="Honeybees" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Honeybees communicate through dance</h1>
+                <p class="fact-text">Honeybees perform a unique dance known as the waggle dance to communicate the location of food sources to other members of their hive. The angle and duration of the dance convey precise information about the direction and distance of the food, allowing fellow bees to locate it efficiently.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact62.jpeg" alt="Narwhal" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The narwhal's tusk is actually a long, spiraled tooth</h1>
+                <p class="fact-text">The narwhal, often dubbed the unicorn of the sea, possesses a long, spiral tusk protruding from its head. Contrary to popular belief, this tusk is not a horn but rather an elongated tooth that can grow up to 10 feet in length. Its exact purpose remains a subject of scientific debate.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact63.jpeg" alt="Jupiter" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Jupiter's Great Red Spot is a massive storm that has been raging for centuries</h1>
+                <p class="fact-text">The Great Red Spot on Jupiter is a gigantic storm that has been observed for over 300 years. It is so large that three Earths could fit comfortably within its boundaries. Despite being a storm, its exact cause and mechanisms are still not fully understood by scientists.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact64.jpeg" alt="Octopus" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Octopuses have three hearts and blue blood</h1>
+                <p class="fact-text">Unlike humans with a single heart, octopuses have three hearts. Two of these hearts pump blood to the gills, while the third pumps oxygenated blood to the rest of the body. Additionally, their blood is blue due to the presence of a copper-based molecule called hemocyanin.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact65.jpeg" alt="Amazon Rainforest" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Amazon rainforest produces 20% of the world's oxygen</h1>
+                <p class="fact-text">Often referred to as the "lungs of the Earth," the Amazon rainforest plays a crucial role in oxygen production. Despite covering only about 2% of the Earth's surface, it generates approximately 20% of the world's oxygen, making it vital for global air quality and climate regulation.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact66.jpeg" alt="Cheetah" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Cheetahs can accelerate from 0 to 60 miles per hour in just a few seconds</h1>
+                <p class="fact-text">Cheetahs are the fastest land animals, capable of reaching speeds of up to 60 miles per hour in as little as three seconds. Their incredible acceleration and top speed enable them to swiftly chase down prey across the African savannah.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact67.jpeg" alt="Milky Way" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Milky Way galaxy is estimated to contain over 100 billion stars</h1>
+                <p class="fact-text">Our home galaxy, the Milky Way, is vast and contains an estimated 100 to 400 billion stars. Among these stars is our own Sun, which resides in one of the Milky Way's spiral arms, known as the Orion Arm or Local Spur.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact68.jpeg" alt="Elephant" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Elephants can communicate using infrasound, which is below the range of human hearing</h1>
+                <p class="fact-text">Elephants produce low-frequency vocalizations known as infrasound, which are below the threshold of human hearing. These powerful, rumbling calls can travel long distances through the ground, allowing elephants to communicate with one another over vast expanses of savannah or forest.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact69.jpeg" alt="Northern Lights" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Northern Lights are caused by collisions between charged particles from the sun and Earth's atmosphere</h1>
+                <p class="fact-text">The aurora borealis, or Northern Lights, are a mesmerizing natural phenomenon that occurs when charged particles from the sun collide with atoms and molecules in Earth's atmosphere. These collisions emit light of various colors, creating stunning displays of dancing ribbons and curtains of light in the polar skies.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact70.jpeg" alt="Koala" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Koalas sleep for up to 18 hours a day</h1>
+                <p class="fact-text">Koalas are known for their relaxed lifestyle, spending the majority of their time dozing in eucalyptus trees. These marsupials can sleep for up to 18 hours a day, conserving energy and digesting their fibrous diet of eucalyptus leaves.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact71.jpeg" alt="Moon" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Moon is gradually moving away from Earth at a rate of about 1.5 inches per year</h1>
+                <p class="fact-text">Due to tidal forces between Earth and the Moon, our celestial companion is slowly drifting away from us at a rate of approximately 1.5 inches (3.8 centimeters) per year. This phenomenon, known as lunar recession, has been ongoing since the formation of the Moon billions of years ago.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact72.jpeg" alt="Orca" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Orcas, also known as killer whales, are actually the largest species of dolphin</h1>
+                <p class="fact-text">Despite their common name, killer whales, or orcas, are not whales but rather the largest species of dolphin. These apex predators are highly intelligent and social animals, known for their distinctive black and white coloring and powerful hunting abilities.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact73.jpeg" alt="Sahara Desert" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Sahara Desert is expanding by about half a mile per month</h1>
+                <p class="fact-text">Climate change and human activities such as overgrazing and deforestation are contributing to the expansion of the Sahara Desert. This vast desert, already the largest hot desert in the world, is encroaching on surrounding regions at a rate of approximately half a mile (0.8 kilometers) per month.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact74.jpeg" alt="Dragonfly" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Dragonflies are incredibly agile flyers and can fly in any direction, including backward</h1>
+                <p class="fact-text">Dragonflies are masterful flyers, capable of intricate aerial maneuvers. They can hover in place, dart forward or backward, and even fly upside down with exceptional agility. This remarkable flying ability makes them highly effective predators, capturing prey on the wing with precision.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact75.jpeg" alt="Soil" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: A teaspoon of soil can contain billions of microorganisms</h1>
+                <p class="fact-text">Soil is teeming with life, hosting a diverse array of microorganisms essential for nutrient cycling and plant growth. Just a teaspoon of healthy soil can contain billions of bacteria, fungi, protozoa, and other microscopic organisms, playing vital roles in ecosystem functioning.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact76.jpeg" alt="Saturn" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Saturn's rings are made up of billions of icy particles, ranging in size from tiny grains to giant boulders</h1>
+                <p class="fact-text">Saturn's iconic rings are composed of countless icy particles, ranging in size from mere dust grains to large boulders several meters across. These particles orbit the gas giant in a vast, flat disk, creating one of the most spectacular sights in the solar system.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact77.jpeg" alt="Giraffe" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Giraffes have the same number of neck vertebrae as humans, despite their much longer necks</h1>
+                <p class="fact-text">Despite their remarkably long necks, giraffes have the same number of neck vertebrae as humans: seven. Each vertebra in a giraffe's neck can measure up to 10 inches (25 centimeters) in length, allowing these majestic animals to reach leaves high in the trees.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact78.jpeg" alt="Andromeda Galaxy" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Andromeda Galaxy is on a collision course with our Milky Way galaxy</h1>
+                <p class="fact-text">In approximately 4 billion years, the Andromeda Galaxy, the largest galaxy in the Local Group, will collide with our own Milky Way galaxy. This cosmic collision will reshape both galaxies and likely result in the formation of a new, larger galaxy known as Milkomeda.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact79.jpeg" alt="Sloth" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Sloths can hold their breath for up to 40 minutes underwater</h1>
+                <p class="fact-text">Despite their reputation for slowness, sloths are surprisingly adept swimmers and can hold their breath for extended periods. When threatened by predators or seeking out food, sloths can dive underwater and remain submerged for up to 40 minutes thanks to their slow metabolic rate.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact80.jpeg" alt="Venus" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Venus is the hottest planet in our solar system, with surface temperatures exceeding 800 degrees Fahrenheit</h1>
+                <p class="fact-text">Despite not being the closest planet to the Sun, Venus holds the title of the hottest planet in our solar system. Its thick atmosphere traps heat from the Sun, creating a runaway greenhouse effect that raises surface temperatures to scorching levels exceeding 800 degrees Fahrenheit (427 degrees Celsius).</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact81.jpeg" alt="Hummingbird" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Hummingbirds are the only birds capable of flying backward</h1>
+                <p class="fact-text">Hummingbirds are famous for their incredible agility and hovering ability. They are the only birds capable of sustained backward flight, allowing them to extract nectar from flowers while hovering in mid-air. This unique flying skill is facilitated by their rapid wingbeats and specialized wing anatomy.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact82.jpeg" alt="Flamingo" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: A group of flamingos is called a flamboyance</h1>
+                <p class="fact-text">Flamingos are known for their striking pink plumage and distinctive behaviors. When gathered in a group, these birds are collectively referred to as a flamboyance. This term aptly describes the flamboyant and colorful spectacle created by a flock of flamingos feeding and socializing in their natural habitat.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact83.jpeg" alt="Pando Aspen Grove" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Pando aspen grove in Utah is one of the world's largest living organisms</h1>
+                <p class="fact-text">Pando, also known as the Trembling Giant, is a massive grove of quaking aspen trees in Utah, USA. Connected by a single root system, Pando is considered one of the largest and oldest living organisms on Earth, estimated to be over 80,000 years old.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact84.jpeg" alt="Owl" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: A group of owls is called a parliament</h1>
+                <p class="fact-text">Owls are known for their wisdom and nocturnal habits. When several owls gather together, they are collectively referred to as a parliament. This term likely originates from the association of owls with wisdom and knowledge in various cultures throughout history.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact85.jpeg" alt="Lightning" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: A single bolt of lightning can heat the surrounding air to temperatures five times hotter than the surface of the sun</h1>
+                <p class="fact-text">Lightning is a powerful natural phenomenon that can reach temperatures exceeding 50,000 degrees Fahrenheit (27,700 degrees Celsius). When a lightning bolt strikes, it superheats the surrounding air, causing it to expand rapidly and produce the characteristic thunderclap we hear during a thunderstorm.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact86.jpeg" alt="Sea Otter" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Sea otters hold hands while sleeping to prevent drifting apart</h1>
+                <p class="fact-text">Sea otters are highly social animals known for their playful behavior and close-knit family groups. To prevent drifting apart while sleeping in the ocean, sea otters often hold hands or link arms with one another, forming rafts of floating otters that drift together on the waves.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact87.jpeg" alt="Sun" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The sun is approximately 4.6 billion years old and is expected to continue shining for another 5 billion years</h1>
+                <p class="fact-text">The sun, the star at the center of our solar system, formed approximately 4.6 billion years ago from a giant molecular cloud. It is currently in the middle stage of its life cycle, steadily fusing hydrogen into helium in its core. It is expected to continue shining for another 5 billion years before exhausting its nuclear fuel and undergoing a series of dramatic changes.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact88.jpeg" alt="Beeswax" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Beeswax is the only natural substance that remains edible indefinitely</h1>
+                <p class="fact-text">Beeswax, produced by honeybees to build their honeycomb structures, is a remarkable natural substance with numerous uses. Unlike many other organic materials, beeswax does not spoil or decay and can remain edible indefinitely under the right conditions, making it one of the few foods that never expire.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact89.jpeg" alt="Olympus Mons" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The largest volcano in the solar system is Olympus Mons on Mars</h1>
+                <p class="fact-text">Olympus Mons, located on the planet Mars, is the largest volcano in the solar system. It towers over the Martian landscape at a height of about 13.6 miles (22 kilometers) and is nearly three times taller than Mount Everest, the tallest mountain on Earth. Olympus Mons is a shield volcano, characterized by its broad, gently sloping profile.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact90.jpeg" alt="African Elephant" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The African elephant is the largest land animal on Earth</h1>
+                <p class="fact-text">The African elephant, distinguished by its large ears and long, curved tusks, holds the title of the largest land animal on Earth. Adult African elephants can weigh up to 6 tons (5,443 kilograms) and stand over 10 feet (3 meters) tall at the shoulder. These majestic creatures play a vital role in shaping their ecosystems and are considered keystone species.</p>
+            </div>
+        </div>
+    </article>
+    
+    <!--Footer content-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-wrapper">
+                <div class="footer-widget">
+                    <a href="#">
+                        <div class="logo">
+                            <img src="./Image/hp-image/logo.png" alt="Logo">
+                        </div>
+                    </a>
+                    <div class="address-contact">
+                        Address:NIT Raipur,<br> Raipur, Chhattisgarh 492010<br>
+                        Phone: 123-456-7890<br>
+                        Email: info@example.com
+                    </div>
+                </div>
+                <div class="footer-widget">
+                    <h6>Menu</h6>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="facts.html">Facts</a></li>
+                        <li><a href="aboutUs.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Help &amp; Support</h6>
+                    <ul class="links">
+                        <li><a href="contactUs.html">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms &amp; Conditionns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Social Media Links</h6>
+                    <ul class="socials">
+                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright-wrapper">
+                <p>Desing and Developed by
+                    <a href="#" terget="blank">FactBook</a>
+                </p>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./login.js"></script>
+
+</body>
+</html>

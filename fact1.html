@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactBook</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="facts.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="header-overlay"></div>
+        <div class="header-content">
+
+            <div class="logo">
+                <div class="logo-circle">
+                    <img src="./Image/hp-image/logo.png" alt="Logo">
+                </div>
+            </div>
+
+            <div class="user-options">
+                <a href="#" class="btn" id="loginBtn">Log In</a>
+                <a href="#" class="btn" id="registerBtn">Sign Up</a>
+            </div>
+            
+        </div>
+
+        <p class="quote">"Fact that Educate, Inspire and Amaze"</p>
+        
+    </header>
+
+    <div class="navigation-menu"> 
+        <ul class="menu">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li class="active"><a href="facts.html"><i class="fas fa-info-circle"></i> Facts</a></li>
+            <li><a href="aboutUs.html"><i class="fas fa-users"></i> About Us</a></li>
+            <li><a href="contactUs.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="wrapper" id="popupWrapper">
+        <div class="popup-content">
+            <span class="icon-close" id="closePopup">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form id="loginForm" action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Remember me </label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="form-box register">
+                <h2>Sign Up</h2>
+                <form id="registerForm" action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" id="username" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="regEmail" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="regPassword" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox" required>I agree to the terms & conditions </label>
+                    </div>
+                    <button type="submit" class="btn">Sign up</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!--Facts content -->
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <p class="heading">Random fun facts that will blow your mind</p>
+            <img src="./Image/Facts/fact11.jpg" alt="Pyramids" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Great Pyramid of Giza was originally covered in smooth, white limestone casing stones</h1>
+                <p class="fact-text">These casing stones reflected the sun's light, making the pyramid shine brightly. Over the centuries, these stones were removed, leaving the rough surface we see today.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact12.jpg" alt="DNA" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Every cell in the human body contains DNA</h1>
+                <p class="fact-text">DNA, or deoxyribonucleic acid, contains the genetic instructions for the development, functioning, growth, and reproduction of all known organisms. It is composed of two strands that coil around each other to form the famous double helix structure.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact13.jpg" alt="Lightning" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Lightning can strike the same place twice</h1>
+                <p class="fact-text">Contrary to popular belief, lightning can indeed strike the same place more than once. Tall structures such as skyscrapers and mountains are often struck repeatedly during a thunderstorm due to their height and prominence.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact14.jpg" alt="Redwoods" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The tallest trees in the world are redwoods</h1>
+                <p class="fact-text">Coastal redwoods, native to California and Oregon, are the tallest trees in the world, with some reaching heights of over 350 feet (107 meters). These magnificent trees can live for thousands of years and are among the oldest living organisms on Earth.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact15.jpg" alt="Volcano" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Hawaii is home to the world’s most active volcano</h1>
+                <p class="fact-text">Kilauea, located on the Big Island of Hawaii, has been erupting continuously since 1983. It is one of the most studied volcanoes in the world and has shaped the landscape of Hawaii over millions of years.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact16.jpg" alt="Cheetah" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Cheetahs can accelerate from 0 to 60 mph (97 km/h) in just a few seconds</h1>
+                <p class="fact-text">Cheetahs are the fastest land animals, capable of reaching speeds of up to 70 mph (113 km/h) in short bursts covering distances of up to 500 meters. Their incredible speed helps them catch their prey, primarily small to medium-sized ungulates.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact17.jpg" alt="Moon" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Moon is gradually moving away from Earth</h1>
+                <p class="fact-text">Due to tidal forces between the Earth and the Moon, the Moon is slowly drifting away from our planet at a rate of about 1.5 inches (3.78 cm) per year. This phenomenon is causing Earth's rotation to slow down slightly over time.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact18.jpg" alt="Turtles" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Some species of turtles can live for over 100 years</h1>
+                <p class="fact-text">Turtles are known for their longevity, with some species capable of living for well over a century. The oldest known turtle was a Seychelles giant tortoise named Jonathan, who lived to be 187 years old before passing away in 2021.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact19.jpg" alt="Antarctica" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Antarctica is the coldest, windiest, and driest continent on Earth</h1>
+                <p class="fact-text">Antarctica holds several records for extreme weather conditions. The lowest temperature ever recorded on Earth, -128.6°F (-89.2°C), was recorded at the Soviet Union's Vostok Station on July 21, 1983. Additionally, the continent experiences strong katabatic winds, with gusts reaching hurricane-force speeds.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact20.jpg" alt="Mount Everest" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Mount Everest is the tallest mountain in the world</h1>
+                <p class="fact-text">Mount Everest, located in the Himalayas on the border between Nepal and China, stands at 29,032 feet (8,849 meters) above sea level, making it the highest point on Earth. Despite its extreme altitude, it continues to attract climbers from around the world, with thousands attempting to reach its summit each year.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact21.jpg" alt="Oceans" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The oceans contain 99% of the Earth's living space</h1>
+                <p class="fact-text">Despite covering only about 71% of the Earth's surface, the oceans provide habitat for the vast majority of life on our planet. From the deepest trenches to the sunlit surface waters, marine ecosystems support an incredible diversity of organisms, from microscopic plankton to massive whales.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact22.jpg" alt="Elephants" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Elephants can communicate over long distances using infrasound</h1>
+                <p class="fact-text">Elephants produce low-frequency sounds, known as infrasound, that can travel over long distances through the ground and air. These infrasonic calls can be used to communicate with other elephants, locate distant herd members, and detect potential threats or resources.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact23.jpeg" alt="Eiffel Tower" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Eiffel Tower was originally intended to be a temporary structure</h1>
+                <p class="fact-text">Constructed for the 1889 Exposition Universelle (World's Fair) in Paris, the Eiffel Tower was initially criticized by some as an eyesore. However, it quickly became a beloved symbol of France and an iconic landmark in the city of Paris. Gustave Eiffel's design was intended to stand for only 20 years, but it remains standing to this day.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact24.jpg" alt="Platypus" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The platypus is one of the few venomous mammals</h1>
+                <p class="fact-text">Male platypuses have venomous spurs on their hind legs that they use to defend themselves during mating season. The venom is not usually lethal to humans but can cause severe pain and swelling. Female platypuses do not have venomous spurs.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact25.jpg" alt="Chameleons" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Chameleons change color to regulate their body temperature and communicate with other chameleons</h1>
+                <p class="fact-text">Contrary to popular belief, chameleons do not change color to match their surroundings for camouflage. Instead, they change color in response to temperature, light, and mood. They can also change color to communicate with other chameleons, establish territory, or attract a mate.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact26.jpg" alt="Machu Picchu" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Machu Picchu was built without the use of wheels or iron tools</h1>
+                <p class="fact-text">The Inca civilization constructed Machu Picchu, a magnificent ancient city located in the Andes Mountains of Peru, without the use of wheels or iron tools. The massive stone blocks used in its construction were transported and shaped using basic tools made of stone, wood, and bronze.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact27.jpg" alt="Jellyfish" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Jellyfish have been around for millions of years and have no brain, heart, or bones</h1>
+                <p class="fact-text">Despite their simple body structure, jellyfish are incredibly ancient creatures that have been swimming in Earth's oceans for at least 500 million years. They belong to a group of animals known as cnidarians, which also includes corals and sea anemones.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact28.jpg" alt="Monarch Butterfly" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Monarch butterflies migrate thousands of miles every year</h1>
+                <p class="fact-text">Monarch butterflies undertake one of the longest insect migrations in the world, traveling thousands of miles from Canada and the United States to central Mexico each year. This remarkable journey spans multiple generations, with each generation continuing the migration begun by its predecessors.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact29.jpg" alt="Leonardo da Vinci" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Leonardo da Vinci was ambidextrous and could write with both hands simultaneously</h1>
+                <p class="fact-text">Leonardo da Vinci, the Renaissance polymath known for his art, science, and inventions, possessed a rare ability to write with both hands at the same time, with one hand writing in mirror script. This ambidextrous skill allowed him to record his thoughts and observations more quickly and efficiently.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact30.jpg" alt="Ants" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Ants can carry objects many times their own body weight</h1>
+                <p class="fact-text">Despite their small size, ants are incredibly strong for their size. Some species of ants can carry objects that are up to 50 times their own body weight. This feat is made possible by their muscular bodies and specialized anatomy.</p>
+            </div>
+        </div>
+    </article>
+    
+    <!--Footer content-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-wrapper">
+                <div class="footer-widget">
+                    <a href="#">
+                        <div class="logo">
+                            <img src="./Image/hp-image/logo.png" alt="Logo">
+                        </div>
+                    </a>
+                    <div class="address-contact">
+                        Address:NIT Raipur,<br> Raipur, Chhattisgarh 492010<br>
+                        Phone: 123-456-7890<br>
+                        Email: info@example.com
+                    </div>
+                </div>
+                <div class="footer-widget">
+                    <h6>Menu</h6>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="facts.html">Facts</a></li>
+                        <li><a href="aboutUs.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Help &amp; Support</h6>
+                    <ul class="links">
+                        <li><a href="contactUs.html">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms &amp; Conditionns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Social Media Links</h6>
+                    <ul class="socials">
+                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright-wrapper">
+                <p>Desing and Developed by
+                    <a href="#" terget="blank">FactBook</a>
+                </p>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./login.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactBook</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="facts.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <div class="header-overlay"></div>
+        <div class="header-content">
+
+            <div class="logo">
+                <div class="logo-circle">
+                    <img src="logo.png" alt="Logo">
+                </div>
+            </div>
+
+            <div class="user-options">
+                <a href="#" class="btn" id="loginBtn">Log In</a>
+                <a href="#" class="btn" id="registerBtn">Sign Up</a>
+            </div>
+            
+        </div>
+
+        <p class="quote">"Fact that Educate, Inspire and Amaze"</p>
+        
+    </header>
+
+    <div class="navigation-menu"> 
+        <ul class="menu">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li class="active"><a href="facts.html"><i class="fas fa-info-circle"></i> Facts</a></li>
+            <li><a href="aboutUs.html"><i class="fas fa-users"></i> About Us</a></li>
+            <li><a href="contactUs.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>
+    </div>
+
+    <div class="wrapper" id="popupWrapper">
+        <div class="popup-content">
+            <span class="icon-close" id="closePopup">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form id="loginForm" action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox"> Remember me </label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="form-box register">
+                <h2>Sign Up</h2>
+                <form id="registerForm" action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text" id="username" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" id="regEmail" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="regPassword" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox" required>I agree to the terms & conditions </label>
+                    </div>
+                    <button type="submit" class="btn">Sign up</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!--Facts content -->
+    <article class="fact-card">
+        <div class="fact-content">
+            <p class="heading">Unbelievable Fun Facts Unveiled – Prepare to Be Amazed!</p>
+            <img src="./Image/Facts/fact191.jpg" alt="Neuschwanstein Castle" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Neuschwanstein Castle inspired Disney's Sleeping Beauty Castle</h1>
+                <p class="fact-text">Perched atop a hill in Bavaria, Germany, Neuschwanstein Castle served as the inspiration for Disney's Sleeping Beauty Castle. Built in the 19th century by King Ludwig II, this fairy-tale castle is one of the most iconic landmarks in Germany.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact192.jpeg" alt="Battle of Thermopylae" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Battle of Thermopylae was fought between the Greeks and the Persians</h1>
+                <p class="fact-text">In 480 BCE, a small Greek force led by King Leonidas of Sparta faced off against the massive Persian army at the narrow pass of Thermopylae. Although ultimately defeated, the Greeks' heroic stand delayed the Persian advance and inspired future generations with tales of courage and sacrifice.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact193.jpg" alt="Mayan Civilization" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Maya civilization developed advanced mathematics and astronomy</h1>
+                <p class="fact-text">The ancient Maya civilization, centered in Mesoamerica, developed sophisticated mathematical and astronomical systems. They accurately tracked celestial movements, developed a complex calendar, and made significant advancements in mathematics, including the concept of zero.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact194.jpeg" alt="The Great Fire of London" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Great Fire of London destroyed much of the city in 1666</h1>
+                <p class="fact-text">In September 1666, a devastating fire swept through the city of London, destroying thousands of homes and buildings, including St. Paul's Cathedral. The fire, which raged for several days, led to significant urban planning reforms and the rebuilding of London.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact195.jpeg" alt="Leonardo da Vinci's The Last Supper" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Leonardo da Vinci's The Last Supper is one of the most famous paintings in the world</h1>
+                <p class="fact-text">Painted between 1495 and 1498 in Milan, Italy, The Last Supper is Leonardo da Vinci's renowned masterpiece depicting the biblical scene of Jesus' final meal with his disciples. Despite being painted on a dry plaster wall, it has survived centuries and continues to captivate audiences with its emotive portrayal.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact196.jpg" alt="Silk Road" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Silk Road facilitated trade and cultural exchange between Asia and Europe</h1>
+                <p class="fact-text">The Silk Road was a network of ancient trade routes that connected Asia with the Mediterranean world, facilitating the exchange of goods, ideas, and cultures between East and West. Named for the lucrative silk trade, it played a significant role in the development of civilizations along its route.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact197.jpg" alt="Taj Mahal" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Taj Mahal was built as a mausoleum for the wife of Emperor Shah Jahan</h1>
+                <p class="fact-text">Commissioned in 1632 by Mughal Emperor Shah Jahan, the Taj Mahal in Agra, India, is a stunning white marble mausoleum built to house the tomb of his beloved wife, Mumtaz Mahal. It is considered one of the most beautiful buildings in the world and a symbol of eternal love.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact198.jpg" alt="Pantheon" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Pantheon in Rome is one of the best-preserved ancient Roman buildings</h1>
+                <p class="fact-text">Constructed in the 2nd century CE, the Pantheon is a magnificent temple in Rome dedicated to all the gods of ancient Rome. Renowned for its massive dome and stunning architecture, it continues to be a marvel of engineering and a symbol of Roman ingenuity.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact199.jpg" alt="Ming Dynasty" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Ming Dynasty ruled China for nearly three centuries</h1>
+                <p class="fact-text">The Ming Dynasty, which lasted from 1368 to 1644, was one of the most stable and prosperous periods in Chinese history. Known for its cultural achievements, including porcelain production and the construction of the Great Wall, the Ming Dynasty left a lasting legacy on Chinese society and culture.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact200.jpg" alt="Berlin Wall" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Berlin Wall divided East and West Berlin during the Cold War</h1>
+                <p class="fact-text">Constructed by the German Democratic Republic (East Germany) in 1961, the Berlin Wall was a barrier that physically and ideologically divided the city of Berlin during the Cold War. Its fall in 1989 symbolized the end of the Cold War and the reunification of Germany.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact201.jpeg" alt="Cleopatra VII" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Cleopatra VII was the last active ruler of the Ptolemaic Kingdom of Egypt</h1>
+                <p class="fact-text">Cleopatra VII, the famed Queen of Egypt, ruled during a tumultuous period marked by political intrigue and conflict with the Roman Republic. Her relationships with Julius Caesar and Mark Antony, as well as her tragic end, have made her one of the most legendary figures in history.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact202.jpeg" alt="The Great Famine" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Great Famine devastated Ireland in the mid-19th century</h1>
+                <p class="fact-text">Between 1845 and 1852, Ireland experienced a devastating famine, known as the Great Famine or the Irish Potato Famine, which resulted in the deaths of approximately one million people and the emigration of millions more. This humanitarian disaster had profound social, economic, and political consequences.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact203.jpeg" alt="Moors" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Moors were Muslim inhabitants of the Iberian Peninsula</h1>
+                <p class="fact-text">During the Middle Ages, the Moors were Muslim inhabitants of the Iberian Peninsula, primarily in what is now Spain and Portugal. Known for their advanced civilization, including architecture, science, and philosophy, their presence left a lasting impact on the culture and history of the region.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact204.jpg" alt="Sistine Chapel Ceiling" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Michelangelo painted the ceiling of the Sistine Chapel</h1>
+                <p class="fact-text">Between 1508 and 1512, Italian Renaissance artist Michelangelo painted the ceiling of the Sistine Chapel in Vatican City. This masterpiece, featuring scenes from the Book of Genesis and other biblical narratives, is considered one of the greatest achievements in Western art.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact205.jpeg" alt="Buddhist Temples of Bagan" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Buddhist Temples of Bagan in Myanmar are a UNESCO World Heritage Site</h1>
+                <p class="fact-text">The ancient city of Bagan, located in Myanmar, is home to thousands of Buddhist temples, stupas, and pagodas dating back to the 9th to 13th centuries. These magnificent structures, with their exquisite architecture and religious significance, form one of the most important archaeological sites in Southeast Asia.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact206.jpeg" alt="Reconquista" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Reconquista was the Christian reconquest of the Iberian Peninsula</h1>
+                <p class="fact-text">The Reconquista was a centuries-long military campaign by Christian kingdoms to recapture territory from Muslim rulers on the Iberian Peninsula. It culminated in the fall of Granada in 1492, effectively ending Muslim rule in Spain and marking the completion of the Christian Reconquest.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact207.jpeg" alt="Hammurabi's Code" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Hammurabi's Code is one of the earliest known written legal codes</h1>
+                <p class="fact-text">Created by the Babylonian king Hammurabi around 1754 BCE, Hammurabi's Code is one of the earliest known written legal codes. Inscribed on a stele, it consists of 282 laws governing various aspects of Babylonian society, including commerce, property, and family matters.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact208.jpeg" alt="Vesuvius Eruption" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The eruption of Mount Vesuvius buried the cities of Pompeii and Herculaneum</h1>
+                <p class="fact-text">In 79 CE, the catastrophic eruption of Mount Vesuvius buried the Roman cities of Pompeii and Herculaneum under a thick layer of volcanic ash and pumice. This preserved these ancient cities remarkably well, providing valuable insights into daily life in the Roman Empire.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact209.jpeg" alt="Hagia Sophia" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Hagia Sophia served as a church, mosque, and museum</h1>
+                <p class="fact-text">Built in the 6th century CE in Constantinople (modern-day Istanbul), the Hagia Sophia has served as a Greek Orthodox Christian cathedral, an Ottoman imperial mosque, and, since 1935, a museum. Its architectural grandeur and cultural significance make it one of the most iconic buildings in the world.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact210.jpeg" alt="D-Day Invasion" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The D-Day Invasion was the largest amphibious assault in history</h1>
+                <p class="fact-text">On June 6, 1944, Allied forces launched the D-Day Invasion, landing thousands of troops on the beaches of Normandy, France, in a coordinated effort to liberate Nazi-occupied Western Europe. The success of this operation marked a turning point in World War II.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact211.jpeg" alt="Magna Carta" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Magna Carta limited the power of English monarchs</h1>
+                <p class="fact-text">Signed by King John of England in 1215, the Magna Carta was a landmark document that established the principle of constitutional government and limited the power of the monarchy. It laid the foundation for modern democratic principles and the rule of law.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact212.jpeg" alt="Golden Age of Islam" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Golden Age of Islam was a period of cultural, scientific, and economic flourishing</h1>
+                <p class="fact-text">From the 8th to the 14th centuries, the Islamic world experienced a Golden Age characterized by advancements in various fields, including mathematics, astronomy, medicine, literature, and architecture. Scholars and scientists made significant contributions that had a lasting impact on human civilization.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact213.jpeg" alt="Joan of Arc" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Joan of Arc was canonized as a saint by the Catholic Church</h1>
+                <p class="fact-text">Joan of Arc, the French heroine who played a pivotal role in the Hundred Years' War, was canonized as a saint by the Catholic Church in 1920. Her bravery, piety, and martyrdom have made her a symbol of French nationalism and a revered figure in history.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact214.jpg" alt="Machu Picchu" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Machu Picchu is a UNESCO World Heritage Site</h1>
+                <p class="fact-text">Located in the Andes Mountains of Peru, Machu Picchu is an ancient Inca citadel built in the 15th century. This remarkable archaeological site, with its breathtaking mountain setting and well-preserved ruins, is considered one of the most important cultural heritage sites in the world.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact215.jpeg" alt="Seven Wonders of the Ancient World" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Seven Wonders of the Ancient World were remarkable feats of architecture</h1>
+                <p class="fact-text">The Seven Wonders of the Ancient World, including the Great Pyramid of Giza and the Hanging Gardens of Babylon, were a list of remarkable structures and monuments compiled by various Greek writers. While most of these wonders have been lost to history, they continue to capture the imagination of people worldwide.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact216.jpeg" alt="Battle of Hastings" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Battle of Hastings led to the Norman conquest of England</h1>
+                <p class="fact-text">In 1066, the Battle of Hastings saw the Norman forces of William the Conqueror defeat the English army of King Harold II, resulting in the Norman conquest of England. This event had far-reaching consequences for English history, language, and culture.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact217.jpeg" alt="Voyages of Zheng He" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The voyages of Zheng He expanded China's influence in the Indian Ocean</h1>
+                <p class="fact-text">In the early 15th century, Chinese explorer Zheng He embarked on a series of maritime expeditions that reached as far as East Africa, expanding China's influence and promoting trade and diplomacy in the Indian Ocean region. His voyages are among the greatest feats of navigation in history.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact218.jpeg" alt="Cyrus the Great" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: Cyrus the Great founded the Achaemenid Empire</h1>
+                <p class="fact-text">Cyrus the Great, the founder of the Achaemenid Empire, ruled Persia from 559 to 530 BCE. Known for his military prowess, administrative skills, and tolerance of diverse cultures and religions, he laid the foundation for one of the largest empires in history.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact219.jpg" alt="Byzantine Empire" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Byzantine Empire preserved and transmitted classical knowledge to medieval Europe</h1>
+                <p class="fact-text">The Byzantine Empire, also known as the Eastern Roman Empire, served as a bridge between the ancient and medieval worlds, preserving and transmitting classical knowledge, literature, and art to medieval Europe. Its capital, Constantinople, was a center of trade, culture, and learning.</p>
+            </div>
+        </div>
+    </article>
+    
+    <article class="fact-card">
+        <div class="fact-content">
+            <img src="./Image/Facts/fact220.jpeg" alt="Shogunate Japan" class="fact-image">
+            <div class="fact-text-container">
+                <h1>Fact: The Tokugawa Shogunate brought stability to Japan during the Edo period</h1>
+                <p class="fact-text">The Tokugawa Shogunate, which ruled Japan from 1603 to 1868, brought an era of peace, stability, and isolation known as the Edo period. During this time, Japan experienced significant cultural and economic development, including the rise of the samurai class and the flourishing of arts and literature.</p>
+            </div>
+        </div>
+    </article>
+    
+    <!--Footer content-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-wrapper">
+                <div class="footer-widget">
+                    <a href="#">
+                        <img src="#" class="logo" alt="logo of Factbook"/>
+                    </a>
+                    <div class="address-contact">
+                        Address:NIT Raipur,<br> Raipur, Chhattisgarh 492010<br>
+                        Phone: 123-456-7890<br>
+                        Email: info@example.com
+                    </div>
+                </div>
+                <div class="footer-widget">
+                    <h6>Menu</h6>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="facts.html">Facts</a></li>
+                        <li><a href="aboutUs.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Help &amp; Support</h6>
+                    <ul class="links">
+                        <li><a href="contactUs.html">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms &amp; Conditionns</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <h6>Social Media Links</h6>
+                    <ul class="socials">
+                        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright-wrapper">
+                <p>Desing and Developed by
+                    <a href="#" terget="blank">FactBook</a>
+                </p>
+            </div>
+        </div>
+        
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./login.js"></script>
+
+</body>
+</html>
